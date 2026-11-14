@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # Allows manual trigger from GitHub UI anytime
 
 jobs:
   web-deploy:
@@ -12,6 +13,8 @@ jobs:
     steps:
       - name: 🚚 Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: 📂 Sync Files to cPanel Directory
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -19,7 +22,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_SERVER_DIR || 'public_html/intuvius/' }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR || './' }}
+          dangerous-clean-slate: false
           exclude: |
             **/.git*
             **/.git*/**
@@ -27,4 +31,3 @@ jobs:
             **/scratch/**
             *.bak
             temp_script.js
-
