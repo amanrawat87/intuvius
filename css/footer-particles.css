@@ -1,0 +1,228 @@
+/* ==========================================================================
+   TYCOON STYLE FOOTER WITH DOTTED PARTICLE BRAND
+   ========================================================================== */
+
+.tycoon-footer {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 80px 40px 30px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  font-family: 'Inter', 'Plus Jakarta Sans', -apple-system, sans-serif !important;
+  z-index: 10;
+}
+
+.tycoon-footer .footer-top-grid {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.tycoon-footer .footer-col-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #71717a !important;
+  margin-bottom: 24px;
+}
+
+.tycoon-footer .footer-slash-links {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tycoon-footer .footer-link-item {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.tycoon-footer .footer-link-item a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: all 0.25s ease !important;
+}
+
+.tycoon-footer .footer-link-item a .slash {
+  color: #52525b !important;
+  font-weight: 400 !important;
+  transition: color 0.25s ease !important;
+}
+
+.tycoon-footer .footer-link-item a:hover {
+  color: #22c55e !important;
+  transform: translateX(4px);
+}
+
+.tycoon-footer .footer-link-item a:hover .slash {
+  color: #22c55e !important;
+}
+
+/* Center Reach Out Col */
+.tycoon-footer .footer-center-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tycoon-footer .footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.tycoon-footer .footer-contact-line {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 26px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  transition: color 0.25s ease !important;
+}
+
+.tycoon-footer .footer-contact-line.email-line {
+  font-size: 24px !important;
+}
+
+.tycoon-footer .footer-contact-line:hover {
+  color: #22c55e !important;
+}
+
+.tycoon-footer .footer-contact-icon {
+  color: #22c55e !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tycoon-footer .footer-contact-icon svg {
+  stroke: #22c55e !important;
+}
+
+.tycoon-footer .footer-connect-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: #2eb85c !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 13px 34px !important;
+  border-radius: 9999px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  box-shadow: 0 4px 20px rgba(46, 184, 92, 0.35) !important;
+}
+
+.tycoon-footer .footer-connect-btn:hover {
+  background: #34d399 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(46, 184, 92, 0.55) !important;
+  color: #030408 !important;
+}
+
+.tycoon-footer .footer-connect-btn svg {
+  transition: transform 0.25s ease;
+  stroke: currentColor !important;
+}
+
+.tycoon-footer .footer-connect-btn:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* Right Social Col */
+.tycoon-footer .footer-right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* Divider & Copyright */
+.tycoon-footer .footer-middle-divider {
+  max-width: 1320px;
+  margin: 50px auto 22px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.tycoon-footer .footer-copy-row {
+  max-width: 1320px;
+  margin: 0 auto 15px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #52525b !important;
+}
+
+/* Particle Canvas Brand Section */
+.tycoon-footer .footer-particle-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 220px;
+  position: relative;
+  cursor: crosshair;
+}
+
+.tycoon-footer #footer-particle-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .tycoon-footer {
+    padding: 60px 20px 20px !important;
+  }
+  .tycoon-footer .footer-top-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 35px;
+  }
+  .tycoon-footer .footer-right-col {
+    align-items: center;
+    text-align: center;
+  }
+  .tycoon-footer .footer-slash-links {
+    align-items: center;
+  }
+  .tycoon-footer .footer-contact-line {
+    font-size: 20px !important;
+  }
+  .tycoon-footer .footer-contact-line.email-line {
+    font-size: 18px !important;
+  }
+  .tycoon-footer .footer-particle-container {
+    height: 140px;
+  }
+}
