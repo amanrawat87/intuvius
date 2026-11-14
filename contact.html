@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Contact Intuivus | Request a TrialOps360 Demo</title>
+  <meta name="description" content="Request a demo of TrialOps360 or send us a question. Contact Intuivus to discuss clinical trial budgeting and planning." />
+  <meta name="keywords" content="clinical trial budgeting software, clinical trial planning system, clinical trial budget, site list, study timeline, TrialOps360" />
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/swiper.min.css" rel="stylesheet">
+  <link href="css/style.css?v=9.0" rel="stylesheet">
+
+  <link rel="shortcut icon" href="images/favicon.png?v=3" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png?v=3" type="image/png">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <!-- Back-to-top start -->
+    <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+        <i class="fa-solid fa-angle-up"></i>
+      </button>
+    </div>
+    <!-- Back-to-top end -->
+
+    <!-- Shared Header Placeholder -->
+    <div id="site-header"></div>
+
+    <!-- Section 1: Header -->
+    <section class="page-title" style="background-image: url(images/background/page-title.png);">
+      <div class="container">
+        <div class="title-outer">
+          <h1 class="title">Contact Us</h1>
+          <p class="text">Request a demo of TrialOps360 or send us a question. We will respond within 1 to 2 business days.</p>
+          <ul class="page-breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Contact Form & Section 3: Contact Details -->
+    <section class="contact-details">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Contact Form -->
+          <div class="col-xl-7 col-lg-6">
+            <div class="sec-title mb-4">
+              <span class="sub-title"><span>Contact</span> Send a Message</span>
+              <h2 class="title" style="color: #090724;">Contact Us</h2>
+            </div>
+
+            <!-- Configure backend / email delivery to [client email address] -->
+            <form id="contact_form" name="contact_form" novalidate>
+              <!-- Honeypot field for spam protection -->
+              <div style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;" aria-hidden="true">
+                <label for="website_honeypot">Website</label>
+                <input type="text" id="website_honeypot" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="full_name" class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
+                    <input id="full_name" name="full_name" class="form-control" type="text" placeholder="Full Name" required>
+                    <div class="invalid-feedback">Please enter your full name.</div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="work_email" class="form-label fw-semibold">Work Email <span class="text-danger">*</span></label>
+                    <input id="work_email" name="work_email" class="form-control" type="email" placeholder="Work Email" required>
+                    <div class="invalid-feedback">Please enter a valid work email address.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="company_org" class="form-label fw-semibold">Company / Organization <span class="text-danger">*</span></label>
+                    <input id="company_org" name="company_org" class="form-control" type="text" placeholder="Company / Organization" required>
+                    <div class="invalid-feedback">Please enter your company or organization.</div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="job_title" class="form-label fw-semibold">Job Title</label>
+                    <input id="job_title" name="job_title" class="form-control" type="text" placeholder="Job Title">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="phone_number" class="form-label fw-semibold">Phone (optional)</label>
+                    <input id="phone_number" name="phone_number" class="form-control" type="text" placeholder="Phone (optional)">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="enquiry_type" class="form-label fw-semibold">Enquiry Type</label>
+                    <select id="enquiry_type" name="enquiry_type" class="form-control">
+                      <option value="Request a Demo">Request a Demo</option>
+                      <option value="General Enquiry">General Enquiry</option>
+                      <option value="Partnership">Partnership</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="contact_message" class="form-label fw-semibold">Message <span class="text-danger">*</span></label>
+                <textarea id="contact_message" name="contact_message" class="form-control" rows="5" placeholder="Message" required></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
+              </div>
+
+              <div class="mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="consent_checkbox" name="consent" required>
+                  <label class="form-check-label" for="consent_checkbox">
+                    I agree to be contacted about my enquiry <span class="text-danger">*</span>
+                  </label>
+                  <div class="invalid-feedback">Please agree to be contacted about your enquiry.</div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <button type="submit" class="btn-style-one"><span class="btn-text">Send Message</span></button>
+              </div>
+
+              <div id="contact-success-alert" class="alert alert-success mt-3" style="display: none;" role="status">
+                Thank you. We have received your message and will be in touch shortly.
+              </div>
+            </form>
+          </div>
+
+          <!-- Section 3: Contact Details -->
+          <div class="col-xl-5 col-lg-6">
+            <div class="contact-details__right">
+              <div class="sec-title mb-4">
+                <span class="sub-title"><span>Details</span> Connect</span>
+                <h2 class="title" style="color: #090724;">Contact Details</h2>
+              </div>
+              <ul class="list-unstyled contact-details__info">
+                <li>
+                  <div class="icon">
+                    <span class="fa-solid fa-envelope"></span>
+                  </div>
+                  <div class="text">
+                    <h6>Email</h6>
+                    <a href="mailto:bd@intuivus.com">bd@intuivus.com</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa-solid fa-phone"></span>
+                  </div>
+                  <div class="text">
+                    <h6>Phone</h6>
+                    <a href="tel:+18005123600">+1 (800) 512-3600</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa-solid fa-location-dot"></span>
+                  </div>
+                  <div class="text">
+                    <h6>Address</h6>
+                    <span>100 Cambridge St, Boston, MA</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa-brands fa-linkedin-in"></span>
+                  </div>
+                  <div class="text">
+                    <h6>LinkedIn</h6>
+                    <span>linkedin.com/company/intuivus</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shared Footer Placeholder -->
+    <div id="site-footer"></div>
+
+  </div>
+
+  <!-- Theme Scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/knob.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/nice-select.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/splitType.js"></script>
+  <script src="js/gsap-scroll-smoother.js"></script>
+  <script src="js/gsap-scroll-to-plugin.js"></script>
+  <script src="js/SplitText.min.js"></script>
+  <script src="js/custom-gsap.js"></script>
+  <script src="js/script.js?v=7.1"></script>
+
+  <!-- Shared Partials & Dynamic Nav Loader -->
+  <script src="js/include-partials.js?v=9.2"></script>
+  <!-- Motion.dev Animations -->
+  <script src="js/motion.js"></script>
+  <script src="js/motion-init.js?v=1.0"></script>
+  <script>
+    (function () {
+      var form = document.getElementById('contact_form');
+      var successAlert = document.getElementById('contact-success-alert');
+      var enquirySelect = document.getElementById('enquiry_type');
+      var messageInput = document.getElementById('contact_message');
+
+      var params = new URLSearchParams(window.location.search);
+      var enquiry = params.get('enquiry');
+      if (enquiry === 'demo' && enquirySelect) {
+        enquirySelect.value = 'Request a Demo';
+      } else if (enquiry === 'budget' && enquirySelect) {
+        enquirySelect.value = 'Request a Demo';
+        if (messageInput && !messageInput.value) {
+          messageInput.value = 'Requesting a complimentary budget for our clinical study.';
+        }
+      }
+
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          var honeypot = document.getElementById('website_honeypot');
+          if (honeypot && honeypot.value.trim() !== '') {
+            return;
+          }
+
+          var fullName = document.getElementById('full_name');
+          var workEmail = document.getElementById('work_email');
+          var companyOrg = document.getElementById('company_org');
+          var contactMsg = document.getElementById('contact_message');
+          var consentBox = document.getElementById('consent_checkbox');
+
+          var isValid = true;
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (!fullName.value.trim()) {
+            fullName.classList.add('is-invalid');
+            isValid = false;
+          } else {
+            fullName.classList.remove('is-invalid');
+          }
+
+          if (!emailRegex.test(workEmail.value.trim())) {
+            workEmail.classList.add('is-invalid');
+            isValid = false;
+          } else {
+            workEmail.classList.remove('is-invalid');
+          }
+
+          if (!companyOrg.value.trim()) {
+            companyOrg.classList.add('is-invalid');
+            isValid = false;
+          } else {
+            companyOrg.classList.remove('is-invalid');
+          }
+
+          if (!contactMsg.value.trim()) {
+            contactMsg.classList.add('is-invalid');
+            isValid = false;
+          } else {
+            contactMsg.classList.remove('is-invalid');
+          }
+
+          if (!consentBox.checked) {
+            consentBox.classList.add('is-invalid');
+            isValid = false;
+          } else {
+            consentBox.classList.remove('is-invalid');
+          }
+
+          if (!isValid) {
+            successAlert.style.display = 'none';
+            return;
+          }
+
+          form.reset();
+          successAlert.style.display = 'block';
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>
