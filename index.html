@@ -36,14 +36,10 @@
   <!-- Partner Clleancode Style Dynamic Preloader -->
   <div class="o-loader" data-loader role="status" aria-live="polite" aria-label="Loading">
     <div class="o-loader__stack" data-loader-stack aria-hidden="true">
-      <img class="o-loader__shot" style="--shot-x: -16px; --shot-y: -12px; --shot-out-r: -12deg; --shot-r: -5deg; z-index: 1;" src="images/loader/loader-shot-1.webp" width="340" height="340" alt="" decoding="async">
-      <img class="o-loader__shot" style="--shot-x: 14px; --shot-y: 9px; --shot-out-r: 9deg; --shot-r: 4deg; z-index: 2;" src="images/loader/loader-shot-2.webp" width="340" height="340" alt="" decoding="async">
-      <img class="o-loader__shot" style="--shot-x: -6px; --shot-y: 14px; --shot-out-r: -6deg; --shot-r: -2.5deg; z-index: 3;" src="images/loader/loader-shot-3.webp" width="340" height="340" alt="" decoding="async">
-      <img class="o-loader__shot" style="--shot-x: 18px; --shot-y: -8px; --shot-out-r: 14deg; --shot-r: 6deg; z-index: 4;" src="images/loader/loader-shot-4.webp" width="340" height="340" alt="" decoding="async">
-      <img class="o-loader__shot" style="--shot-x: -20px; --shot-y: 4px; --shot-out-r: -15deg; --shot-r: -3.5deg; z-index: 5;" src="images/loader/loader-shot-5.webp" width="340" height="340" alt="" decoding="async">
-      <img class="o-loader__shot" style="--shot-x: 8px; --shot-y: -16px; --shot-out-r: 7deg; --shot-r: 2deg; z-index: 6;" src="images/loader/loader-shot-6.webp" width="340" height="340" alt="" decoding="async">
-      <img class="o-loader__shot" style="--shot-x: -10px; --shot-y: -6px; --shot-out-r: -9deg; --shot-r: 5deg; z-index: 7;" src="images/loader/loader-shot-7.webp" width="340" height="340" alt="" decoding="async">
-      <img class="o-loader__shot" style="--shot-x: 16px; --shot-y: 12px; --shot-out-r: 11deg; --shot-r: -4.5deg; z-index: 8;" src="images/loader/loader-shot-8.webp" width="340" height="340" alt="" decoding="async">
+      <img class="o-loader__shot" style="--shot-x: -16px; --shot-y: -12px; --shot-out-r: -12deg; --shot-r: -5deg; z-index: 1; object-fit: cover;" src="images/resource/product-bg-budget.jpg" width="340" height="340" alt="" decoding="async">
+      <img class="o-loader__shot" style="--shot-x: 14px; --shot-y: 9px; --shot-out-r: 9deg; --shot-r: 4deg; z-index: 2; object-fit: cover;" src="images/resource/product-bg-site.jpg" width="340" height="340" alt="" decoding="async">
+      <img class="o-loader__shot" style="--shot-x: -6px; --shot-y: 14px; --shot-out-r: -6deg; --shot-r: -2.5deg; z-index: 3; object-fit: cover;" src="images/resource/product-bg-feasibility.jpg" width="340" height="340" alt="" decoding="async">
+      <img class="o-loader__shot" style="--shot-x: 18px; --shot-y: -8px; --shot-out-r: 14deg; --shot-r: 6deg; z-index: 4; object-fit: cover;" src="images/resource/about-clinical-research.jpg" width="340" height="340" alt="" decoding="async">
     </div>
 
     <div class="o-loader__word" aria-hidden="true">
@@ -65,7 +61,10 @@
     <!-- The Lonely Pixel Style Hero Slider (Powered by Swiper.js) -->
         <!-- Hero Slider Section (Full-Width Background Image + Centered Typography & Actions) -->
         <!-- Hyperiux Vault Inspired Enterprise Hero Slider -->
-    <section class="hyper-hero-section" id="hero-showcase">
+        <!-- O-SCS Aperture Scroll-Portal Wrap (Sticky Reveal of Hero Banner) -->
+    <div class="scs-portal-hero-wrap" id="scs-portal-wrap">
+      <div class="scs-portal-sticky-frame" id="scs-portal-frame">
+<section class="hyper-hero-section" id="hero-showcase">
       <!-- 3D Concentric Toroidal Metallic Ribbon & Authentic Eulerian Fluid Interactive Stage -->
       <div class="hyper-torus-stage" id="hyperTorusStage" aria-hidden="true">
         <canvas id="hyperDotsCanvas" class="hyper-dots-canvas" aria-hidden="true"></canvas>
@@ -202,6 +201,112 @@
       </div>
     </section>
     <!-- End The Lonely Pixel Style Scrollytelling Hero Section -->
+
+    <!-- ==========================================================
+         O-SCS SCROLL-EXPANDING APERTURE PORTAL OVERLAY
+         Resting view on load; splits & opens circular aperture revealing Hero Banner
+         ========================================================== -->
+    <div class="scs-portal-stage" id="scs-portal-stage">
+      <!-- Radiating Cosmic Grid & 3 Interlocking Logo Hexagons (Reference Geometry) -->
+      <div class="scs-portal-grid" aria-hidden="true">
+        <span class="scs-grid-line is-h"></span>
+        <span class="scs-grid-line is-v"></span>
+        <span class="scs-grid-line is-diag-1"></span>
+        <span class="scs-grid-line is-diag-2"></span>
+        <span class="scs-grid-line is-diag-3"></span>
+        <span class="scs-grid-line is-diag-4"></span>
+
+        <!-- Left Intersecting Hexagon (Intuivus Logo Shape) -->
+        <div class="scs-hex-sub is-left">
+          <svg viewBox="0 0 500 540" class="scs-hex-svg" preserveAspectRatio="xMidYMid meet">
+            <polygon class="scs-hex-sub-outer" points="250,15 475,145 475,395 250,525 25,395 25,145" />
+          </svg>
+        </div>
+
+        <!-- Right Intersecting Hexagon (Intuivus Logo Shape) -->
+        <div class="scs-hex-sub is-right">
+          <svg viewBox="0 0 500 540" class="scs-hex-svg" preserveAspectRatio="xMidYMid meet">
+            <polygon class="scs-hex-sub-outer" points="250,15 475,145 475,395 250,525 25,395 25,145" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Center Luminous Glowing Logo Hexagon (Center Aperture / Orb) -->
+      <div class="scs-portal-orb scs-portal-hex" id="scs-portal-orb" aria-hidden="true">
+        <!-- Glowing Ambient Corona / Aura -->
+        <div class="scs-hex-aura"></div>
+
+        <!-- Center SVG Hexagon with Gradient Stroke (Clean Pure Logo Boundary) -->
+        <svg viewBox="0 0 500 540" class="scs-hex-center-svg" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="scsHexAuraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f472b6" stop-opacity="0.95" />
+              <stop offset="28%" stop-color="#c084fc" stop-opacity="1" />
+              <stop offset="70%" stop-color="#7c3aed" stop-opacity="0.95" />
+              <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.9" />
+            </linearGradient>
+          </defs>
+
+          <!-- Outer Radiant Hexagon Stroke -->
+          <polygon class="scs-hex-stroke-glow" points="250,15 475,145 475,395 250,525 25,395 25,145" />
+          <polygon class="scs-hex-stroke-main" points="250,15 475,145 475,395 250,525 25,395 25,145" />
+
+          <!-- Hexagon Vertex Ticks / Laser Precision Nodes -->
+          <circle cx="250" cy="15" r="3.5" class="scs-hex-node" />
+          <circle cx="475" cy="145" r="3.5" class="scs-hex-node" />
+          <circle cx="475" cy="395" r="3.5" class="scs-hex-node" />
+          <circle cx="250" cy="525" r="3.5" class="scs-hex-node" />
+          <circle cx="25" cy="395" r="3.5" class="scs-hex-node" />
+          <circle cx="25" cy="145" r="3.5" class="scs-hex-node" />
+        </svg>
+      </div>
+
+      <!-- Split Display Headline (CLINICAL TRIALS. SMARTER AHEAD) -->
+      <h1 class="scs-portal-title" aria-label="Clinical Trials. Smarter Ahead.">
+        <span class="scs-line scs-line-top" id="scs-line-top">
+          <span class="scs-line-text">CLINICAL TRIALS.</span>
+          <span class="scs-line-glow" aria-hidden="true">CLINICAL TRIALS.</span>
+        </span>
+        <span class="scs-line scs-line-bot" id="scs-line-bot">
+          <span class="scs-line-text">SMARTER AHEAD</span>
+          <span class="scs-line-glow" aria-hidden="true">SMARTER AHEAD</span>
+        </span>
+      </h1>
+
+      <!-- Bottom Subtitle + Continuous Trust Strip -->
+      <div class="scs-portal-bottom" id="scs-portal-bottom">
+        <p class="scs-portal-sub">
+          Smarter systems for clinical trials, from planning to execution &mdash; built to help sponsors and CROs plan faster with confidence.
+        </p>
+        <!-- Scroll Cue cleanly stacked inside flex column (no overlap) -->
+        <a href="#about" class="scs-scroll-cue" id="scsScrollCue" aria-label="Scroll to explore platform">
+          <span>Scroll to Explore</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+        <div class="scs-portal-marquee" aria-hidden="true">
+          <div class="scs-marquee-track">
+            <span>PHARMA SPONSORS</span><i class="scs-dot"></i>
+            <span>CRO LEADERSHIP</span><i class="scs-dot"></i>
+            <span>TRIALOPS360</span><i class="scs-dot"></i>
+            <span>STUDY BUDGETING</span><i class="scs-dot"></i>
+            <span>SITE SELECTION</span><i class="scs-dot"></i>
+            <span>TIMELINE PLANNING</span><i class="scs-dot"></i>
+            <span>EXECUTION SYSTEMS</span><i class="scs-dot"></i>
+            <span>PHARMA SPONSORS</span><i class="scs-dot"></i>
+            <span>CRO LEADERSHIP</span><i class="scs-dot"></i>
+            <span>TRIALOPS360</span><i class="scs-dot"></i>
+            <span>STUDY BUDGETING</span><i class="scs-dot"></i>
+            <span>SITE SELECTION</span><i class="scs-dot"></i>
+            <span>TIMELINE PLANNING</span><i class="scs-dot"></i>
+            <span>EXECUTION SYSTEMS</span><i class="scs-dot"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+    </div>
+    <!-- End O-SCS Aperture Scroll-Portal Wrap -->
 
     <!-- Section 2: About Intuivus (short) -->
     <section class="about-section pt-60 pb-60" id="about" style="scroll-margin-top: 90px;">
@@ -660,6 +765,103 @@
     </section>
     <!-- End TrialOps360 Canvas Section -->
 
+        <!-- Section 6: Who It Is For (Target Audience Section - Redesigned Modern SaaS) -->
+    <section class="testimonial-section pt-60 pb-60" id="who-it-is-for">
+      <div class="large-container">
+        <div class="outer-box who-it-is-for-box">
+          <div class="sec-title text-center light mb-50" data-aos="fade-up">
+            <span class="metrics-pill-badge mb-3">
+              <span class="badge-dot">●</span> Built for Clinical Teams
+            </span>
+            <h2 class="title" style="color: #ffffff; font-weight: 800; font-size: clamp(28px, 5vw, 44px); line-height: 1.2;">Who It Is <span style="background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">For</span></h2>
+            <div class="text mx-auto mt-2" style="max-width: 650px; color: #94a3b8; font-size: 1.02rem; line-height: 1.65;">
+              Purpose-built intelligence workflows designed for sponsors, CROs, clinops leaders, and emerging biotech innovators.
+            </div>
+          </div>
+
+          <!-- 4 Normal Small Cards Grid (Clean, Proportional & Modern) -->
+          <div class="row g-4 justify-content-center mt-2" data-aos="fade-up">
+            <!-- Card 1: Pharma & Biotech -->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+              <div class="audience-small-card">
+                <div class="audience-small-card-top">
+                  <div class="audience-card-icon">
+                    <i class="fa-solid fa-flask-vial"></i>
+                  </div>
+                  <span class="audience-card-tag">Sponsors</span>
+                </div>
+                <h3 class="audience-card-title">Pharma &amp; Biotech</h3>
+                <p class="audience-card-desc">
+                  Turn early protocol synopses into deterministic budgets, site allocations, and board-ready milestones with total certainty.
+                </p>
+                <div class="audience-card-footer">
+                  <span class="audience-card-badge">Predictable Delivery</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: CRO Teams -->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+              <div class="audience-small-card">
+                <div class="audience-small-card-top">
+                  <div class="audience-card-icon">
+                    <i class="fa-solid fa-hospital-user"></i>
+                  </div>
+                  <span class="audience-card-tag">Proposals &amp; Ops</span>
+                </div>
+                <h3 class="audience-card-title">CRO Leadership &amp; Teams</h3>
+                <p class="audience-card-desc">
+                  Empower proposal teams to build competitive, defensible study budgets and operational plans in hours instead of weeks.
+                </p>
+                <div class="audience-card-footer">
+                  <span class="audience-card-badge">RFP Speed &lt; 48h</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: ClinOps & Finance -->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+              <div class="audience-small-card">
+                <div class="audience-small-card-top">
+                  <div class="audience-card-icon">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                  </div>
+                  <span class="audience-card-tag">Governance</span>
+                </div>
+                <h3 class="audience-card-title">ClinOps &amp; Finance Leads</h3>
+                <p class="audience-card-desc">
+                  Maintain a shared, audit-defensible source of truth to avoid budget surprises, spreadsheet drift, and mid-study variance.
+                </p>
+                <div class="audience-card-footer">
+                  <span class="audience-card-badge">Zero Budget Drift</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Small & Emerging -->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+              <div class="audience-small-card">
+                <div class="audience-small-card-top">
+                  <div class="audience-card-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                  </div>
+                  <span class="audience-card-tag">Biotech</span>
+                </div>
+                <h3 class="audience-card-title">Small &amp; Mid-Size Sponsors</h3>
+                <p class="audience-card-desc">
+                  Plan clinical trials with lean teams using automated operational intelligence without costly consultants or guesswork.
+                </p>
+                <div class="audience-card-footer">
+                  <span class="audience-card-badge">3x Team Leverage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Audience Section -->
+
     <!-- Section 5B: Modular Outputs Carousel (Original modular-card-visual Swiper Carousel) -->
     <section class="modular-products-section pt-60 pb-60" id="products">
       <div class="container">
@@ -803,418 +1005,6 @@
     </section>
     <!-- End Modular Section -->
 
-        <!-- Section 6: Who It Is For (Target Audience Section - Redesigned Modern SaaS) -->
-    <section class="testimonial-section pt-60 pb-60" id="who-it-is-for">
-      <div class="large-container">
-        <div class="outer-box who-it-is-for-box">
-          <div class="sec-title text-center light mb-50" data-aos="fade-up">
-            <span class="metrics-pill-badge mb-3">
-              <span class="badge-dot">●</span> Built for Clinical Teams
-            </span>
-            <h2 class="title" style="color: #ffffff; font-weight: 800; font-size: clamp(28px, 5vw, 44px); line-height: 1.2;">Who It Is <span style="background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">For</span></h2>
-            <div class="text mx-auto mt-2" style="max-width: 650px; color: #94a3b8; font-size: 1.02rem; line-height: 1.65;">
-              Purpose-built intelligence workflows designed for sponsors, CROs, clinops leaders, and emerging biotech innovators.
-            </div>
-          </div>
-
-          <!-- Interactive Tabbed Switcher Navigation -->
-          <div class="audience-tabs-wrapper" data-aos="fade-up">
-            <nav class="audience-tabs-nav" role="tablist" aria-label="Who It Is For Tabs">
-              <button class="audience-tab-btn active" role="tab" aria-selected="true" aria-controls="panel-sponsors" data-target="panel-sponsors">
-                <span class="tab-dot" aria-hidden="true"></span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M10 2v7.31"></path>
-                  <path d="M14 9.3V2"></path>
-                  <path d="M8.5 2h7"></path>
-                  <path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path>
-                  <path d="M5.52 16h12.96"></path>
-                </svg>
-                <span>Pharma &amp; Biotech</span>
-              </button>
-
-              <button class="audience-tab-btn" role="tab" aria-selected="false" aria-controls="panel-cros" data-target="panel-cros">
-                <span class="tab-dot" aria-hidden="true"></span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                </svg>
-                <span>CRO Teams</span>
-              </button>
-
-              <button class="audience-tab-btn" role="tab" aria-selected="false" aria-controls="panel-clinops" data-target="panel-clinops">
-                <span class="tab-dot" aria-hidden="true"></span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="18" y1="20" x2="18" y2="10"></line>
-                  <line x1="12" y1="20" x2="12" y2="4"></line>
-                  <line x1="6" y1="20" x2="6" y2="14"></line>
-                </svg>
-                <span>ClinOps &amp; Finance</span>
-              </button>
-
-              <button class="audience-tab-btn" role="tab" aria-selected="false" aria-controls="panel-biotech" data-target="panel-biotech">
-                <span class="tab-dot" aria-hidden="true"></span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <circle cx="12" cy="12" r="6"></circle>
-                  <circle cx="12" cy="2" r="2"></circle>
-                </svg>
-                <span>Small &amp; Mid-Size</span>
-              </button>
-            </nav>
-          </div>
-
-          <!-- Showcase Panels Container -->
-          <div class="audience-showcase-container" data-aos="fade-up" data-aos-delay="100">
-            <!-- Panel 1: Pharma & Biotech Sponsors -->
-            <div class="audience-showcase-panel active" id="panel-sponsors" role="tabpanel">
-              <div class="audience-panel-grid">
-                <div class="audience-panel-left">
-                  <span class="audience-role-pill">Clinical Operations &amp; Development Heads</span>
-                  <h3 class="audience-panel-title">Turn Protocol Synopses into Board-Approved Budgets in Days</h3>
-                  <p class="audience-panel-desc">
-                    Eliminate trial planning uncertainty. Replace weeks of fragmented spreadsheet modeling with automated bottom-up budgets, site allocations, and realistic milestone schedules with total certainty.
-                  </p>
-
-                  <div class="audience-metrics-grid">
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">⚡</span> 75% Faster</div>
-                      <div class="audience-metric-label">Operational Model Delivery</div>
-                    </div>
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">🎯</span> 98%+ Accuracy</div>
-                      <div class="audience-metric-label">Site Feasibility &amp; Capacity</div>
-                    </div>
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">🛡️</span> 100% GxP</div>
-                      <div class="audience-metric-label">Part 11 Audit-Defensible</div>
-                    </div>
-                  </div>
-
-                  <a href="#cta" class="audience-cta-link">
-                    <span>Explore Sponsor Solutions</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </a>
-                </div>
-
-                <div class="audience-panel-right">
-                  <div class="audience-preview-widget">
-                    <div class="widget-header">
-                      <div class="widget-header-left">
-                        <div class="widget-mac-dots"><span></span><span></span><span></span></div>
-                        <div class="widget-header-title">
-                          <span class="live-pulse"></span>
-                          TrialOps360 &bull; Sponsor Mode
-                        </div>
-                      </div>
-                      <span class="widget-header-badge">Live System</span>
-                    </div>
-
-                    <div class="widget-progress-wrap">
-                      <div class="widget-progress-header">
-                        <span>Study Budget Allocation</span>
-                        <strong>$18.4M Total Forecast</strong>
-                      </div>
-                      <div class="widget-progress-track">
-                        <div class="widget-progress-fill" style="width: 82%;"></div>
-                      </div>
-                    </div>
-
-                    <div class="widget-rows">
-                      <div class="widget-row">
-                        <span class="widget-row-label">Protocol Ingestion</span>
-                        <span class="widget-row-value val-accent">100% Ingested &bull; Verified</span>
-                      </div>
-                      <div class="widget-row">
-                        <span class="widget-row-label">Global Sites Activated</span>
-                        <span class="widget-row-value">42 Sites &bull; 6 Countries</span>
-                      </div>
-                      <div class="widget-row">
-                        <span class="widget-row-label">Operational Timeline</span>
-                        <span class="widget-row-value">Board-Ready Milestones</span>
-                      </div>
-                    </div>
-                    <div class="widget-footer">
-                      <span>Planning Velocity</span>
-                      <strong>75% Faster Delivery</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Panel 2: CRO Leadership & Teams -->
-            <div class="audience-showcase-panel" id="panel-cros" role="tabpanel">
-              <div class="audience-panel-grid">
-                <div class="audience-panel-left">
-                  <span class="audience-role-pill">BD, Proposals &amp; Project Management</span>
-                  <h3 class="audience-panel-title">Build Competitive, Margin-Defended Bids with Total Precision</h3>
-                  <p class="audience-panel-desc">
-                    Empower proposal and operations teams to build transparent, institutional-grade clinical trial budgets that win sponsor trust while defending project margins against scope creep.
-                  </p>
-
-                  <div class="audience-metrics-grid">
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">⚡</span> &lt; 48 Hours</div>
-                      <div class="audience-metric-label">Rapid RFP Bid Turnaround</div>
-                    </div>
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">📈</span> 18.4% Margin</div>
-                      <div class="audience-metric-label">Protected Project Margin</div>
-                    </div>
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">🤝</span> +40% Win</div>
-                      <div class="audience-metric-label">Sponsor Proposal Trust</div>
-                    </div>
-                  </div>
-
-                  <a href="#cta" class="audience-cta-link">
-                    <span>Explore CRO Solutions</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </a>
-                </div>
-
-                <div class="audience-panel-right">
-                  <div class="audience-preview-widget">
-                    <div class="widget-header">
-                      <div class="widget-header-left">
-                        <div class="widget-mac-dots"><span></span><span></span><span></span></div>
-                        <div class="widget-header-title">
-                          <span class="live-pulse"></span>
-                          TrialOps360 &bull; CRO Bid Suite
-                        </div>
-                      </div>
-                      <span class="widget-header-badge">Proposal Mode</span>
-                    </div>
-
-                    <div class="widget-progress-wrap">
-                      <div class="widget-progress-header">
-                        <span>Margin Protection Guard</span>
-                        <strong>22.5% Target Baseline</strong>
-                      </div>
-                      <div class="widget-progress-track">
-                        <div class="widget-progress-fill" style="width: 90%; background: linear-gradient(90deg, #10b981 0%, #38bdf8 100%);"></div>
-                      </div>
-                    </div>
-
-                    <div class="widget-rows">
-                      <div class="widget-row">
-                        <span class="widget-row-label">RFP Turnaround</span>
-                        <span class="widget-row-value val-accent">&lt; 48 Hours Delivered</span>
-                      </div>
-                      <div class="widget-row">
-                        <span class="widget-row-label">Site Feasibility</span>
-                        <span class="widget-row-value">Country-Level Benchmark</span>
-                      </div>
-                      <div class="widget-row">
-                        <span class="widget-row-label">Cost Transparency</span>
-                        <span class="widget-row-value">Audit-Defensible Items</span>
-                      </div>
-                    </div>
-                    <div class="widget-footer">
-                      <span>Bid Readiness</span>
-                      <strong>100% Sponsor Aligned</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Panel 3: ClinOps, Feasibility & Finance -->
-            <div class="audience-showcase-panel" id="panel-clinops" role="tabpanel">
-              <div class="audience-panel-grid">
-                <div class="audience-panel-left">
-                  <span class="audience-role-pill">Feasibility, Budgets &amp; Contracts</span>
-                  <h3 class="audience-panel-title">Total Visibility Over Trial Expenditure &amp; Milestone Escrow</h3>
-                  <p class="audience-panel-desc">
-                    Connect clinical feasibility directly with financial execution. Compare multi-scenario forecasts, track milestone escrow gates, and eliminate mid-trial cost overruns permanently.
-                  </p>
-
-                  <div class="audience-metrics-grid">
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">🔍</span> 0 Errors</div>
-                      <div class="audience-metric-label">Spreadsheet Formulas Replaced</div>
-                    </div>
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">📊</span> 3 Scenarios</div>
-                      <div class="audience-metric-label">Base &bull; Fast &bull; Lean Models</div>
-                    </div>
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">⏱️</span> -35% Drift</div>
-                      <div class="audience-metric-label">Milestone Startup Delays</div>
-                    </div>
-                  </div>
-
-                  <a href="#cta" class="audience-cta-link">
-                    <span>Explore Finance Solutions</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </a>
-                </div>
-
-                <div class="audience-panel-right">
-                  <div class="audience-preview-widget">
-                    <div class="widget-header">
-                      <div class="widget-header-left">
-                        <div class="widget-mac-dots"><span></span><span></span><span></span></div>
-                        <div class="widget-header-title">
-                          <span class="live-pulse"></span>
-                          TrialOps360 &bull; Financial Engine
-                        </div>
-                      </div>
-                      <span class="widget-header-badge">Real-Time Sync</span>
-                    </div>
-
-                    <div class="widget-progress-wrap">
-                      <div class="widget-progress-header">
-                        <span>Milestone Escrow Reconciliation</span>
-                        <strong>100% On-Target</strong>
-                      </div>
-                      <div class="widget-progress-track">
-                        <div class="widget-progress-fill" style="width: 78%; background: linear-gradient(90deg, #a855f7 0%, #06b6d4 100%);"></div>
-                      </div>
-                    </div>
-
-                    <div class="widget-rows">
-                      <div class="widget-row">
-                        <span class="widget-row-label">Spreadsheets</span>
-                        <span class="widget-row-value val-accent">Fully Replaced</span>
-                      </div>
-                      <div class="widget-row">
-                        <span class="widget-row-label">Variance Tracking</span>
-                        <span class="widget-row-value">&lt; 1.5% Projected Drift</span>
-                      </div>
-                      <div class="widget-row">
-                        <span class="widget-row-label">Milestone Accrual</span>
-                        <span class="widget-row-value">Synchronized Curve</span>
-                      </div>
-                    </div>
-                    <div class="widget-footer">
-                      <span>Financial Precision</span>
-                      <strong>100% Audit Ready</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Panel 4: Small & Mid-Size Sponsors -->
-            <div class="audience-showcase-panel" id="panel-biotech" role="tabpanel">
-              <div class="audience-panel-grid">
-                <div class="audience-panel-left">
-                  <span class="audience-role-pill">Focused Trial Planning &amp; Agile Teams</span>
-                  <h3 class="audience-panel-title">Enterprise-Grade Intelligence Without Enterprise Overhead</h3>
-                  <p class="audience-panel-desc">
-                    Scale your clinical runway with lean teams. Leverage pre-built operational templates, benchmark cost indices, and automated site selection to launch studies with institutional confidence.
-                  </p>
-
-                  <div class="audience-metrics-grid">
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">🚀</span> Fast-Track</div>
-                      <div class="audience-metric-label">Phase I/II Launchpad</div>
-                    </div>
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">💡</span> Global Data</div>
-                      <div class="audience-metric-label">Fair-Market Benchmarks</div>
-                    </div>
-                    <div class="audience-metric-card">
-                      <div class="audience-metric-num"><span class="metric-icon">🏆</span> Board Ready</div>
-                      <div class="audience-metric-label">Institutional Documentation</div>
-                    </div>
-                  </div>
-
-                  <a href="#cta" class="audience-cta-link">
-                    <span>Explore Biotech Solutions</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </a>
-                </div>
-
-                <div class="audience-panel-right">
-                  <div class="audience-preview-widget">
-                    <div class="widget-header">
-                      <div class="widget-header-left">
-                        <div class="widget-mac-dots"><span></span><span></span><span></span></div>
-                        <div class="widget-header-title">
-                          <span class="live-pulse"></span>
-                          TrialOps360 &bull; Agile Suite
-                        </div>
-                      </div>
-                      <span class="widget-header-badge">Investor Ready</span>
-                    </div>
-
-                    <div class="widget-progress-wrap">
-                      <div class="widget-progress-header">
-                        <span>Clinical Capital Efficiency</span>
-                        <strong>Top 5% Benchmark</strong>
-                      </div>
-                      <div class="widget-progress-track">
-                        <div class="widget-progress-fill" style="width: 95%; background: linear-gradient(90deg, #ec4899 0%, #8b5cf6 100%);"></div>
-                      </div>
-                    </div>
-
-                    <div class="widget-rows">
-                      <div class="widget-row">
-                        <span class="widget-row-label">Study Options</span>
-                        <span class="widget-row-value val-accent">Multi-Scenario Modeled</span>
-                      </div>
-                      <div class="widget-row">
-                        <span class="widget-row-label">Capital Runway</span>
-                        <span class="widget-row-value">Optimized Allocations</span>
-                      </div>
-                      <div class="widget-row">
-                        <span class="widget-row-label">Board Reporting</span>
-                        <span class="widget-row-value">Instant Export</span>
-                      </div>
-                    </div>
-                    <div class="widget-footer">
-                      <span>Resource Leverage</span>
-                      <strong>3x Team Leverage</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <script>
-            (function() {
-              function setupAudienceTabs() {
-                var tabBtns = document.querySelectorAll('.audience-tab-btn');
-                var panels = document.querySelectorAll('.audience-showcase-panel');
-                if (!tabBtns.length || !panels.length) return;
-
-                tabBtns.forEach(function(btn) {
-                  btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var targetId = btn.getAttribute('data-target');
-                    tabBtns.forEach(function(b) {
-                      b.classList.remove('active');
-                      b.setAttribute('aria-selected', 'false');
-                    });
-                    btn.classList.add('active');
-                    btn.setAttribute('aria-selected', 'true');
-
-                    panels.forEach(function(panel) {
-                      if (panel.id === targetId) {
-                        panel.classList.add('active');
-                      } else {
-                        panel.classList.remove('active');
-                      }
-                    });
-                  });
-                });
-              }
-
-              if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', setupAudienceTabs);
-              } else {
-                setupAudienceTabs();
-              }
-            })();
-          </script>
-        </div>
-      </div>
-    </section>
-    <!-- End Audience Section -->
-
         <!-- Section 5: Closing Call to Action (Redesigned Enterprise Card) -->
     <section class="cta-section-layout1 pt-60 pb-60" id="cta">
       <div class="large-container">
@@ -1242,21 +1032,6 @@
                 <a href="contact.html?enquiry=budget" class="cta-action-btn-secondary">
                   <span>Get Complimentary Study Budget</span>
                 </a>
-              </div>
-            </div>
-            <!-- Enterprise Trust Badges Strip -->
-            <div class="cta-trust-strip">
-              <div class="cta-trust-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                <span>21 CFR Part 11 &amp; HIPAA Compliant</span>
-              </div>
-              <div class="cta-trust-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                <span>Turnaround in as Little as 48 Hours</span>
-              </div>
-              <div class="cta-trust-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <span>Full Protocol Feasibility Included</span>
               </div>
             </div>
           </div>
@@ -2081,6 +1856,176 @@
     }
   })();
   </script>
+
+  <!-- O-SCS Scroll-Expanding Aperture Portal Controller -->
+  <script>
+    (function () {
+      function initScsScrollPortal() {
+        var wrap = document.getElementById('scs-portal-wrap');
+        var frame = document.getElementById('scs-portal-frame');
+        if (!wrap || !frame) return;
+
+        var portalStage = document.getElementById('scs-portal-stage');
+        var lineTop = document.getElementById('scs-line-top');
+        var lineBot = document.getElementById('scs-line-bot');
+        var orb = document.getElementById('scs-portal-orb');
+        var bottom = document.getElementById('scs-portal-bottom');
+        var cue = document.getElementById('scsScrollCue');
+        var grid = portalStage ? portalStage.querySelector('.scs-portal-grid') : null;
+
+        var ticking = false;
+        var hasTriggeredResize = false;
+
+        function updatePortal() {
+          var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+          var wrapTop = wrap.offsetTop;
+          var totalRunway = Math.max(800, wrap.offsetHeight - window.innerHeight);
+          var relativeScroll = scrollY - wrapTop;
+
+          // 1. PINNING: Reliable fixed pinning while inside wrap runway
+          if (relativeScroll < 0) {
+            frame.style.position = 'absolute';
+            frame.style.top = '0px';
+            frame.style.left = '0px';
+            frame.style.width = '100%';
+            frame.style.height = '100vh';
+          } else if (relativeScroll <= totalRunway) {
+            frame.style.position = 'fixed';
+            frame.style.top = '0px';
+            frame.style.left = '0px';
+            frame.style.width = '100%';
+            frame.style.height = '100vh';
+          } else {
+            frame.style.position = 'absolute';
+            frame.style.top = totalRunway + 'px';
+            frame.style.left = '0px';
+            frame.style.width = '100%';
+            frame.style.height = '100vh';
+          }
+
+          // 2. APERTURE ANIMATION: First 650px of relative scroll
+          var portalRange = 650;
+          var p = Math.max(0, Math.min(1, relativeScroll / portalRange));
+
+          // 3. HEADER VISIBILITY: Hidden on O-SCS resting view (p <= 0.08), Visible on Hero Banner & Beyond
+          var headerEl = document.getElementById('site-header');
+          if (headerEl) {
+            if (p > 0.08) {
+              headerEl.classList.add('is-visible');
+            } else {
+              headerEl.classList.remove('is-visible');
+            }
+          }
+
+          if (portalStage) {
+            if (p <= 0.005) {
+              portalStage.style.display = 'flex';
+              portalStage.style.webkitMaskImage = 'none';
+              portalStage.style.maskImage = 'none';
+              portalStage.style.opacity = '1';
+              portalStage.style.pointerEvents = 'auto';
+
+              if (lineTop) { lineTop.style.transform = 'none'; lineTop.style.opacity = '1'; }
+              if (lineBot) { lineBot.style.transform = 'none'; lineBot.style.opacity = '1'; }
+              if (orb) { orb.style.transform = 'translate(-50%, -50%) scale(1) rotate(0deg)'; }
+              if (bottom) { bottom.style.opacity = '1'; bottom.style.transform = 'none'; }
+              if (cue) { cue.style.opacity = '1'; }
+              if (grid) { grid.style.transform = 'none'; grid.style.opacity = '1'; }
+            } else if (p >= 0.92) {
+              portalStage.style.display = 'none';
+              portalStage.style.pointerEvents = 'none';
+              if (!hasTriggeredResize) {
+                hasTriggeredResize = true;
+                window.dispatchEvent(new Event('resize'));
+              }
+            } else {
+              portalStage.style.display = 'flex';
+              portalStage.style.pointerEvents = p > 0.60 ? 'none' : 'auto';
+
+              // Subtitle & cue fade out quickly
+              if (bottom) {
+                var botP = Math.min(1, p / 0.16);
+                bottom.style.opacity = String(Math.max(0, 1 - botP));
+                bottom.style.transform = 'translate3d(0, ' + (20 * botP) + 'px, 0)';
+              }
+              if (cue) {
+                cue.style.opacity = String(Math.max(0, 1 - p / 0.14));
+              }
+
+              // Split text lines parting
+              var splitP = Math.min(1, p / 0.68);
+              var splitEased = 1 - Math.pow(1 - splitP, 2.2);
+              var shiftVh = 44 * splitEased;
+              var scaleLine = 1 + 1.25 * splitEased;
+              var textOp = p < 0.28 ? 1 : Math.max(0, 1 - (p - 0.28) / 0.32);
+
+              if (lineTop) {
+                lineTop.style.transform = 'translate3d(0, ' + (-shiftVh) + 'vh, 0) scale(' + scaleLine + ')';
+                lineTop.style.opacity = String(textOp);
+              }
+              if (lineBot) {
+                lineBot.style.transform = 'translate3d(0, ' + shiftVh + 'vh, 0) scale(' + scaleLine + ')';
+                lineBot.style.opacity = String(textOp);
+              }
+
+              // Center glowing orb aperture expansion
+              var orbP = Math.min(1, p / 0.85);
+              var orbEased = Math.pow(orbP, 1.35);
+              var orbScale = 1 + 4.2 * orbEased;
+              var orbRotate = 24 * orbP;
+              if (orb) {
+                orb.style.transform = 'translate(-50%, -50%) scale(' + orbScale + ') rotate(' + orbRotate + 'deg)';
+              }
+
+              // Radar grid lines
+              if (grid) {
+                grid.style.transform = 'scale(' + (1 + 0.65 * orbEased) + ')';
+                grid.style.opacity = String(Math.max(0, 1 - p * 0.85));
+              }
+
+              // Circular Aperture Mask Opening (Revealing Hero Showcase Banner)
+              var maxRadius = Math.max(window.innerWidth, window.innerHeight) * 0.95;
+              var holeRadius = Math.max(0, (p - 0.04) / 0.78) * maxRadius;
+              var maskStr = 'radial-gradient(circle at 50% 48%, transparent ' + holeRadius + 'px, #000 ' + (holeRadius + 75) + 'px)';
+              portalStage.style.webkitMaskImage = maskStr;
+              portalStage.style.maskImage = maskStr;
+              portalStage.style.opacity = p > 0.72 ? String(Math.max(0, 1 - (p - 0.72) / 0.20)) : '1';
+            }
+          }
+
+          ticking = false;
+        }
+
+        function requestTick() {
+          if (!ticking) {
+            window.requestAnimationFrame(updatePortal);
+            ticking = true;
+          }
+        }
+
+        window.addEventListener('scroll', requestTick, { passive: true });
+        window.addEventListener('resize', requestTick);
+
+        if (cue) {
+          cue.addEventListener('click', function (e) {
+            e.preventDefault();
+            var targetY = wrap.offsetTop + 700;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          });
+        }
+
+        // Initialize immediately
+        updatePortal();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initScsScrollPortal);
+      } else {
+        initScsScrollPortal();
+      }
+    })();
+  </script>
+
 </body>
 
 </html>

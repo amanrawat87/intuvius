@@ -40,40 +40,56 @@
     <!-- Shared Header Placeholder -->
     <div id="site-header"></div>
 
-    <!-- Section 1: Header -->
-    <section class="page-title" style="background-image: url(images/background/page-title.png);">
+    <!-- Section 1: Modern Cosmic Header -->
+    <section class="page-title-modern">
       <div class="container">
-        <div class="title-outer">
-          <h1 class="title">About Intuivus</h1>
-          <p class="text">Building better systems for clinical trials.</p>
-          <ul class="page-breadcrumb">
+        <div class="title-outer text-start">
+          <span class="metrics-pill-badge mb-3">
+            <span class="badge-dot">●</span> About Intuivus
+          </span>
+          <h1 class="page-modern-title">Building Better Systems for <span class="gradient-text">Clinical Trials</span></h1>
+          <p class="page-modern-subtitle">Deterministic planning systems designed to unify assumptions, eliminate budgeting uncertainty, and accelerate study execution.</p>
+          <ul class="page-modern-breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li>About</li>
+            <li><span class="sep">/</span></li>
+            <li class="active">About</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Section 2: Who We Are -->
-    <section class="about-section pt-60 pb-60" style="background: #ffffff; position: relative;">
+    <!-- Section 2: Who We Are (White Section) -->
+    <section class="about-section section-white pt-60 pb-60">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-xl-6 col-lg-6">
+          <!-- Left side content (matching home page) -->
+          <div class="col-xl-6 col-lg-6 about-reveal-wrap pe-xl-4" data-aos="fade-right" data-aos-duration="1000">
             <div class="sec-title mb-4">
-              <span class="sub-title"><span>About</span> Intuivus</span>
-              <h2 class="title" style="color: #0B2230; font-weight: 700;">Who We Are</h2>
+              <span class="metrics-pill-badge mb-3">
+                <span class="badge-dot">●</span> About Intuivus
+              </span>
+              <h2 class="title about-reveal-title" style="color: #0B2230; font-weight: 700; font-size: clamp(28px, 4.2vw, 42px); line-height: 1.2;">About Intuivus</h2>
             </div>
-            <div class="text">
-              <p class="mb-0" style="color: #475569; font-size: 1.08rem; line-height: 1.8;">
-                Intuivus is a clinical trial technology company. We develop systems that help sponsors and CROs plan and run clinical trials more efficiently. Based in Boston, our team brings together clinical trial operations and software engineering experience to simplify study planning.
+            <div class="text mb-4">
+              <p class="mb-3 about-reveal-para" style="color: #475569; font-size: 1.08rem; line-height: 1.8;">
+                Intuivus is a clinical trial technology company. We are building a connected set of systems that support every stage of a clinical trial, from early planning through to execution.
+              </p>
+              <p class="mb-3 about-reveal-para" style="color: #475569; font-size: 1.08rem; line-height: 1.8;">
+                Clinical trials depend on accurate assumptions, realistic budgets and well-planned operations. Our systems turn study information into clear, usable plans so teams can make better decisions early.
               </p>
             </div>
+            <div class="btn-box d-flex flex-wrap align-items-center gap-3 mt-4 about-reveal-btns">
+              <a class="btn-style-one" href="trialops360.html"><span class="btn-text">Explore TrialOps360 <i
+                    class="fa fa-arrow-right ms-2"></i></span></a>
+              <a class="btn-style-two" href="contact.html" style="display: inline-flex; align-items: center; border-radius: 12px; padding: 13px 26px; font-weight: 600; color: #7c3aed; border: 1.5px solid rgba(124, 58, 237, 0.3); background: rgba(124, 58, 237, 0.05); text-decoration: none;">Contact Our Team</a>
+            </div>
           </div>
+          <!-- Right side image (matching home page styling) -->
           <div class="col-xl-6 col-lg-6 mt-5 mt-lg-0">
-            <div class="about-image-wrapper position-relative ps-xl-4">
+            <div class="about-image-wrapper position-relative ps-xl-4" data-aos="fade-left" data-aos-duration="1000">
               <div class="image-inner position-relative"
                 style="border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(11, 34, 48, 0.12); border: 1px solid #e2e8f0;">
-                <img src="images/resource/about-clinical-research.jpg" alt="Intuivus Clinical Trial Technology"
+                <img src="images/resource/about-clinical-research.jpg" alt="Intuivus Clinical Research Team"
                   class="w-100 h-auto" style="display: block; object-fit: cover;">
               </div>
             </div>
@@ -82,150 +98,395 @@
       </div>
     </section>
 
-    <!-- Section 3: Our Mission, Section 4: Our Vision & Section 5: What We Believe (Original pillar-card-minimal cards) -->
-    <section class="why-us-section pt-60 pb-60">
+    <!-- Section 3: Our Mission & Our Vision (Dedicated Dark Section) -->
+    <section class="mission-vision-section section-dark pt-60 pb-60" style="background: #070514 !important;">
       <div class="container">
-        <div class="row g-4 mb-60">
-          <div class="col-lg-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-bullseye"></i>
+        <div class="sec-title text-center light mb-5" data-aos="fade-up">
+          <span class="metrics-pill-badge mb-3">
+            <span class="badge-dot">●</span> Mission &amp; Vision
+          </span>
+          <h2 class="title" style="color: #ffffff; font-weight: 800; font-size: clamp(26px, 4.5vw, 40px); line-height: 1.25;">
+            Engineered for Purpose, Driven by Vision
+          </h2>
+          <p class="text mx-auto mt-3" style="max-width: 680px; color: #94a3b8; font-size: 1.05rem; line-height: 1.65;">
+            Building next-generation operational infrastructure to eliminate guesswork and replace fragmented spreadsheets across global trials.
+          </p>
+        </div>
+
+        <div class="row g-4 mb-2">
+          <!-- Mission Card -->
+          <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="cosmic-glow-card">
+              <div>
+                <div class="cosmic-glow-card-header">
+                  <div class="cosmic-glow-icon-box" aria-hidden="true">
+                    <i class="fa-solid fa-bullseye"></i>
+                  </div>
+                  <span class="cosmic-glow-pill">Foundation</span>
                 </div>
+                <h3 class="cosmic-glow-title">Our Mission</h3>
+                <p class="cosmic-glow-thesis">
+                  To make clinical trial planning and execution simpler, faster and more reliable through well-designed technology.
+                </p>
+                <ul class="cosmic-glow-list">
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Unify protocol assumptions into board-defensible study budgets in days</span>
+                  </li>
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Eliminate spreadsheet variance, manual reconciliation, and budget surprises</span>
+                  </li>
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Empower clinical ops and finance leaders with real-time planning certainty</span>
+                  </li>
+                </ul>
               </div>
-              <h2 class="pillar-card-title" style="font-size: 1.7rem;">Our Mission</h2>
-              <p class="pillar-card-thesis mb-0">
-                To make clinical trial planning and execution simpler, faster and more reliable through well-designed technology.
-              </p>
             </div>
           </div>
 
-          <div class="col-lg-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-network-wired"></i>
+          <!-- Vision Card -->
+          <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="cosmic-glow-card">
+              <div>
+                <div class="cosmic-glow-card-header">
+                  <div class="cosmic-glow-icon-box" aria-hidden="true">
+                    <i class="fa-solid fa-network-wired"></i>
+                  </div>
+                  <span class="cosmic-glow-pill">Horizon</span>
                 </div>
+                <h3 class="cosmic-glow-title">Our Vision</h3>
+                <p class="cosmic-glow-thesis">
+                  A connected set of systems that supports the entire clinical trial lifecycle, from planning to execution.
+                </p>
+                <ul class="cosmic-glow-list">
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>A unified ecosystem bridging study feasibility, budget modeling, and site execution</span>
+                  </li>
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Continuous data synchronization from Phase 1 first-in-human through Phase 4</span>
+                  </li>
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Seamless interoperability connecting sponsors, CROs, and clinical research sites</span>
+                  </li>
+                </ul>
               </div>
-              <h2 class="pillar-card-title" style="font-size: 1.7rem;">Our Vision</h2>
-              <p class="pillar-card-thesis mb-0">
-                A connected set of systems that supports the entire clinical trial lifecycle, from planning to execution.
-              </p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="sec-title text-center mb-40">
+    <!-- Section 4: What We Believe (Dedicated White Section with Counting Cards) -->
+    <section class="values-section section-white pt-60 pb-60" style="background: #ffffff !important;">
+      <div class="container">
+        <div class="sec-title text-center mb-5" data-aos="fade-up">
           <span class="metrics-pill-badge mb-3">
-            <span class="badge-dot">●</span> Values
+            <span class="badge-dot">●</span> Core Values
           </span>
-          <h2 class="title"
-            style="font-size: 2.5rem; font-weight: 800; color: #090724; line-height: 1.25; letter-spacing: -1px;">
+          <h2 class="title fw-bold" style="color: #0B2230; font-size: clamp(28px, 4.5vw, 42px); line-height: 1.25; letter-spacing: -1px;">
             What We Believe
           </h2>
+          <p class="text mx-auto mt-2" style="max-width: 680px; color: #64748b; font-size: 1.05rem; line-height: 1.65;">
+            Four core principles that guide how we engineer technology and partner with clinical trial teams.
+          </p>
         </div>
 
         <div class="row g-4 justify-content-center">
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-eye"></i>
+          <!-- Card 1: Clarity (01) -->
+          <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+            <div class="hyper-ref-card">
+              <span class="hyper-card-watermark" aria-hidden="true">01</span>
+              <div class="hyper-card-glow-bg" aria-hidden="true"></div>
+              <div class="hyper-card-glow-bg-bottom" aria-hidden="true"></div>
+              <div class="hyper-card-content">
+                <div>
+                  <div class="hyper-card-top-row">
+                    <div class="hyper-card-icon-box" aria-hidden="true">
+                      <i class="fa-solid fa-eye" style="font-size: 18px;"></i>
+                    </div>
+                    <span class="hyper-card-badge-pill">01</span>
+                  </div>
+                  <h3 class="hyper-card-title">Clarity</h3>
+                  <p class="hyper-card-desc">Complex trials should be easy to understand.</p>
+                  <ul class="hyper-card-points">
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Intuitive views replacing 50-tab spreadsheets</span>
+                    </li>
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Instant visibility into primary cost drivers</span>
+                    </li>
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Transparent scenario comparisons</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="hyper-card-footer mt-4">
+                  <span class="hyper-card-footer-label">VALUE 01 &bull; CLARITY</span>
+                  <div class="hyper-card-arrow-btn" aria-label="Learn more about Clarity">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </div>
                 </div>
               </div>
-              <h3 class="pillar-card-title">Clarity</h3>
-              <p class="pillar-card-thesis mb-0">Complex trials should be easy to understand.</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-calculator"></i>
+          <!-- Card 2: Accuracy (02) -->
+          <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+            <div class="hyper-ref-card">
+              <span class="hyper-card-watermark" aria-hidden="true">02</span>
+              <div class="hyper-card-glow-bg" aria-hidden="true"></div>
+              <div class="hyper-card-glow-bg-bottom" aria-hidden="true"></div>
+              <div class="hyper-card-content">
+                <div>
+                  <div class="hyper-card-top-row">
+                    <div class="hyper-card-icon-box" aria-hidden="true">
+                      <i class="fa-solid fa-calculator" style="font-size: 18px;"></i>
+                    </div>
+                    <span class="hyper-card-badge-pill">02</span>
+                  </div>
+                  <h3 class="hyper-card-title">Accuracy</h3>
+                  <p class="hyper-card-desc">Good decisions start with reliable numbers.</p>
+                  <ul class="hyper-card-points">
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Parameter-driven bottom-up modeling</span>
+                    </li>
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Part 11 audit-defensible algorithms</span>
+                    </li>
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Empirical clinical benchmark calibration</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="hyper-card-footer mt-4">
+                  <span class="hyper-card-footer-label">VALUE 02 &bull; ACCURACY</span>
+                  <div class="hyper-card-arrow-btn" aria-label="Learn more about Accuracy">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </div>
                 </div>
               </div>
-              <h3 class="pillar-card-title">Accuracy</h3>
-              <p class="pillar-card-thesis mb-0">Good decisions start with reliable numbers.</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-briefcase"></i>
+          <!-- Card 3: Practicality (03) -->
+          <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+            <div class="hyper-ref-card">
+              <span class="hyper-card-watermark" aria-hidden="true">03</span>
+              <div class="hyper-card-glow-bg" aria-hidden="true"></div>
+              <div class="hyper-card-glow-bg-bottom" aria-hidden="true"></div>
+              <div class="hyper-card-content">
+                <div>
+                  <div class="hyper-card-top-row">
+                    <div class="hyper-card-icon-box" aria-hidden="true">
+                      <i class="fa-solid fa-briefcase" style="font-size: 18px;"></i>
+                    </div>
+                    <span class="hyper-card-badge-pill">03</span>
+                  </div>
+                  <h3 class="hyper-card-title">Practicality</h3>
+                  <p class="hyper-card-desc">Our systems are built around real clinical trial work.</p>
+                  <ul class="hyper-card-points">
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Designed around real ClinOps workflows</span>
+                    </li>
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Realistic enrollment rates &amp; feasibility</span>
+                    </li>
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Pragmatic milestone schedules</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="hyper-card-footer mt-4">
+                  <span class="hyper-card-footer-label">VALUE 03 &bull; PRACTICALITY</span>
+                  <div class="hyper-card-arrow-btn" aria-label="Learn more about Practicality">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </div>
                 </div>
               </div>
-              <h3 class="pillar-card-title">Practicality</h3>
-              <p class="pillar-card-thesis mb-0">Our systems are built around real clinical trial work.</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-handshake"></i>
+          <!-- Card 4: Partnership (04) -->
+          <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+            <div class="hyper-ref-card">
+              <span class="hyper-card-watermark" aria-hidden="true">04</span>
+              <div class="hyper-card-glow-bg" aria-hidden="true"></div>
+              <div class="hyper-card-glow-bg-bottom" aria-hidden="true"></div>
+              <div class="hyper-card-content">
+                <div>
+                  <div class="hyper-card-top-row">
+                    <div class="hyper-card-icon-box" aria-hidden="true">
+                      <i class="fa-solid fa-handshake" style="font-size: 18px;"></i>
+                    </div>
+                    <span class="hyper-card-badge-pill">04</span>
+                  </div>
+                  <h3 class="hyper-card-title">Partnership</h3>
+                  <p class="hyper-card-desc">We build with our users, not just for them.</p>
+                  <ul class="hyper-card-points">
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Continuous feedback loops with study teams</span>
+                    </li>
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Rapid feature delivery driven by user needs</span>
+                    </li>
+                    <li class="hyper-card-point-item">
+                      <span class="hyper-card-check">✓</span>
+                      <span>Dedicated clinical &amp; technical onboarding</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="hyper-card-footer mt-4">
+                  <span class="hyper-card-footer-label">VALUE 04 &bull; PARTNERSHIP</span>
+                  <div class="hyper-card-arrow-btn" aria-label="Learn more about Partnership">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </div>
                 </div>
               </div>
-              <h3 class="pillar-card-title">Partnership</h3>
-              <p class="pillar-card-thesis mb-0">We build with our users, not just for them.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 6: Our Journey & Section 7: Leadership / Team -->
-    <section class="about-section pt-60 pb-60" style="background: #ffffff; position: relative;">
+    <!-- Section 5: Our Journey & Leadership / Team (Dedicated Dark Section with Glowing Effect) -->
+    <section class="journey-team-section section-dark pt-60 pb-60" style="background: #070514 !important;">
       <div class="container">
+        <div class="sec-title text-center light mb-5" data-aos="fade-up">
+          <span class="metrics-pill-badge mb-3">
+            <span class="badge-dot">●</span> Evolution &amp; Leadership
+          </span>
+          <h2 class="title" style="color: #ffffff; font-weight: 800; font-size: clamp(26px, 4.5vw, 40px); line-height: 1.25;">
+            Our Journey &amp; Leadership
+          </h2>
+          <p class="text mx-auto mt-2" style="max-width: 680px; color: #94a3b8; font-size: 1.05rem; line-height: 1.65;">
+            From clinical operations frontline experience to engineered deterministic platforms.
+          </p>
+        </div>
+
         <div class="row g-4">
-          <div class="col-lg-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-route"></i>
+          <!-- Journey Card -->
+          <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="cosmic-glow-card">
+              <div>
+                <div class="cosmic-glow-card-header">
+                  <div class="cosmic-glow-icon-box" aria-hidden="true">
+                    <i class="fa-solid fa-route"></i>
+                  </div>
+                  <span class="cosmic-glow-pill">Roadmap &amp; Origins</span>
                 </div>
+                <h3 class="cosmic-glow-title">Our Journey</h3>
+                <p class="cosmic-glow-thesis">
+                  TrialOps360 is the first system in the Intuivus product family. More systems are planned to support further stages of the clinical trial lifecycle.
+                </p>
+                <ul class="cosmic-glow-list">
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>TrialOps360 Core:</strong> Groundbreaking clinical trial budgeting and bottom-up financial scenario engine.</span>
+                  </li>
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Site &amp; Feasibility Intelligence:</strong> Automated global site capacity and enrollment timeline simulation.</span>
+                  </li>
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Connected Lifecycle Systems:</strong> Seamless protocol-to-execution pipeline connecting all stakeholders.</span>
+                  </li>
+                </ul>
               </div>
-              <h2 class="pillar-card-title" style="font-size: 1.7rem;">Our Journey</h2>
-              <p class="pillar-card-thesis mb-0">
-                TrialOps360 is the first system in the Intuivus product family. More systems are planned to support further stages of the clinical trial lifecycle.
-              </p>
             </div>
           </div>
 
-          <div class="col-lg-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-users"></i>
+          <!-- Leadership Card -->
+          <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="cosmic-glow-card">
+              <div>
+                <div class="cosmic-glow-card-header">
+                  <div class="cosmic-glow-icon-box" aria-hidden="true">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                  <span class="cosmic-glow-pill">Domain Expertise</span>
                 </div>
+                <h3 class="cosmic-glow-title">Leadership / Team</h3>
+                <p class="cosmic-glow-thesis">
+                  Our leadership team combines clinical development, trial operations, and software engineering experience dedicated to building practical systems for sponsors and CROs.
+                </p>
+                <ul class="cosmic-glow-list">
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>ClinOps Veterans:</strong> Deep real-world experience managing global multi-center clinical trials.</span>
+                  </li>
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Enterprise Engineering:</strong> Architected for GxP compliance, 21 CFR Part 11 auditability, and bank-grade data security.</span>
+                  </li>
+                  <li class="cosmic-glow-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Customer-Centric Innovation:</strong> Dedicated biopharma advisory board guiding platform enhancements.</span>
+                  </li>
+                </ul>
               </div>
-              <h2 class="pillar-card-title" style="font-size: 1.7rem;">Leadership / Team</h2>
-              <p class="pillar-card-thesis mb-0">
-                Our leadership team combines clinical development, trial operations, and software engineering experience dedicated to building practical systems for sponsors and CROs.
-              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 8: Call to Action -->
-    <section class="cta-section-layout1 pt-60 pb-60">
-      <div class="shape1 bounce-x"><img src="images/icons/shape-45.png" alt="" loading="lazy"></div>
+    <!-- Section 6: Redesigned Call to Action (White Section framing Cosmic Card) -->
+    <section class="cta-section-layout1 section-white pt-60 pb-60">
       <div class="large-container">
-        <div class="outer-box">
-          <div class="bg-image bg"><img src="images/background/cta4-bg-intuivus.jpg" alt="" loading="lazy"></div>
-          <div class="sec-title text-center light mb-0">
-            <div class="h2 title">Want to know more about what we are building?</div>
-          </div>
-          <div class="cta-action-wrap text-center mt-4 pt-1">
-            <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
-              <a href="contact.html" class="btn-style-one theme-btn">
-                <span class="btn-text">Contact Us <i class="fa fa-arrow-right ms-2"></i></span>
-              </a>
+        <div class="outer-box position-relative" data-aos="fade-up">
+          <div class="cta-aurora-glow"></div>
+          <div class="cta-grid-lines"></div>
+          <div class="position-relative" style="z-index: 2;">
+            <div class="sec-title text-center light mb-0">
+              <span class="metrics-pill-badge mb-3">
+                <span class="badge-dot">●</span> READY TO EXPERIENCE INTUIVUS?
+              </span>
+              <h2 class="title" style="font-size: clamp(28px, 4.2vw, 44px); font-weight: 800; color: #ffffff; line-height: 1.2; letter-spacing: -1px; max-width: 820px; margin: 0 auto 16px;">
+                Want to know more about what we are <span class="cta-title-gradient">building?</span>
+              </h2>
+              <p class="text mx-auto" style="max-width: 680px; color: #cbd5e1; font-size: 1.05rem; line-height: 1.65;">
+                Schedule a personalized walkthrough of TrialOps360 or discuss tailored clinical systems with our leadership team.
+              </p>
+            </div>
+            <div class="cta-action-wrap text-center mt-4 pt-2">
+              <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+                <a href="contact.html?enquiry=demo" class="cta-action-btn-primary">
+                  <span>Request a Demo</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="contact.html?enquiry=budget" class="cta-action-btn-secondary">
+                  <span>Get Complimentary Study Budget</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

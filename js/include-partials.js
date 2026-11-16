@@ -163,106 +163,110 @@
 
   const EMBEDDED_FOOTER_HTML = `<!-- Main Footer (Tycoon Dotted Particle Style) -->
 <footer class="main-footer footer-style-one tycoon-footer" id="main-site-footer">
-  <div class="footer-top-grid">
+  <div class="outer-box">
+    <div class="footer-container">
+      <div class="footer-top-grid">
 
-    <!-- Col 1: Services & Company -->
-    <div class="footer-links-col">
-      <div class="footer-col-title">SERVICES &amp; COMPANY</div>
-      <ul class="footer-slash-links">
-        <li class="footer-link-item">
-          <a href="index.html">
-            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-            <span>HOME</span>
-          </a>
-        </li>
-        <li class="footer-link-item">
-          <a href="trialops360.html">
-            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-            <span>TRIALOPS360</span>
-          </a>
-        </li>
-        <li class="footer-link-item">
-          <a href="other-systems.html">
-            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-            <span>OTHER SYSTEMS</span>
-          </a>
-        </li>
-        <li class="footer-link-item">
-          <a href="about.html">
-            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-            <span>ABOUT US</span>
-          </a>
-        </li>
-        <li class="footer-link-item">
-          <a href="contact.html">
-            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-            <span>CONTACT</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+        <!-- Col 1: Services & Company -->
+        <div class="footer-links-col">
+          <div class="footer-col-title">SERVICES &amp; COMPANY</div>
+          <ul class="footer-slash-links">
+            <li class="footer-link-item">
+              <a href="index.html">
+                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span>HOME</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="trialops360.html">
+                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span>TRIALOPS360</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="other-systems.html">
+                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span>OTHER SYSTEMS</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="about.html">
+                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span>ABOUT US</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="contact.html">
+                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span>CONTACT</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-    <!-- Col 2: Reach Out To Us -->
-    <div class="footer-center-col">
-      <div class="footer-col-title">REACH OUT TO US</div>
-      <div class="footer-contact-info">
-        <a href="tel:+918527458950" class="footer-contact-line">
-          <span class="footer-contact-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          </span>
-          <span>+91 8527458950</span>
-        </a>
-        <a href="mailto:bd@intuivus.com" class="footer-contact-line email-line">
-          <span class="footer-contact-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-          </span>
-          <span>bd@intuivus.com</span>
-        </a>
+        <!-- Col 2: Reach Out To Us -->
+        <div class="footer-center-col">
+          <div class="footer-col-title">REACH OUT TO US</div>
+          <div class="footer-contact-info">
+            <a href="tel:+918527458950" class="footer-contact-line">
+              <span class="footer-contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </span>
+              <span>+91 8527458950</span>
+            </a>
+            <a href="mailto:bd@intuivus.com" class="footer-contact-line email-line">
+              <span class="footer-contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              </span>
+              <span>bd@intuivus.com</span>
+            </a>
+          </div>
+          <a href="contact.html?enquiry=connect" class="footer-connect-btn">
+            <span>Let's Connect</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- Col 3: Social -->
+        <div class="footer-right-col">
+          <div class="footer-col-title">SOCIAL</div>
+          <ul class="footer-slash-links">
+            <li class="footer-link-item">
+              <a href="https://linkedin.com/company/intuivus" target="_blank" rel="noopener">
+                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span>LINKEDIN</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://twitter.com/intuivus" target="_blank" rel="noopener">
+                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span>TWITTER</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://instagram.com/intuivus" target="_blank" rel="noopener">
+                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span>INSTAGRAM</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://github.com/amanrawat87/intuvius" target="_blank" rel="noopener">
+                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span>GITHUB</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </div>
-      <a href="contact.html?enquiry=connect" class="footer-connect-btn">
-        <span>Let's Connect</span>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-      </a>
+
+      <div class="footer-middle-divider"></div>
+
+      <div class="footer-copy-row">
+        <span>&copy; 2026 ALL RIGHTS RESERVED</span>
+        <span>INTUIVUS &bull; CONNECTED INTELLIGENCE</span>
+      </div>
     </div>
-
-    <!-- Col 3: Social -->
-    <div class="footer-right-col">
-      <div class="footer-col-title">SOCIAL</div>
-      <ul class="footer-slash-links">
-        <li class="footer-link-item">
-          <a href="https://linkedin.com/company/intuivus" target="_blank" rel="noopener">
-            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-            <span>LINKEDIN</span>
-          </a>
-        </li>
-        <li class="footer-link-item">
-          <a href="https://twitter.com/intuivus" target="_blank" rel="noopener">
-            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-            <span>TWITTER</span>
-          </a>
-        </li>
-        <li class="footer-link-item">
-          <a href="https://instagram.com/intuivus" target="_blank" rel="noopener">
-            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-            <span>INSTAGRAM</span>
-          </a>
-        </li>
-        <li class="footer-link-item">
-          <a href="https://github.com/amanrawat87/intuvius" target="_blank" rel="noopener">
-            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-            <span>GITHUB</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="footer-middle-divider"></div>
-
-  <div class="footer-copy-row">
-    <span>&copy; 2026 ALL RIGHTS RESERVED</span>
-    <span>INTUIVUS &bull; CONNECTED INTELLIGENCE</span>
   </div>
 
   <!-- Giant Dotted Matrix Particle Brand Name -->
