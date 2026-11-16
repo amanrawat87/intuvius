@@ -5313,20 +5313,8 @@ Main Header
 }
 
 .main-menu .navigation>li.dropdown>a:after {
-  content: "\f107";
-  font-family: "Font Awesome 6 Pro";
-  font-size: 12px;
-  font-weight: 900;
-  height: 20px;
-  line-height: 24px;
-  margin-top: -2px;
-  position: absolute;
-  right: -14px;
-  top: 50%;
-  width: 10px;
-  z-index: 5;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  content: none !important;
+  display: none !important;
 }
 
 .main-menu .navigation>li.dropdown:hover>ul {
@@ -24088,7 +24076,7 @@ html.has-loader .o-loader.is-done {
     linear-gradient(to right, rgba(99, 50, 209, 0.035) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(99, 50, 209, 0.035) 1px, transparent 1px) !important;
   background-size: 100% 100%, 100% 100%, 24px 24px, 24px 24px, 24px 24px !important;
-  padding: 100px 0 !important;
+  padding: 60px 0 !important;
   border-top: 1px solid rgba(139, 92, 246, 0.12) !important;
   border-bottom: 1px solid rgba(139, 92, 246, 0.12) !important;
   overflow: hidden;
@@ -24269,12 +24257,9 @@ html.has-loader .o-loader.is-done {
   position: relative;
   background-color: #FAFBFD !important;
   background-image:
-    radial-gradient(rgba(124, 58, 237, 0.08) 1.2px, transparent 1.2px),
-    radial-gradient(circle at 85% 15%, rgba(124, 58, 237, 0.06) 0%, transparent 45%),
-    radial-gradient(circle at 10% 85%, rgba(99, 50, 209, 0.05) 0%, transparent 45%),
-    linear-gradient(to right, rgba(99, 50, 209, 0.025) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(99, 50, 209, 0.025) 1px, transparent 1px) !important;
-  background-size: 28px 28px, 100% 100%, 100% 100%, 28px 28px, 28px 28px !important;
+    repeating-linear-gradient(45deg, rgba(124, 58, 237, 0.045) 0px, rgba(124, 58, 237, 0.045) 1.2px, transparent 1.2px, transparent 18px),
+    radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 90% 80%, rgba(99, 50, 209, 0.07) 0%, transparent 45%) !important;
   overflow: hidden;
 }
 
@@ -24628,9 +24613,9 @@ html.has-loader .o-loader.is-done {
   position: relative;
   z-index: 10;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -24731,9 +24716,21 @@ html.has-loader .o-loader.is-done {
 /* ==========================================================================
    4-STEP PROTOCOL SYNOPSIS CARDS (EXACT IMAGE 1 SPECIFICATION)
    ========================================================================== */
-.synopsis-flow-section {
-  background: #050508 !important;
-  position: relative;
+.synopsis-flow-section,
+.metrics-section.synopsis-flow-section,
+#metrics {
+  background-color: #060412 !important;
+  background-image:
+    radial-gradient(rgba(168, 85, 247, 0.22) 1.2px, transparent 1.2px),
+    radial-gradient(circle at 15% 20%, rgba(124, 58, 237, 0.20) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(99, 50, 209, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.08) 0%, transparent 60%),
+    linear-gradient(to right, rgba(139, 92, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(139, 92, 246, 0.05) 1px, transparent 1px) !important;
+  background-size: 28px 28px, 100% 100%, 100% 100%, 100% 100%, 28px 28px, 28px 28px !important;
+  position: relative !important;
+  border-top: 1px solid rgba(139, 92, 246, 0.18) !important;
+  border-bottom: 1px solid rgba(139, 92, 246, 0.18) !important;
   z-index: 10;
 }
 
