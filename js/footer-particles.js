@@ -32,7 +32,7 @@
     var mouse = {
       x: -9999,
       y: -9999,
-      radius: 130,
+      radius: 95,
       isHovered: false
     };
 
@@ -122,8 +122,8 @@
       offscreen.height = height;
       var offCtx = offscreen.getContext('2d');
 
-      // Font size responsive to container width
-      var fontSize = Math.min(Math.floor(width / 6.2), Math.floor(height * 0.85));
+      // Font size responsive to container width (compact, refined scale)
+      var fontSize = Math.min(Math.floor(width / 8.6), Math.floor(height * 0.72), 105);
       offCtx.fillStyle = '#ffffff';
       offCtx.font = '900 ' + fontSize + 'px "Inter", "Plus Jakarta Sans", "Poppins", "Arial Black", sans-serif';
       offCtx.textAlign = 'center';
@@ -138,9 +138,9 @@
       var imgData = offCtx.getImageData(0, 0, width, height);
       var data = imgData.data;
 
-      // Grid dot spacing
-      var dotSpacing = width > 1100 ? 6.5 : (width > 768 ? 5.5 : 4.5);
-      var dotRadius = width > 1100 ? 2.1 : (width > 768 ? 1.7 : 1.3);
+      // Grid dot spacing for smaller refined letters
+      var dotSpacing = width > 1100 ? 4.8 : (width > 768 ? 4.0 : 3.2);
+      var dotRadius = width > 1100 ? 1.5 : (width > 768 ? 1.2 : 0.95);
 
       for (var y = 0; y < height; y += dotSpacing) {
         for (var x = 0; x < width; x += dotSpacing) {

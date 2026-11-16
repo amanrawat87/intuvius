@@ -1,5 +1,5 @@
 /* ==========================================================================
-   TYCOON STYLE FOOTER WITH DOTTED PARTICLE BRAND
+   TYCOON STYLE FOOTER WITH DOTTED PARTICLE BRAND (THEME PURPLE ACCENT)
    ========================================================================== */
 
 .tycoon-footer {
@@ -55,23 +55,42 @@
   text-transform: uppercase !important;
   display: inline-flex !important;
   align-items: center !important;
-  gap: 8px !important;
+  gap: 10px !important;
   transition: all 0.25s ease !important;
 }
 
+/* Stylish Diagonal Icon / Bullet */
+.tycoon-footer .footer-link-item a .slash-icon,
 .tycoon-footer .footer-link-item a .slash {
-  color: #52525b !important;
-  font-weight: 400 !important;
-  transition: color 0.25s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #C084FC !important; /* Intuivus theme accent */
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  transition: all 0.25s ease !important;
+  filter: drop-shadow(0 0 6px rgba(192, 132, 252, 0.4));
+}
+
+.tycoon-footer .footer-link-item a .slash-icon svg {
+  stroke: #C084FC !important;
+  transition: all 0.25s ease !important;
 }
 
 .tycoon-footer .footer-link-item a:hover {
-  color: #22c55e !important;
+  color: #C084FC !important;
   transform: translateX(4px);
 }
 
+.tycoon-footer .footer-link-item a:hover .slash-icon,
 .tycoon-footer .footer-link-item a:hover .slash {
-  color: #22c55e !important;
+  color: #E879F9 !important;
+  filter: drop-shadow(0 0 10px rgba(232, 121, 249, 0.8));
+}
+
+.tycoon-footer .footer-link-item a:hover .slash-icon svg {
+  stroke: #E879F9 !important;
 }
 
 /* Center Reach Out Col */
@@ -99,7 +118,7 @@
   font-size: 26px !important;
   font-weight: 600 !important;
   letter-spacing: -0.01em !important;
-  transition: color 0.25s ease !important;
+  transition: all 0.25s ease !important;
 }
 
 .tycoon-footer .footer-contact-line.email-line {
@@ -107,47 +126,57 @@
 }
 
 .tycoon-footer .footer-contact-line:hover {
-  color: #22c55e !important;
+  color: #C084FC !important;
 }
 
+/* Intuivus Theme Color Icons */
 .tycoon-footer .footer-contact-icon {
-  color: #22c55e !important;
+  color: #A855F7 !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.65));
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
 
 .tycoon-footer .footer-contact-icon svg {
-  stroke: #22c55e !important;
+  stroke: #A855F7 !important;
 }
 
+.tycoon-footer .footer-contact-line:hover .footer-contact-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 12px rgba(192, 132, 252, 0.9));
+}
+
+/* Intuivus Theme Gradient Connect Button */
 .tycoon-footer .footer-connect-btn {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   gap: 10px !important;
-  background: #2eb85c !important;
-  color: #ffffff !important;
+  background: linear-gradient(135deg, #7C3AED 0%, #6332D1 100%) !important;
+  color: #FFFFFF !important;
   text-decoration: none !important;
-  padding: 13px 34px !important;
+  padding: 14px 34px !important;
   border-radius: 9999px !important;
-  font-size: 14px !important;
+  font-size: 14.5px !important;
   font-weight: 600 !important;
   letter-spacing: 0.02em !important;
+  border: 1px solid rgba(192, 132, 252, 0.45) !important;
+  box-shadow: 0 6px 24px rgba(124, 58, 237, 0.45) !important;
   transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
-  box-shadow: 0 4px 20px rgba(46, 184, 92, 0.35) !important;
 }
 
 .tycoon-footer .footer-connect-btn:hover {
-  background: #34d399 !important;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(46, 184, 92, 0.55) !important;
-  color: #030408 !important;
+  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 32px rgba(124, 58, 237, 0.70) !important;
+  color: #FFFFFF !important;
 }
 
 .tycoon-footer .footer-connect-btn svg {
   transition: transform 0.25s ease;
-  stroke: currentColor !important;
+  stroke: #FFFFFF !important;
 }
 
 .tycoon-footer .footer-connect-btn:hover svg {
@@ -189,7 +218,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  height: 220px;
+  height: 140px;
   position: relative;
   cursor: crosshair;
 }
@@ -223,6 +252,6 @@
     font-size: 18px !important;
   }
   .tycoon-footer .footer-particle-container {
-    height: 140px;
+    height: 90px;
   }
 }

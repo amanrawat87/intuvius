@@ -12983,7 +12983,9 @@ Section Title
   letter-spacing: -1.2px;
   line-height: 1.15;
   margin-bottom: 8px;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 .flagship-tagline {
@@ -25028,7 +25030,7 @@ html.has-loader.is-filling .o-loader__part {
 
 
 /* ==========================================================================
-   TYCOON STYLE FOOTER WITH DOTTED PARTICLE BRAND
+   TYCOON STYLE FOOTER WITH DOTTED PARTICLE BRAND (THEME PURPLE ACCENT)
    ========================================================================== */
 
 .tycoon-footer {
@@ -25084,23 +25086,42 @@ html.has-loader.is-filling .o-loader__part {
   text-transform: uppercase !important;
   display: inline-flex !important;
   align-items: center !important;
-  gap: 8px !important;
+  gap: 10px !important;
   transition: all 0.25s ease !important;
 }
 
+/* Stylish Diagonal Icon / Bullet */
+.tycoon-footer .footer-link-item a .slash-icon,
 .tycoon-footer .footer-link-item a .slash {
-  color: #52525b !important;
-  font-weight: 400 !important;
-  transition: color 0.25s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #C084FC !important; /* Intuivus theme accent */
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  transition: all 0.25s ease !important;
+  filter: drop-shadow(0 0 6px rgba(192, 132, 252, 0.4));
+}
+
+.tycoon-footer .footer-link-item a .slash-icon svg {
+  stroke: #C084FC !important;
+  transition: all 0.25s ease !important;
 }
 
 .tycoon-footer .footer-link-item a:hover {
-  color: #22c55e !important;
+  color: #C084FC !important;
   transform: translateX(4px);
 }
 
+.tycoon-footer .footer-link-item a:hover .slash-icon,
 .tycoon-footer .footer-link-item a:hover .slash {
-  color: #22c55e !important;
+  color: #E879F9 !important;
+  filter: drop-shadow(0 0 10px rgba(232, 121, 249, 0.8));
+}
+
+.tycoon-footer .footer-link-item a:hover .slash-icon svg {
+  stroke: #E879F9 !important;
 }
 
 /* Center Reach Out Col */
@@ -25128,7 +25149,7 @@ html.has-loader.is-filling .o-loader__part {
   font-size: 26px !important;
   font-weight: 600 !important;
   letter-spacing: -0.01em !important;
-  transition: color 0.25s ease !important;
+  transition: all 0.25s ease !important;
 }
 
 .tycoon-footer .footer-contact-line.email-line {
@@ -25136,47 +25157,57 @@ html.has-loader.is-filling .o-loader__part {
 }
 
 .tycoon-footer .footer-contact-line:hover {
-  color: #22c55e !important;
+  color: #C084FC !important;
 }
 
+/* Intuivus Theme Color Icons */
 .tycoon-footer .footer-contact-icon {
-  color: #22c55e !important;
+  color: #A855F7 !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.65));
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
 
 .tycoon-footer .footer-contact-icon svg {
-  stroke: #22c55e !important;
+  stroke: #A855F7 !important;
 }
 
+.tycoon-footer .footer-contact-line:hover .footer-contact-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 12px rgba(192, 132, 252, 0.9));
+}
+
+/* Intuivus Theme Gradient Connect Button */
 .tycoon-footer .footer-connect-btn {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   gap: 10px !important;
-  background: #2eb85c !important;
-  color: #ffffff !important;
+  background: linear-gradient(135deg, #7C3AED 0%, #6332D1 100%) !important;
+  color: #FFFFFF !important;
   text-decoration: none !important;
-  padding: 13px 34px !important;
+  padding: 14px 34px !important;
   border-radius: 9999px !important;
-  font-size: 14px !important;
+  font-size: 14.5px !important;
   font-weight: 600 !important;
   letter-spacing: 0.02em !important;
+  border: 1px solid rgba(192, 132, 252, 0.45) !important;
+  box-shadow: 0 6px 24px rgba(124, 58, 237, 0.45) !important;
   transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
-  box-shadow: 0 4px 20px rgba(46, 184, 92, 0.35) !important;
 }
 
 .tycoon-footer .footer-connect-btn:hover {
-  background: #34d399 !important;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(46, 184, 92, 0.55) !important;
-  color: #030408 !important;
+  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 32px rgba(124, 58, 237, 0.70) !important;
+  color: #FFFFFF !important;
 }
 
 .tycoon-footer .footer-connect-btn svg {
   transition: transform 0.25s ease;
-  stroke: currentColor !important;
+  stroke: #FFFFFF !important;
 }
 
 .tycoon-footer .footer-connect-btn:hover svg {
@@ -25218,7 +25249,7 @@ html.has-loader.is-filling .o-loader__part {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  height: 220px;
+  height: 140px;
   position: relative;
   cursor: crosshair;
 }
@@ -25252,6 +25283,436 @@ html.has-loader.is-filling .o-loader__part {
     font-size: 18px !important;
   }
   .tycoon-footer .footer-particle-container {
-    height: 140px;
+    height: 90px;
+  }
+}
+
+
+/* ==========================================================================
+   IMAGE 1 REPLICA CARD DESIGN & FULL MOBILE RESPONSIVENESS
+   ========================================================================== */
+
+/* --- CARD DESIGN (Matching Image 1: Client-First, Innovation, Integrity, Passion) --- */
+.hyper-ref-card {
+  position: relative !important;
+  background: #090A10 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 20px !important;
+  padding: 32px 28px !important;
+  overflow: hidden !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  min-height: 380px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Synopsis section cards can match height gracefully */
+.synopsis-flow-section .hyper-ref-card {
+  min-height: 380px !important;
+}
+
+/* Card Content Container */
+.hyper-card-content {
+  position: relative !important;
+  z-index: 2 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+}
+
+/* Top Row: Squircle Icon Left, Number Badge Right */
+.hyper-card-top-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 22px !important;
+}
+
+/* Squircle Icon Box (Image 1 style) */
+.hyper-card-icon-box {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  background: rgba(124, 58, 237, 0.12) !important;
+  border: 1px solid rgba(168, 85, 247, 0.35) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #C084FC !important;
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.20) !important;
+  transition: all 0.35s ease !important;
+}
+
+.hyper-card-icon-box svg {
+  stroke: #C084FC !important;
+  transition: all 0.35s ease !important;
+}
+
+/* Number Badge Pill (Image 1 style e.g. 01, 02, 03, 04) */
+.hyper-card-badge-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 5px 14px !important;
+  border-radius: 9999px !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  color: #E4E4E7 !important;
+  transition: all 0.35s ease !important;
+}
+
+/* Card Title */
+.hyper-card-title,
+.hyper-step-title {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  margin-top: 20px !important;
+  margin-bottom: 12px !important;
+  line-height: 1.3 !important;
+  letter-spacing: -0.01em !important;
+}
+
+/* Card Description */
+.hyper-card-desc,
+.hyper-step-desc {
+  font-size: 14px !important;
+  color: #94A3B8 !important;
+  line-height: 1.65 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Tags in 4-Step Synopsis */
+.hyper-step-tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin-top: 16px !important;
+}
+
+.hyper-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 5px 12px !important;
+  border-radius: 9999px !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  font-size: 11.5px !important;
+  font-weight: 500 !important;
+  color: #94A3B8 !important;
+  transition: all 0.25s ease !important;
+}
+
+.hyper-ref-card:hover .hyper-tag {
+  border-color: rgba(168, 85, 247, 0.3) !important;
+  color: #E4E4E7 !important;
+}
+
+/* Card Points list in Our Approach */
+.hyper-card-points {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 18px 0 0 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.hyper-card-point-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  font-size: 13.5px !important;
+  color: #94A3B8 !important;
+  line-height: 1.5 !important;
+}
+
+.hyper-card-check {
+  color: #A855F7 !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  margin-top: 1px !important;
+}
+
+/* Card Footer Row: Tag Left, Arrow Button Right */
+.hyper-card-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding-top: 20px !important;
+  margin-top: 24px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.hyper-card-footer-label {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #71717A !important;
+  transition: color 0.3s ease !important;
+}
+
+/* Circular Arrow Button (Image 1 style ↗) */
+.hyper-card-arrow-btn {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #D4D4D8 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  flex-shrink: 0 !important;
+}
+
+.hyper-card-arrow-btn svg {
+  stroke: currentColor !important;
+  transition: transform 0.25s ease !important;
+}
+
+/* Giant Subtle Watermark Number (Image 1 style) */
+.hyper-card-watermark {
+  position: absolute !important;
+  right: 18px !important;
+  bottom: 8px !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-size: 88px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  color: transparent !important;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.04) !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  z-index: 1 !important;
+  transition: all 0.35s ease !important;
+}
+
+/* --- ACTIVE / HOVER STATE (Matching Card 3 "Integrity" in Image 1) --- */
+.hyper-ref-card.is-highlighted,
+.hyper-ref-card:hover {
+  border-color: rgba(168, 85, 247, 0.75) !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 35px rgba(124, 58, 237, 0.32) !important;
+  background: radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.22) 0%, #090A10 70%) !important;
+}
+
+.hyper-ref-card.is-highlighted .hyper-card-icon-box,
+.hyper-ref-card:hover .hyper-card-icon-box {
+  border-color: #C084FC !important;
+  background: rgba(124, 58, 237, 0.28) !important;
+  box-shadow: 0 0 24px rgba(168, 85, 247, 0.65) !important;
+  color: #FFFFFF !important;
+  transform: scale(1.05);
+}
+
+.hyper-ref-card.is-highlighted .hyper-card-icon-box svg,
+.hyper-ref-card:hover .hyper-card-icon-box svg {
+  stroke: #FFFFFF !important;
+}
+
+.hyper-ref-card.is-highlighted .hyper-card-badge-pill,
+.hyper-ref-card:hover .hyper-card-badge-pill {
+  border-color: rgba(168, 85, 247, 0.5) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.3) !important;
+}
+
+.hyper-ref-card.is-highlighted .hyper-card-footer-label,
+.hyper-ref-card:hover .hyper-card-footer-label {
+  color: #C084FC !important;
+}
+
+.hyper-ref-card.is-highlighted .hyper-card-arrow-btn,
+.hyper-ref-card:hover .hyper-card-arrow-btn {
+  background: #7C3AED !important;
+  color: #FFFFFF !important;
+  border-color: #A855F7 !important;
+  box-shadow: 0 0 16px rgba(124, 58, 237, 0.6) !important;
+  transform: scale(1.08);
+}
+
+.hyper-ref-card.is-highlighted .hyper-card-arrow-btn svg,
+.hyper-ref-card:hover .hyper-card-arrow-btn svg {
+  transform: translate(2px, -2px);
+}
+
+.hyper-ref-card.is-highlighted .hyper-card-watermark,
+.hyper-ref-card:hover .hyper-card-watermark {
+  -webkit-text-stroke: 1.5px rgba(168, 85, 247, 0.16) !important;
+  transform: scale(1.04);
+}
+
+
+/* ==========================================================================
+   FULL MOBILE RESPONSIVENESS FIXES (Screen <= 991px & iPhone SE 375px)
+   ========================================================================== */
+
+/* Prevent any horizontal screen shifting / overflow on mobile */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  position: relative !important;
+}
+
+@media (max-width: 991px) {
+  /* 1. Header Mobile Responsiveness */
+  .main-header .action-box .header-btn {
+    display: none !important; /* Hide oversized desktop buttons from header on mobile */
+  }
+
+  .main-header .action-box {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .main-header .mobile-nav-toggler {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 10px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #FFFFFF !important;
+    font-size: 20px !important;
+    cursor: pointer !important;
+    margin: 0 !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .main-header .mobile-nav-toggler:hover {
+    background: rgba(124, 58, 237, 0.25) !important;
+    border-color: #A855F7 !important;
+  }
+
+  .main-header .logo img {
+    height: 38px !important;
+    width: auto !important;
+    max-width: 135px !important;
+  }
+
+  .main-header .main-box {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 12px 16px !important;
+    width: 100% !important;
+  }
+
+  .header-lower {
+    padding: 0 !important;
+  }
+
+  /* 2. Hero Section Mobile Responsiveness */
+  .hyper-split-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    margin-top: 15px !important;
+    padding: 0 16px !important;
+    width: 100% !important;
+  }
+
+  .hyper-col-left,
+  .hyper-col-right {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .hyper-title {
+    font-size: clamp(28px, 7.8vw, 42px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 12px !important;
+    word-break: break-word !important;
+  }
+
+  .hyper-subtext {
+    font-size: 14.5px !important;
+    line-height: 1.6 !important;
+    color: #CBD5E1 !important;
+    margin-bottom: 22px !important;
+  }
+
+  .hyper-btn-group {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .hyper-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 13px 20px !important;
+    font-size: 14.5px !important;
+  }
+
+  /* Hide floating navigation buttons on mobile to prevent blocking text */
+  .hyper-nav-btn {
+    display: none !important;
+  }
+
+  .hyper-hero-slider {
+    padding: 40px 0 60px !important;
+    min-height: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Cards Mobile Padding & Watermark Scale */
+  .hyper-ref-card {
+    padding: 24px 20px 22px !important;
+    min-height: auto !important;
+    border-radius: 18px !important;
+  }
+
+  .synopsis-flow-section .hyper-ref-card {
+    min-height: auto !important;
+  }
+
+  .hyper-card-title,
+  .hyper-step-title {
+    font-size: 19px !important;
+  }
+
+  .hyper-card-desc,
+  .hyper-step-desc {
+    font-size: 13.5px !important;
+  }
+
+  .hyper-card-watermark {
+    font-size: 64px !important;
+    right: 12px !important;
+    bottom: 4px !important;
+  }
+
+  .sec-title h2.title {
+    font-size: 2rem !important;
+  }
+
+  .metrics-section,
+  .why-us-section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
   }
 }

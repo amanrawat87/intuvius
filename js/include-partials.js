@@ -94,8 +94,12 @@
           </div>
 
           <!-- Mobile Nav toggler -->
-          <div class="mobile-nav-toggler">
-            <div class="shape-line-img"><i class="fas fa-bars"></i></div>
+          <div class="mobile-nav-toggler" aria-label="Open navigation menu" role="button" tabindex="0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
           </div>
         </div>
       </div>
@@ -103,21 +107,26 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu">
+  <div class="mobile-menu" aria-label="Mobile Navigation" role="dialog" aria-modal="true">
     <div class="menu-backdrop"></div>
     <nav class="menu-box">
       <div class="upper-box">
         <div class="nav-logo">
           <a href="index.html" class="d-inline-flex align-items-center text-decoration-none">
-            <img src="images/logo-intuivus-white.png" alt="Intuivus" style="height: 48px; width: auto; object-fit: contain;">
+            <img src="images/logo-intuivus-white.png" alt="Intuivus" style="height: 44px; width: auto; object-fit: contain;">
           </a>
         </div>
-        <div class="close-btn"><i class="icon fa fa-times"></i></div>
+        <div class="close-btn" aria-label="Close navigation menu" role="button" tabindex="0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
       </div>
       <ul class="navigation clearfix">
         <!-- Populated and synchronized by js/include-partials.js -->
       </ul>
-      <div class="p-3 d-flex flex-column gap-2">
+      <div class="drawer-cta-box p-3 d-flex flex-column gap-2">
         <a class="header-btn-primary w-100 text-center" href="contact.html?enquiry=demo"><span class="btn-text">Request a Demo</span></a>
         <a class="header-btn-secondary w-100 text-center" href="contact.html?enquiry=budget"><span class="btn-text">Get Complimentary Budget</span></a>
       </div>
@@ -160,11 +169,36 @@
     <div class="footer-links-col">
       <div class="footer-col-title">SERVICES &amp; COMPANY</div>
       <ul class="footer-slash-links">
-        <li class="footer-link-item"><a href="index.html"><span class="slash">/</span> HOME</a></li>
-        <li class="footer-link-item"><a href="trialops360.html"><span class="slash">/</span> TRIALOPS360</a></li>
-        <li class="footer-link-item"><a href="other-systems.html"><span class="slash">/</span> OTHER SYSTEMS</a></li>
-        <li class="footer-link-item"><a href="about.html"><span class="slash">/</span> ABOUT US</a></li>
-        <li class="footer-link-item"><a href="contact.html"><span class="slash">/</span> CONTACT</a></li>
+        <li class="footer-link-item">
+          <a href="index.html">
+            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <span>HOME</span>
+          </a>
+        </li>
+        <li class="footer-link-item">
+          <a href="trialops360.html">
+            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <span>TRIALOPS360</span>
+          </a>
+        </li>
+        <li class="footer-link-item">
+          <a href="other-systems.html">
+            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <span>OTHER SYSTEMS</span>
+          </a>
+        </li>
+        <li class="footer-link-item">
+          <a href="about.html">
+            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <span>ABOUT US</span>
+          </a>
+        </li>
+        <li class="footer-link-item">
+          <a href="contact.html">
+            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <span>CONTACT</span>
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -176,13 +210,13 @@
           <span class="footer-contact-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           </span>
-          +91 8527458950
+          <span>+91 8527458950</span>
         </a>
         <a href="mailto:bd@intuivus.com" class="footer-contact-line email-line">
           <span class="footer-contact-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
           </span>
-          bd@intuivus.com
+          <span>bd@intuivus.com</span>
         </a>
       </div>
       <a href="contact.html?enquiry=connect" class="footer-connect-btn">
@@ -195,10 +229,30 @@
     <div class="footer-right-col">
       <div class="footer-col-title">SOCIAL</div>
       <ul class="footer-slash-links">
-        <li class="footer-link-item"><a href="https://linkedin.com/company/intuivus" target="_blank" rel="noopener"><span class="slash">/</span> LINKEDIN</a></li>
-        <li class="footer-link-item"><a href="https://twitter.com/intuivus" target="_blank" rel="noopener"><span class="slash">/</span> TWITTER</a></li>
-        <li class="footer-link-item"><a href="https://instagram.com/intuivus" target="_blank" rel="noopener"><span class="slash">/</span> INSTAGRAM</a></li>
-        <li class="footer-link-item"><a href="https://github.com/amanrawat87/intuvius" target="_blank" rel="noopener"><span class="slash">/</span> GITHUB</a></li>
+        <li class="footer-link-item">
+          <a href="https://linkedin.com/company/intuivus" target="_blank" rel="noopener">
+            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <span>LINKEDIN</span>
+          </a>
+        </li>
+        <li class="footer-link-item">
+          <a href="https://twitter.com/intuivus" target="_blank" rel="noopener">
+            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <span>TWITTER</span>
+          </a>
+        </li>
+        <li class="footer-link-item">
+          <a href="https://instagram.com/intuivus" target="_blank" rel="noopener">
+            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <span>INSTAGRAM</span>
+          </a>
+        </li>
+        <li class="footer-link-item">
+          <a href="https://github.com/amanrawat87/intuvius" target="_blank" rel="noopener">
+            <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <span>GITHUB</span>
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -260,8 +314,20 @@
     });
   }
 
+  // Ensure .mobile-menu is attached directly to document.body
+  // so it is NEVER constrained by headers with backdrop-filter or overflow-x clip
+  function attachMobileMenuToBody() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    if (mobileMenu && mobileMenu.parentElement !== document.body) {
+      document.body.appendChild(mobileMenu);
+    }
+  }
+
   function syncThemeNavigation() {
     markActiveNavigation();
+
+    // Ensure mobile drawer is attached to body
+    attachMobileMenuToBody();
 
     if (!window.jQuery) return;
     const $ = window.jQuery;
@@ -282,22 +348,94 @@
       }
     }
 
-    $('.mobile-nav-toggler').off('click').on('click', function () {
+    // Direct jQuery handlers as fallback
+    $('.mobile-nav-toggler').off('click').on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      attachMobileMenuToBody();
       $('body').addClass('mobile-menu-visible');
     });
 
-    $('.mobile-menu .close-btn, .mobile-menu .menu-backdrop').off('click').on('click', function () {
+    $('.mobile-menu .close-btn, .mobile-menu .menu-backdrop').off('click').on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
       $('body').removeClass('mobile-menu-visible');
     });
 
-    $('.mobile-menu li.dropdown .dropdown-btn').off('click').on('click', function () {
-      $(this).prev('ul').slideToggle(500);
+    $('.mobile-menu li.dropdown .dropdown-btn').off('click').on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const parentLi = $(this).closest('li.dropdown');
+      parentLi.toggleClass('open');
       $(this).toggleClass('active');
+      parentLi.find('> ul').slideToggle(280);
+    });
+
+    // Close mobile drawer when an inner link is clicked
+    $('.mobile-menu .navigation a:not(.nav-dropdown-toggle)').off('click.closeDrawer').on('click.closeDrawer', function () {
+      $('body').removeClass('mobile-menu-visible');
+    });
+  }
+
+  // Global Delegated Listeners (Vanilla JS with capture: true for bulletproof execution)
+  if (typeof document !== 'undefined' && !window._intuivusMobileMenuAttached) {
+    window._intuivusMobileMenuAttached = true;
+
+    document.addEventListener('click', function (e) {
+      // Toggle button clicked
+      const toggler = e.target.closest('.mobile-nav-toggler');
+      if (toggler) {
+        e.preventDefault();
+        e.stopPropagation();
+        attachMobileMenuToBody();
+        document.body.classList.add('mobile-menu-visible');
+        return;
+      }
+
+      // Close button or backdrop clicked
+      const closer = e.target.closest('.mobile-menu .close-btn, .mobile-menu .menu-backdrop');
+      if (closer) {
+        e.preventDefault();
+        e.stopPropagation();
+        document.body.classList.remove('mobile-menu-visible');
+        return;
+      }
+
+      // Dropdown arrow clicked in mobile menu
+      const ddBtn = e.target.closest('.mobile-menu li.dropdown .dropdown-btn');
+      if (ddBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        const parentLi = ddBtn.closest('li.dropdown');
+        if (parentLi) {
+          parentLi.classList.toggle('open');
+          ddBtn.classList.toggle('active');
+          const subMenu = parentLi.querySelector('ul');
+          if (subMenu) {
+            subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+          }
+        }
+        return;
+      }
+
+      // Nav link clicked in mobile menu (close drawer)
+      const navLink = e.target.closest('.mobile-menu .navigation a:not(.nav-dropdown-toggle)');
+      if (navLink) {
+        document.body.classList.remove('mobile-menu-visible');
+      }
+    }, true);
+
+    // Escape key closes mobile menu
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && document.body.classList.contains('mobile-menu-visible')) {
+        document.body.classList.remove('mobile-menu-visible');
+      }
     });
   }
 
   async function initPartials() {
-    await loadPartial('#site-header', 'partials/header.html?v=9.2', EMBEDDED_HEADER_HTML);
+    await loadPartial('#site-header', 'partials/header.html?v=9.3', EMBEDDED_HEADER_HTML);
+    attachMobileMenuToBody();
     if (document.body && document.body.classList.contains('home-page-tlp')) {
       var heroLogo = document.querySelector('.main-header.header-style-two .logo-box .logo img');
       if (heroLogo) heroLogo.src = 'images/logo-intuivus-white.png'; heroLogo.style.height = '48px'; heroLogo.style.width = 'auto';
