@@ -173,58 +173,42 @@
           <ul class="footer-slash-links">
             <li class="footer-link-item">
               <a href="index.html">
-                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span class="footer-link-icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
                 <span>HOME</span>
               </a>
             </li>
             <li class="footer-link-item">
               <a href="trialops360.html">
-                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span class="footer-link-icon" aria-hidden="true"><i class="fa-solid fa-chart-pie"></i></span>
                 <span>TRIALOPS360</span>
               </a>
             </li>
             <li class="footer-link-item">
               <a href="other-systems.html">
-                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span class="footer-link-icon" aria-hidden="true"><i class="fa-solid fa-network-wired"></i></span>
                 <span>OTHER SYSTEMS</span>
               </a>
             </li>
             <li class="footer-link-item">
               <a href="about.html">
-                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span class="footer-link-icon" aria-hidden="true"><i class="fa-solid fa-circle-info"></i></span>
                 <span>ABOUT US</span>
               </a>
             </li>
             <li class="footer-link-item">
               <a href="contact.html">
-                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span class="footer-link-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
                 <span>CONTACT</span>
               </a>
             </li>
           </ul>
         </div>
 
-        <!-- Col 2: Reach Out To Us -->
-        <div class="footer-center-col">
-          <div class="footer-col-title">REACH OUT TO US</div>
-          <div class="footer-contact-info">
-            <a href="tel:+918527458950" class="footer-contact-line">
-              <span class="footer-contact-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              </span>
-              <span>+91 8527458950</span>
-            </a>
-            <a href="mailto:bd@intuivus.com" class="footer-contact-line email-line">
-              <span class="footer-contact-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-              </span>
-              <span>bd@intuivus.com</span>
-            </a>
+        <!-- Col 2: Dotted Matrix INTUIVUS (Moved up to replace center section) -->
+        <div class="footer-center-col footer-brand-particle-col">
+          <div class="footer-particle-container" id="footer-particle-container">
+            <canvas id="footer-particle-canvas"></canvas>
           </div>
-          <a href="contact.html?enquiry=connect" class="footer-connect-btn">
-            <span>Let's Connect</span>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </a>
         </div>
 
         <!-- Col 3: Social -->
@@ -233,26 +217,20 @@
           <ul class="footer-slash-links">
             <li class="footer-link-item">
               <a href="https://linkedin.com/company/intuivus" target="_blank" rel="noopener">
-                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span class="footer-link-icon" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></span>
                 <span>LINKEDIN</span>
               </a>
             </li>
             <li class="footer-link-item">
               <a href="https://twitter.com/intuivus" target="_blank" rel="noopener">
-                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span class="footer-link-icon" aria-hidden="true"><i class="fa-brands fa-twitter"></i></span>
                 <span>TWITTER</span>
               </a>
             </li>
             <li class="footer-link-item">
               <a href="https://instagram.com/intuivus" target="_blank" rel="noopener">
-                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span class="footer-link-icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
                 <span>INSTAGRAM</span>
-              </a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://github.com/amanrawat87/intuvius" target="_blank" rel="noopener">
-                <span class="slash-icon" aria-hidden="true"><svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M7.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-                <span>GITHUB</span>
               </a>
             </li>
           </ul>
@@ -268,12 +246,116 @@
       </div>
     </div>
   </div>
+</footer>
+<!-- Request Demo Modal (Side-by-side Image & Form Layout - Compact & Luxury Dark) -->
+<div class="modal fade demo-popup-modal" id="requestDemoModal" tabindex="-1" aria-labelledby="requestDemoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered demo-modal-dialog">
+    <div class="modal-content demo-modal-content">
+      <div class="modal-body p-0">
+        <button type="button" class="btn-close demo-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="row g-0 align-items-stretch">
+          
+          <!-- Left Column: Visual Showcase -->
+          <div class="col-md-5 d-none d-md-flex flex-column justify-content-between demo-modal-media-col" style="background: linear-gradient(180deg, rgba(13, 8, 36, 0.90) 0%, rgba(9, 5, 24, 0.97) 100%), url('images/resource/about-clinical-research.jpg') center center / cover no-repeat;">
+            <div>
+              <div class="demo-modal-brand-badge mb-3">
+                <span class="badge-dot">●</span> Intuivus Live Demo
+              </div>
+              <h3 class="demo-modal-media-title">Experience Clinical Intelligence Live</h3>
+              <p class="demo-modal-media-desc">
+                Schedule a tailored 30-minute walkthrough to see how TrialOps360 automates study budgets, global site allocations, and execution plans with board-ready certainty.
+              </p>
+              
+              <ul class="demo-modal-feature-list">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>1-on-1 session with clinical operations leaders</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Protocol synopsis to bottom-up budget demo</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Interactive country &amp; site allocation simulation</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="demo-modal-media-footer mt-3 pt-3 border-top border-white-10">
+              <span class="text-white-50" style="font-size: 0.74rem;"><i class="fa-solid fa-shield-halved text-purple me-1"></i> Enterprise GxP &amp; 21 CFR Part 11 compliant.</span>
+            </div>
+          </div>
 
-  <!-- Giant Dotted Matrix Particle Brand Name -->
-  <div class="footer-particle-container" id="footer-particle-container">
-    <canvas id="footer-particle-canvas"></canvas>
+          <!-- Right Column: Interactive Form -->
+          <div class="col-md-7 p-4 p-lg-4 demo-modal-form-col">
+            <div class="demo-modal-header mb-3">
+              <span class="metrics-pill-badge mb-2">
+                <span class="badge-dot">●</span> 30-Min Walkthrough
+              </span>
+              <h3 class="title fw-bold mb-1" id="requestDemoModalLabel" style="color: #ffffff; font-size: 1.35rem; line-height: 1.25;">Request a Product Demo</h3>
+              <p class="mb-0" style="color: #94a3b8; font-size: 0.82rem;">Fill in your details below and our clinical team will confirm your session.</p>
+            </div>
+
+            <form id="popup_demo_form" name="popup_demo_form" novalidate>
+              <div class="row g-2 mb-2">
+                <div class="col-sm-6">
+                  <label for="demo_full_name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <input id="demo_full_name" name="full_name" class="form-control" type="text" placeholder="Dr. Sarah Chen" required>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="demo_work_email" class="form-label">Work Email <span class="text-danger">*</span></label>
+                  <input id="demo_work_email" name="work_email" class="form-control" type="email" placeholder="sarah.chen@biopharma.com" required>
+                  <div class="invalid-feedback">Please enter a valid work email.</div>
+                </div>
+              </div>
+
+              <div class="row g-2 mb-2">
+                <div class="col-sm-6">
+                  <label for="demo_company" class="form-label">Company / Org <span class="text-danger">*</span></label>
+                  <input id="demo_company" name="company" class="form-control" type="text" placeholder="BioPharma Innovations" required>
+                  <div class="invalid-feedback">Please enter your organization.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="demo_job_title" class="form-label">Job Title</label>
+                  <input id="demo_job_title" name="job_title" class="form-control" type="text" placeholder="VP Clinical Operations">
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <label for="demo_focus_area" class="form-label">Primary Area of Interest</label>
+                <select id="demo_focus_area" name="focus_area" class="form-control">
+                  <option value="TrialOps360 Full Platform">TrialOps360 Full Platform Walkthrough</option>
+                  <option value="Clinical Trial Budgeting">Clinical Trial Budgeting &amp; Modeling</option>
+                  <option value="Site Allocation & Feasibility">Site Allocation &amp; Feasibility Simulation</option>
+                  <option value="Custom Scenario Comparison">Custom Scenario Comparison</option>
+                </select>
+              </div>
+
+              <div class="mb-2">
+                <label for="demo_notes" class="form-label">Study Details or Questions (optional)</label>
+                <textarea id="demo_notes" name="notes" class="form-control" rows="2" placeholder="Briefly describe your trial phase, indication, or planning timeline..."></textarea>
+              </div>
+
+              <div class="mt-3">
+                <button type="submit" class="header-btn-primary demo-modal-submit-btn w-100 py-2 d-flex align-items-center justify-content-center gap-2 border-0">
+                  <span class="btn-text">Schedule Demo Walkthrough</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+
+              <div id="demo-success-alert" class="alert alert-success mt-2 mb-0 py-2" style="display: none; background: rgba(34, 197, 94, 0.18); border-color: rgba(34, 197, 94, 0.35); color: #4ade80; font-size: 0.85rem;" role="status">
+                Thank you! We have received your request and will reach out within 24 hours to coordinate your live demo.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
-</footer>`;
+</div>`;
 
   async function loadPartial(selector, url, fallbackHtml) {
     const target = document.querySelector(selector);
@@ -437,7 +519,87 @@
     });
   }
 
+  
+  function initDemoModalHandler() {
+    // Intercept any click on Request a Demo buttons/links to show the modal
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('a, button');
+      if (!btn) return;
+      var text = (btn.textContent || '').trim().toLowerCase();
+      var href = btn.getAttribute('href') || '';
+      var isDemoTrigger = btn.dataset.bsTarget === '#requestDemoModal' ||
+                          btn.hasAttribute('data-open-demo-modal') ||
+                          href === '#requestDemoModal' ||
+                          href.indexOf('enquiry=demo') !== -1 ||
+                          text === 'request a demo' ||
+                          text === 'request a 30-min demo';
+      if (isDemoTrigger) {
+        var modalEl = document.getElementById('requestDemoModal');
+        if (modalEl) {
+          if (modalEl.parentElement !== document.body) {
+            document.body.appendChild(modalEl);
+          }
+          if (window.bootstrap && window.bootstrap.Modal) {
+            e.preventDefault();
+            var modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+            modal.show();
+          }
+        }
+      }
+    });
+
+    // Handle popup demo form submit
+    document.addEventListener('submit', function (e) {
+      if (e.target && e.target.id === 'popup_demo_form') {
+        e.preventDefault();
+        var form = e.target;
+        var fullName = document.getElementById('demo_full_name');
+        var workEmail = document.getElementById('demo_work_email');
+        var company = document.getElementById('demo_company');
+        var alertBox = document.getElementById('demo-success-alert');
+
+        var isValid = true;
+        if (!fullName || !fullName.value.trim()) {
+          if (fullName) fullName.classList.add('is-invalid');
+          isValid = false;
+        } else if (fullName) {
+          fullName.classList.remove('is-invalid');
+        }
+
+        if (!workEmail || !workEmail.value.trim() || !workEmail.value.includes('@')) {
+          if (workEmail) workEmail.classList.add('is-invalid');
+          isValid = false;
+        } else if (workEmail) {
+          workEmail.classList.remove('is-invalid');
+        }
+
+        if (!company || !company.value.trim()) {
+          if (company) company.classList.add('is-invalid');
+          isValid = false;
+        } else if (company) {
+          company.classList.remove('is-invalid');
+        }
+
+        if (!isValid) return;
+
+        if (alertBox) {
+          alertBox.style.display = 'block';
+        }
+        form.reset();
+        setTimeout(function() {
+          var modalEl = document.getElementById('requestDemoModal');
+          if (modalEl && window.bootstrap && window.bootstrap.Modal) {
+            var modal = bootstrap.Modal.getInstance(modalEl);
+            if (modal) modal.hide();
+            if (alertBox) alertBox.style.display = 'none';
+          }
+        }, 3000);
+      }
+    });
+  }
+
   async function initPartials() {
+    initDemoModalHandler();
     await loadPartial('#site-header', 'partials/header.html?v=9.3', EMBEDDED_HEADER_HTML);
     attachMobileMenuToBody();
     if (document.body && document.body.classList.contains('home-page-tlp')) {
@@ -446,6 +608,10 @@
     }
     syncThemeNavigation();
     await loadPartial('#site-footer', 'partials/footer.html?v=10.0', EMBEDDED_FOOTER_HTML);
+    var modalEl = document.getElementById('requestDemoModal');
+    if (modalEl && modalEl.parentElement !== document.body) {
+      document.body.appendChild(modalEl);
+    }
     if (typeof window.initFooterParticles === 'function') {
       window.initFooterParticles();
     }

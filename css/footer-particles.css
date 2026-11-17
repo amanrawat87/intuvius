@@ -216,9 +216,10 @@
 /* Particle Canvas Brand Section */
 .tycoon-footer .footer-particle-container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 900px;
   margin: 0 auto;
-  height: 140px;
+  height: 190px;
+  min-height: 190px;
   position: relative;
   cursor: crosshair;
 }

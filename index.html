@@ -58,13 +58,10 @@
     <!-- Shared Header Placeholder -->
     <div id="site-header"></div>
 
-    <!-- The Lonely Pixel Style Hero Slider (Powered by Swiper.js) -->
-        <!-- Hero Slider Section (Full-Width Background Image + Centered Typography & Actions) -->
-        <!-- Hyperiux Vault Inspired Enterprise Hero Slider -->
-        <!-- O-SCS Aperture Scroll-Portal Wrap (Sticky Reveal of Hero Banner) -->
+    <!-- O-SCS Aperture Scroll-Portal Wrap (Sticky Reveal of Hero Banner) -->
     <div class="scs-portal-hero-wrap" id="scs-portal-wrap">
       <div class="scs-portal-sticky-frame" id="scs-portal-frame">
-<section class="hyper-hero-section" id="hero-showcase">
+        <section class="hyper-hero-section" id="hero-showcase">
       <!-- 3D Concentric Toroidal Metallic Ribbon & Authentic Eulerian Fluid Interactive Stage -->
       <div class="hyper-torus-stage" id="hyperTorusStage" aria-hidden="true">
         <canvas id="hyperDotsCanvas" class="hyper-dots-canvas" aria-hidden="true"></canvas>
@@ -101,7 +98,7 @@
                       <span class="btn-sq" aria-hidden="true">■</span>
                       <span>Read Overview</span>
                     </a>
-                    <a href="contact.html?enquiry=demo" class="hyper-btn hyper-btn-primary">
+                    <a href="#requestDemoModal" data-bs-toggle="modal" data-bs-target="#requestDemoModal" class="hyper-btn hyper-btn-primary">
                       <span class="btn-sq" aria-hidden="true">■</span>
                       <span>Request a Demo</span>
                     </a>
@@ -167,7 +164,7 @@
                       <span class="btn-sq" aria-hidden="true">■</span>
                       <span>Explore Platform</span>
                     </a>
-                    <a href="contact.html?enquiry=demo" class="hyper-btn hyper-btn-primary">
+                    <a href="#requestDemoModal" data-bs-toggle="modal" data-bs-target="#requestDemoModal" class="hyper-btn hyper-btn-primary">
                       <span class="btn-sq" aria-hidden="true">■</span>
                       <span>Schedule Walkthrough</span>
                     </a>
@@ -200,7 +197,6 @@
         </div>
       </div>
     </section>
-    <!-- End The Lonely Pixel Style Scrollytelling Hero Section -->
 
     <!-- ==========================================================
          O-SCS SCROLL-EXPANDING APERTURE PORTAL OVERLAY
@@ -308,7 +304,7 @@
     </div>
     <!-- End O-SCS Aperture Scroll-Portal Wrap -->
 
-    <!-- Section 2: About Intuivus (short) -->
+        <!-- Section 2: About Intuivus (short) -->
     <section class="about-section pt-60 pb-60" id="about" style="scroll-margin-top: 90px;">
       <div class="container">
         <div class="row align-items-center">
@@ -326,7 +322,7 @@
           <div class="col-xl-6 col-lg-6 about-reveal-wrap ps-xl-4" data-aos="fade-left" data-aos-duration="1000">
             <div class="sec-title mb-4">
               <span class="metrics-pill-badge mb-3">
-                <span class="badge-dot">●</span> About Intuivus
+                <span class="badge-dot">●</span> Who We Are
               </span>
               <h2 class="title about-reveal-title" style="color: #0B2230; font-weight: 700;">About Intuivus</h2>
             </div>
@@ -435,7 +431,7 @@
       <div class="container">
         <div class="sec-title text-center mb-55" data-aos="fade-up">
           <span class="metrics-pill-badge mb-3">
-            <span class="badge-dot">●</span> Our Approach
+            <span class="badge-dot">●</span> How We Work
           </span>
           <h2 class="title" style="font-size: 2.6rem; font-weight: 800; color: #090724 !important; line-height: 1.25; letter-spacing: -0.02em;">
             Our <span class="approach-gradient-text">Approach</span>
@@ -632,12 +628,6 @@
         <circle cx="1105" cy="555" r="310" stroke="url(#intuivus-arc-bright)" stroke-width="4" opacity="0.45" />
       </svg>
 
-      <div class="container position-relative" style="z-index: 3;">
-        <h3 class="client-title">
-          Built for <span>Pharma Sponsors</span>, <span>Biotech</span>, and <span>CRO Teams</span>
-        </h3>
-      </div>
-
       <div class="clients-marquee-viewport">
         <div class="clients-marquee-track">
           <div class="clients-marquee-logo"><img src="images/resource/client-placeholder-1.svg" alt="Novagen Therapeutics"></div>
@@ -673,7 +663,7 @@
           <div class="container position-relative" style="z-index: 2;">
             <div class="row align-items-center g-5">
               <div class="col-xl-6 col-lg-6 col-12" data-aos="fade-right">
-                <div class="sec-title light mb-0">
+                <div class="sec-title mb-0">
                   <span class="metrics-pill-badge mb-3">
                     <span class="badge-dot">●</span> Featured Product
                   </span>
@@ -767,7 +757,7 @@
 
         <!-- Section 6: Who It Is For (Target Audience Section - Redesigned Modern SaaS) -->
     <section class="testimonial-section pt-60 pb-60" id="who-it-is-for">
-      <div class="large-container">
+      <div class="container">
         <div class="outer-box who-it-is-for-box">
           <div class="sec-title text-center light mb-50" data-aos="fade-up">
             <span class="metrics-pill-badge mb-3">
@@ -786,7 +776,7 @@
               <div class="audience-small-card">
                 <div class="audience-small-card-top">
                   <div class="audience-card-icon">
-                    <i class="fa-solid fa-flask-vial"></i>
+                    <i class="fa-solid fa-flask"></i>
                   </div>
                   <span class="audience-card-tag">Sponsors</span>
                 </div>
@@ -1007,7 +997,7 @@
 
         <!-- Section 5: Closing Call to Action (Redesigned Enterprise Card) -->
     <section class="cta-section-layout1 pt-60 pb-60" id="cta">
-      <div class="large-container">
+      <div class="container">
         <div class="outer-box position-relative" data-aos="fade-up">
           <div class="cta-aurora-glow"></div>
           <div class="cta-grid-lines"></div>
@@ -1025,7 +1015,7 @@
             </div>
             <div class="cta-action-wrap text-center mt-4 pt-2">
               <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
-                <a href="contact.html?enquiry=demo" class="cta-action-btn-primary">
+                <a href="#requestDemoModal" data-bs-toggle="modal" data-bs-target="#requestDemoModal" class="cta-action-btn-primary">
                   <span>Request a 30-Min Demo</span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -1875,36 +1865,44 @@
 
         var ticking = false;
         var hasTriggeredResize = false;
+        var runway = 280; // Compact runway: smooth 220px aperture opening, then immediate natural scroll to About Us
+
+        function updateDimensions() {
+          var vh = window.innerHeight || 900;
+          wrap.style.height = (vh + runway) + 'px';
+          frame.style.height = vh + 'px';
+        }
+        updateDimensions();
 
         function updatePortal() {
           var scrollY = window.pageYOffset || document.documentElement.scrollTop;
           var wrapTop = wrap.offsetTop;
-          var totalRunway = Math.max(800, wrap.offsetHeight - window.innerHeight);
           var relativeScroll = scrollY - wrapTop;
+          var vh = window.innerHeight || 900;
 
-          // 1. PINNING: Reliable fixed pinning while inside wrap runway
+          // 1. PINNING: Fixed while opening, then placed at exactly runway top so About Us connects seamlessly
           if (relativeScroll < 0) {
             frame.style.position = 'absolute';
             frame.style.top = '0px';
             frame.style.left = '0px';
             frame.style.width = '100%';
-            frame.style.height = '100vh';
-          } else if (relativeScroll <= totalRunway) {
+            frame.style.height = vh + 'px';
+          } else if (relativeScroll <= runway) {
             frame.style.position = 'fixed';
             frame.style.top = '0px';
             frame.style.left = '0px';
             frame.style.width = '100%';
-            frame.style.height = '100vh';
+            frame.style.height = vh + 'px';
           } else {
             frame.style.position = 'absolute';
-            frame.style.top = totalRunway + 'px';
+            frame.style.top = runway + 'px';
             frame.style.left = '0px';
             frame.style.width = '100%';
-            frame.style.height = '100vh';
+            frame.style.height = vh + 'px';
           }
 
-          // 2. APERTURE ANIMATION: First 650px of relative scroll
-          var portalRange = 650;
+          // APERTURE ANIMATION: Responsive smooth opening across 220px of scroll
+          var portalRange = 220;
           var p = Math.max(0, Math.min(1, relativeScroll / portalRange));
 
           // 3. HEADER VISIBILITY: Hidden on O-SCS resting view (p <= 0.08), Visible on Hero Banner & Beyond
@@ -2004,13 +2002,21 @@
         }
 
         window.addEventListener('scroll', requestTick, { passive: true });
-        window.addEventListener('resize', requestTick);
+        window.addEventListener('resize', function () {
+          updateDimensions();
+          requestTick();
+        });
 
         if (cue) {
           cue.addEventListener('click', function (e) {
             e.preventDefault();
-            var targetY = wrap.offsetTop + 700;
-            window.scrollTo({ top: targetY, behavior: 'smooth' });
+            var aboutEl = document.getElementById('about');
+            if (aboutEl) {
+              aboutEl.scrollIntoView({ behavior: 'smooth' });
+            } else {
+              var targetY = wrap.offsetTop + wrap.offsetHeight + 10;
+              window.scrollTo({ top: targetY, behavior: 'smooth' });
+            }
           });
         }
 

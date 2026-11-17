@@ -40,37 +40,34 @@
     <!-- Shared Header Placeholder -->
     <div id="site-header"></div>
 
-    <!-- Section 1: Modern Cosmic Header -->
-    <section class="page-title-modern">
+    <!-- Section 1: Modern Cosmic Header (Compact) -->
+    <section class="page-title-modern page-title-contact">
       <div class="container">
         <div class="title-outer text-start">
-          <span class="metrics-pill-badge mb-3">
-            <span class="badge-dot">●</span> Get In Touch
-          </span>
-          <h1 class="page-modern-title">Let's Connect About Your <span class="gradient-text">Clinical Trials</span></h1>
-          <p class="page-modern-subtitle">Request a personalized demo of TrialOps360 or discuss your study planning with our operational specialists.</p>
-          <ul class="page-modern-breadcrumb">
-            <li><a href="index.html">Home</a></li>
+          <ul class="page-modern-breadcrumb mb-2">
+            <li><a href="index.html" class="crumb-home">Home</a></li>
             <li><span class="sep">/</span></li>
-            <li class="active">Contact</li>
+            <li class="active">Contact Us</li>
           </ul>
+          <h1 class="page-modern-title mb-1">Let's Connect About Your <span class="gradient-text">Clinical Trials</span></h1>
+          <p class="page-modern-subtitle mb-0">Request a personalized demo of TrialOps360 or discuss your study planning with our operational specialists.</p>
         </div>
       </div>
     </section>
 
-    <!-- Section 2: Contact Form & Section 3: Contact Details (White Section) -->
-    <section class="contact-details section-white pt-60 pb-60">
+    <!-- Section 2: Contact Form & Section 3: Contact Details (White Section - Compact Full Screen Fit) -->
+    <section class="contact-details section-white pt-35 pb-35">
       <div class="container">
         <div class="row g-4 align-items-stretch">
           <!-- Contact Form -->
           <div class="col-xl-7 col-lg-6">
             <div class="contact-form-card h-100">
-              <div class="sec-title mb-4">
-                <span class="metrics-pill-badge mb-2">
+              <div class="sec-title mb-3">
+                <span class="metrics-pill-badge mb-1">
                   <span class="badge-dot">●</span> Send A Message
                 </span>
-                <h2 class="title fw-bold mb-2" style="color: #090724;">Request a Demo or Send an Enquiry</h2>
-                <p class="text-secondary mb-0" style="font-size: 0.95rem;">Fill out the details below and our team will get back to you within 1 business day.</p>
+                <h2 class="title fw-bold mb-1" style="color: #090724; font-size: 1.35rem; line-height: 1.25;">Request a Demo or Send an Enquiry</h2>
+                <p class="text-secondary mb-0" style="font-size: 0.84rem;">Fill out the details below and our team will get back to you within 1 business day.</p>
               </div>
 
               <!-- Configure backend / email delivery to [client email address] -->
@@ -81,16 +78,16 @@
                   <input type="text" id="website_honeypot" name="website" tabindex="-1" autocomplete="off">
                 </div>
 
-                <div class="row">
+                <div class="row g-2 mb-2">
                   <div class="col-sm-6">
-                    <div class="mb-3">
+                    <div>
                       <label for="full_name" class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
                       <input id="full_name" name="full_name" class="form-control" type="text" placeholder="Dr. Sarah Chen" required>
                       <div class="invalid-feedback">Please enter your full name.</div>
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="mb-3">
+                    <div>
                       <label for="work_email" class="form-label fw-semibold">Work Email <span class="text-danger">*</span></label>
                       <input id="work_email" name="work_email" class="form-control" type="email" placeholder="sarah.chen@biopharma.com" required>
                       <div class="invalid-feedback">Please enter a valid work email address.</div>
@@ -98,31 +95,31 @@
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row g-2 mb-2">
                   <div class="col-sm-6">
-                    <div class="mb-3">
+                    <div>
                       <label for="company_org" class="form-label fw-semibold">Company / Organization <span class="text-danger">*</span></label>
                       <input id="company_org" name="company_org" class="form-control" type="text" placeholder="BioPharma Innovations" required>
                       <div class="invalid-feedback">Please enter your company or organization.</div>
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="mb-3">
+                    <div>
                       <label for="job_title" class="form-label fw-semibold">Job Title</label>
                       <input id="job_title" name="job_title" class="form-control" type="text" placeholder="VP Clinical Operations">
                     </div>
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row g-2 mb-2">
                   <div class="col-sm-6">
-                    <div class="mb-3">
+                    <div>
                       <label for="phone_number" class="form-label fw-semibold">Phone (optional)</label>
                       <input id="phone_number" name="phone_number" class="form-control" type="text" placeholder="+1 (555) 000-0000">
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="mb-3">
+                    <div>
                       <label for="enquiry_type" class="form-label fw-semibold">Enquiry Type</label>
                       <select id="enquiry_type" name="enquiry_type" class="form-control">
                         <option value="Request a Demo">Request a Demo</option>
@@ -134,30 +131,30 @@
                   </div>
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-2">
                   <label for="contact_message" class="form-label fw-semibold">Message <span class="text-danger">*</span></label>
-                  <textarea id="contact_message" name="contact_message" class="form-control" rows="4" placeholder="Briefly describe your study phase, therapeutic area, or timeline requirements..." required></textarea>
+                  <textarea id="contact_message" name="contact_message" class="form-control" rows="2" placeholder="Briefly describe your study phase, therapeutic area, or timeline requirements..." required></textarea>
                   <div class="invalid-feedback">Please enter your message.</div>
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-2">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="consent_checkbox" name="consent" required>
-                    <label class="form-check-label" for="consent_checkbox" style="color: #475569;">
+                    <label class="form-check-label" for="consent_checkbox" style="color: #475569; font-size: 0.8rem;">
                       I agree to be contacted about my enquiry <span class="text-danger">*</span>
                     </label>
                     <div class="invalid-feedback">Please agree to be contacted about your enquiry.</div>
                   </div>
                 </div>
 
-                <div class="mb-3">
-                  <button type="submit" class="header-btn-primary w-100 py-3 d-flex align-items-center justify-content-center gap-2 border-0" style="font-size: 1rem; border-radius: 10px; cursor: pointer;">
+                <div>
+                  <button type="submit" class="header-btn-primary w-100 py-2 d-flex align-items-center justify-content-center gap-2 border-0" style="font-size: 0.9rem; border-radius: 8px; cursor: pointer;">
                     <span class="btn-text">Submit Request</span>
                     <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>
 
-                <div id="contact-success-alert" class="alert alert-success mt-3" style="display: none; background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.3); color: #166534;" role="status">
+                <div id="contact-success-alert" class="alert alert-success mt-2 mb-0 py-2" style="display: none; background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.3); color: #166534; font-size: 0.85rem;" role="status">
                   Thank you. We have received your message and will be in touch shortly.
                 </div>
               </form>
@@ -168,14 +165,14 @@
           <div class="col-xl-5 col-lg-6">
             <div class="contact-details-dark-card h-100 d-flex flex-column justify-content-between">
               <div>
-                <div class="sec-title mb-4">
-                  <span class="metrics-pill-badge mb-2">
+                <div class="sec-title mb-3">
+                  <span class="metrics-pill-badge mb-1">
                     <span class="badge-dot">●</span> Direct Contact
                   </span>
-                  <h2 class="title text-white fw-bold mb-2">Contact Details</h2>
-                  <p class="text-white-50" style="font-size: 0.95rem;">Connect with our clinical operations and technology team directly.</p>
+                  <h2 class="title text-white fw-bold mb-1" style="font-size: 1.35rem; line-height: 1.25;">Contact Details</h2>
+                  <p class="text-white-50 mb-0" style="font-size: 0.84rem;">Connect with our clinical operations and technology team directly.</p>
                 </div>
-                <ul class="list-unstyled contact-details__info">
+                <ul class="list-unstyled contact-details__info mb-0">
                   <li>
                     <div class="icon">
                       <span class="fa-solid fa-envelope"></span>
@@ -216,12 +213,12 @@
               </div>
 
               <!-- Trust Guarantee Card -->
-              <div class="p-3 rounded-3 mt-4" style="background: rgba(124, 58, 237, 0.16); border: 1px solid rgba(168, 85, 247, 0.3);">
+              <div class="p-2 px-3 rounded-3 mt-3" style="background: rgba(124, 58, 237, 0.16); border: 1px solid rgba(168, 85, 247, 0.3);">
                 <div class="d-flex align-items-center gap-2 mb-1">
-                  <i class="fa-solid fa-bolt text-warning" style="font-size: 14px;"></i>
-                  <span class="fw-bold text-white" style="font-size: 0.9rem;">Fast Operational Response</span>
+                  <i class="fa-solid fa-bolt text-warning" style="font-size: 13px;"></i>
+                  <span class="fw-bold text-white" style="font-size: 0.84rem;">Fast Operational Response</span>
                 </div>
-                <p class="mb-0 text-white-50" style="font-size: 0.85rem; line-height: 1.5;">Complimentary study budgets and feasibility analyses are turned around in as little as 48 hours from synopsis receipt.</p>
+                <p class="mb-0 text-white-50" style="font-size: 0.78rem; line-height: 1.45;">Complimentary study budgets and feasibility analyses are turned around in as little as 48 hours from synopsis receipt.</p>
               </div>
             </div>
           </div>
@@ -229,24 +226,32 @@
       </div>
     </section>
 
-    <!-- Section 4: Closing CTA Banner (Dark Section) -->
-    <section class="cta-section-layout1 section-dark pt-60 pb-60">
-      <div class="large-container">
-        <div class="outer-box">
-          <div class="bg-image bg"><img src="images/background/cta4-bg-intuivus.jpg" alt="" loading="lazy"></div>
-          <div class="sec-title text-center light mb-0">
-            <div class="h2 title">Ready to accelerate your clinical study planning?</div>
-          </div>
-          <div class="cta-action-wrap text-center mt-4 pt-1">
-            <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
-              <a href="trialops360.html" class="btn-style-one theme-btn">
-                <span class="btn-text">Explore TrialOps360 <i class="fa fa-arrow-right ms-2"></i></span>
-              </a>
-            </div>
-          </div>
+    <!-- Section 3: Interactive Location Map (Light Clean Section Below Form) -->
+    <section class="contact-map-section section-white pt-40 pb-50" id="location-map">
+      <div class="container">
+        <div class="sec-title text-center mb-4">
+          <span class="metrics-pill-badge mb-2">
+            <span class="badge-dot">●</span> Operations &amp; Headquarters
+          </span>
+          <h2 class="title fw-bold" style="color: #090724; font-size: clamp(1.6rem, 2.5vw, 2.1rem); line-height: 1.25;">
+            Find Us in <span class="gradient-text">Boston</span>
+          </h2>
+          <p class="text mx-auto mb-0" style="max-width: 580px; color: #64748b; font-size: 0.92rem; line-height: 1.6;">
+            100 Cambridge St, Boston, MA &bull; Direct access to clinical operations, biopharma partnerships, and engineering.
+          </p>
         </div>
-      </div>
-    </section>
+
+        <div class="contact-map-frame-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.1672469446215!2d-71.0637176!3d42.3602534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370849488a7db%3A0x6b5a34e06c7e3f22!2s100%20Cambridge%20St%2C%20Boston%2C%20MA%2002114!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+            width="100%"
+            height="360"
+            style="border:0; display: block; width: 100%; border-radius: 18px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Intuivus Headquarters Boston MA">
+          </iframe>
         </div>
       </div>
     </section>

@@ -32,7 +32,7 @@
     var mouse = {
       x: -9999,
       y: -9999,
-      radius: 95,
+      radius: 120,
       isHovered: false
     };
 
@@ -108,8 +108,12 @@
     };
 
     function buildParticles() {
-      width = container.clientWidth || 1200;
-      height = container.clientHeight || 220;
+      width = container.clientWidth || 750;
+      height = container.clientHeight || 190;
+      if (width < 50) {
+        setTimeout(buildParticles, 100);
+        return;
+      }
       canvas.width = width * dpr;
       canvas.height = height * dpr;
       ctx.setTransform(1, 0, 0, 1, 0, 0);
@@ -122,8 +126,8 @@
       offscreen.height = height;
       var offCtx = offscreen.getContext('2d');
 
-      // Font size responsive to container width (compact, refined scale)
-      var fontSize = Math.min(Math.floor(width / 8.6), Math.floor(height * 0.72), 105);
+      // Font size responsive to container width (prominent, bold scale for footer center column)
+      var fontSize = Math.min(Math.floor(width / 6.4), Math.floor(height * 0.76), 130);
       offCtx.fillStyle = '#ffffff';
       offCtx.font = '900 ' + fontSize + 'px "Inter", "Plus Jakarta Sans", "Poppins", "Arial Black", sans-serif';
       offCtx.textAlign = 'center';
@@ -133,14 +137,14 @@
       }
 
       var text = 'INTUIVUS';
-      offCtx.fillText(text, width / 2, height / 2 + 4);
+      offCtx.fillText(text, width / 2, height / 2);
 
       var imgData = offCtx.getImageData(0, 0, width, height);
       var data = imgData.data;
 
-      // Grid dot spacing for smaller refined letters
-      var dotSpacing = width > 1100 ? 4.8 : (width > 768 ? 4.0 : 3.2);
-      var dotRadius = width > 1100 ? 1.5 : (width > 768 ? 1.2 : 0.95);
+      // Grid dot spacing and radius matching LED dot matrix style (high density & crisp glow)
+      var dotSpacing = Math.max(3.8, Math.min(4.8, fontSize * 0.038));
+      var dotRadius = Math.max(1.25, Math.min(1.5, fontSize * 0.012));
 
       for (var y = 0; y < height; y += dotSpacing) {
         for (var x = 0; x < width; x += dotSpacing) {
@@ -149,7 +153,7 @@
           var index = (py * width + px) * 4;
           var alpha = data[index + 3];
 
-          if (alpha > 130) {
+          if (alpha > 120) {
             particles.push(new Particle(x, y, dotRadius));
           }
         }

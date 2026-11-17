@@ -40,15 +40,53 @@
     <!-- Shared Header Placeholder -->
     <div id="site-header"></div>
 
-    <!-- Section 1: Hero (Modern Cosmic Showcase) -->
-    <section class="trialops-hero-section">
+    <!-- Page Title / Breadcrumb Header -->
+    <section class="page-title-modern">
+      <div class="container">
+        <div class="title-outer text-start">
+          <ul class="page-modern-breadcrumb mb-3">
+            <li><a href="index.html">Home</a></li>
+            <li><span class="sep">/</span></li>
+            <li><a href="trialops360.html">Technology</a></li>
+            <li><span class="sep">/</span></li>
+            <li class="active">TrialOps360</li>
+          </ul>
+          <h1 class="page-modern-title">TrialOps<span class="gradient-text">360</span> Flagship Platform</h1>
+          <p class="page-modern-subtitle">Deterministic clinical trial budgeting, scenario forecasting, and site allocation intelligence built for modern sponsors and CROs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: What is TrialOps360? (White Section) -->
+    <section class="about-section section-white pt-60 pb-60" id="what-is-trialops360">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-10">
+            <div class="sec-title mb-3">
+              <span class="metrics-pill-badge mb-3">
+                <span class="badge-dot">●</span> Overview
+              </span>
+              <h2 class="title fw-bold mb-3" style="font-size: 2.3rem;">What is TrialOps360?</h2>
+            </div>
+            <div class="text">
+              <p class="mb-0" style="color: #475569; font-size: 1.08rem; line-height: 1.8;">
+                TrialOps360 is a comprehensive system for planning and budgeting clinical trials. Teams enter key assumptions from the study synopsis, such as phase, indication, number of patients, countries, duration and visit schedule. The system then produces a complete planning package that is ready to review and refine.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: TrialOps360 Flagship Showcase (Dark Section) -->
+    <section class="trialops-hero-section section-dark pt-60 pb-60" id="trialops360">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
             <span class="metrics-pill-badge mb-3">
               <span class="badge-dot">●</span> Technology • Flagship Platform
             </span>
-            <h1 class="page-modern-title text-start mb-3">TrialOps<span class="gradient-text">360</span></h1>
+            <h2 class="title text-start mb-3" style="color: #ffffff; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 800; letter-spacing: -0.03em;">TrialOps<span class="gradient-text">360</span></h2>
             <p class="text-white fw-bold mb-3" style="font-size: 1.35rem; line-height: 1.35;">
               From synopsis to study plan, in one system.
             </p>
@@ -78,97 +116,118 @@
       </div>
     </section>
 
-    <!-- Section 2: What is TrialOps360? (White Section) -->
-    <section class="about-section section-white pt-60 pb-60">
+    <!-- Section 3: The Challenge (White Section) -->
+    <section class="why-us-section section-white pt-60 pb-60" id="the-challenge">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-10">
-            <div class="sec-title mb-3">
-              <span class="metrics-pill-badge mb-3">
-                <span class="badge-dot">●</span> Overview
-              </span>
-              <h2 class="title fw-bold mb-3" style="font-size: 2.3rem;">What is TrialOps360?</h2>
-            </div>
-            <div class="text">
-              <p class="mb-0" style="color: #475569; font-size: 1.08rem; line-height: 1.8;">
-                TrialOps360 is a comprehensive system for planning and budgeting clinical trials. Teams enter key assumptions from the study synopsis, such as phase, indication, number of patients, countries, duration and visit schedule. The system then produces a complete planning package that is ready to review and refine.
-              </p>
+        <!-- 2-Column Challenge Block (Content on Left, Visual on Right) -->
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 col-12">
+            <span class="metrics-pill-badge mb-3">
+              <span class="badge-dot">●</span> Clinical Trial Bottlenecks
+            </span>
+            <h2 class="title fw-bold mb-3" style="font-size: clamp(1.9rem, 3.2vw, 2.3rem); color: #090724; line-height: 1.25; letter-spacing: -0.02em;">
+              The Challenge in Study Planning
+            </h2>
+            <p class="mb-4" style="color: #475569; font-size: 1.05rem; line-height: 1.7;">
+              Planning a clinical trial is traditionally slow, fragmented, and vulnerable to manual error. Study teams and CROs routinely struggle with disconnected tools:
+            </p>
+            <ul class="challenge-points-list">
+              <li>
+                <div class="challenge-point-bullet"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div>
+                  <strong>Manual Spreadsheet Budgets:</strong> Budgets built manually in fragile, disconnected spreadsheets.
+                </div>
+              </li>
+              <li>
+                <div class="challenge-point-bullet"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div>
+                  <strong>Inconsistent Assumptions:</strong> Conflicting formulas and baseline numbers across cross-functional teams.
+                </div>
+              </li>
+              <li>
+                <div class="challenge-point-bullet"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div>
+                  <strong>Site & Country Guesswork:</strong> Time-consuming site selection without unified historical feasibility data.
+                </div>
+              </li>
+              <li>
+                <div class="challenge-point-bullet"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div>
+                  <strong>Unvalidated Timelines:</strong> Critical milestone projections that are difficult to validate before study launch.
+                </div>
+              </li>
+              <li>
+                <div class="challenge-point-bullet"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div>
+                  <strong>Costly Synopsis Delays:</strong> Weeks or months lost bridging the gap between a synopsis and an actionable plan.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="challenge-visual-wrapper position-relative">
+              <div class="challenge-img-box" style="border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(11, 34, 48, 0.12); border: 1px solid #e2e8f0;">
+                <img src="images/resource/project-details.jpg" alt="Clinical Trial Planning Complexity and Collaboration" class="w-100 h-auto" style="display: block; object-fit: cover;">
+              </div>
+              <div class="challenge-floating-stat">
+                <div class="stat-icon-wrap">
+                  <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+                <div>
+                  <div class="stat-number">4–6 Weeks</div>
+                  <div class="stat-label">Average delay between synopsis & budget</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 3: The Challenge & Section 4: How It Works (Dark Section) -->
-    <section class="why-us-section section-dark pt-60 pb-60">
+    <!-- Section 4: How TrialOps360 Solves It (Dark Section) -->
+    <section class="why-us-section section-dark pt-60 pb-60" id="how-it-works">
       <div class="container">
-        <!-- The Challenge -->
-        <div class="row justify-content-center mb-5">
-          <div class="col-lg-10">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-triangle-exclamation"></i>
-                </div>
-              </div>
-              <h2 class="pillar-card-title text-white" style="font-size: 1.75rem;">The Challenge</h2>
-              <p class="pillar-card-thesis">Planning a clinical trial is slow and complex. Teams often face:</p>
-              <ul class="pillar-card-points">
-                <li><i class="fa-solid fa-circle-check"></i><span>Budgets built manually in spreadsheets</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Inconsistent assumptions across teams</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Time-consuming site and country selection</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Timelines that are hard to validate early</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Delays between a synopsis and an actionable plan</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- How It Works -->
         <div class="sec-title text-center mb-4">
-          <span class="metrics-pill-badge mb-3">
-            <span class="badge-dot">●</span> Process
+          <span class="metrics-pill-badge mb-2">
+            <span class="badge-dot">●</span> The Process
           </span>
-          <h2 class="title text-white fw-bold"
-            style="font-size: 2.5rem; line-height: 1.25; letter-spacing: -1px;">
-            How It Works
+          <h2 class="title fw-bold text-white" style="font-size: 2.1rem; line-height: 1.25;">
+            How TrialOps<span class="gradient-text">360</span> Solves It
           </h2>
+          <p style="color: rgba(255, 255, 255, 0.7); font-size: 1rem; max-width: 580px; margin: 0 auto;">
+            From synopsis to deterministic budget, site list, and timeline in three structured steps.
+          </p>
         </div>
 
         <div class="row g-4 justify-content-center">
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <span style="font-weight: 800; font-size: 1.15rem;">1</span>
-                </div>
+            <div class="pillar-card-minimal step-card-compact">
+              <div class="step-badge-num">
+                01
               </div>
-              <h3 class="pillar-card-title text-white">Enter assumptions</h3>
-              <p class="pillar-card-thesis mb-0">Input the key details from your protocol synopsis.</p>
+              <h3 class="step-card-title text-white">Enter assumptions</h3>
+              <p class="step-card-desc" style="color: rgba(255, 255, 255, 0.72);">Input key parameters from your protocol synopsis: phase, indication, sample size, countries, duration, and visit schedule.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <span style="font-weight: 800; font-size: 1.15rem;">2</span>
-                </div>
+            <div class="pillar-card-minimal step-card-compact">
+              <div class="step-badge-num">
+                02
               </div>
-              <h3 class="pillar-card-title text-white">System generates the plan</h3>
-              <p class="pillar-card-thesis mb-0">TrialOps360 builds the budget, site list, timeline and execution plan from your inputs.</p>
+              <h3 class="step-card-title text-white">System generates the plan</h3>
+              <p class="step-card-desc" style="color: rgba(255, 255, 255, 0.72);">TrialOps360 applies verified clinical algorithms to build the full budget, site list, milestone timeline, and execution plan.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="pillar-card-header">
-                <div class="pillar-card-icon">
-                  <span style="font-weight: 800; font-size: 1.15rem;">3</span>
-                </div>
+            <div class="pillar-card-minimal step-card-compact">
+              <div class="step-badge-num">
+                03
               </div>
-              <h3 class="pillar-card-title text-white">Review and use</h3>
-              <p class="pillar-card-thesis mb-0">Review, adjust assumptions if needed, and use the outputs for planning, proposals and decision making.</p>
+              <h3 class="step-card-title text-white">Review and use</h3>
+              <p class="step-card-desc" style="color: rgba(255, 255, 255, 0.72);">Review scenario trade-offs, fine-tune assumptions in real time, and export board-ready packages to Excel or PDF.</p>
             </div>
           </div>
         </div>
@@ -178,7 +237,7 @@
     <!-- Section 5: What You Get (White Section) -->
     <section class="modular-products-section section-white pt-60 pb-60" id="what-you-get">
       <div class="container">
-        <div class="modular-section-header-wrap">
+        <div class="modular-section-header-wrap mb-4">
           <div class="row align-items-end">
             <div class="col-lg-8 col-12">
               <span class="metrics-pill-badge mb-3">
@@ -264,64 +323,64 @@
       </div>
     </section>
 
-    <!-- Section 6: Key Features, Section 7: Benefits, Section 8: Who It Is For (Dark Section) -->
-    <section class="why-us-section section-dark pt-60 pb-60">
+    <!-- Section 6: Key Features, Benefits, Who It Is For (Dark Section) -->
+    <section class="why-us-section section-dark pt-60 pb-60" id="key-features">
       <div class="container">
         <div class="row g-4">
-          <!-- Key Features -->
-          <div class="col-lg-6 col-12">
-            <div class="pillar-card-minimal">
+          <!-- Key Features (Compact Card) -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="pillar-card-minimal compact-pillar-card">
               <div class="pillar-card-header">
                 <div class="pillar-card-icon">
                   <i class="fa-solid fa-sliders"></i>
                 </div>
               </div>
-              <h2 class="pillar-card-title" style="font-size: 1.7rem;">Key Features</h2>
+              <h2 class="pillar-card-title text-white">Key Features</h2>
               <ul class="pillar-card-points">
-                <li><i class="fa-solid fa-circle-check"></i><span>Assumption-driven planning from the synopsis</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Assumption-driven planning</span></li>
                 <li><i class="fa-solid fa-circle-check"></i><span>Automated budget generation</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Site list generation</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Timeline and milestone planning</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Structured execution plan</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Consistent, standardised outputs across studies</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Export to Excel or PDF, scenario comparison, and country-wise cost view</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Recommended site allocation</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Milestone timeline mapping</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Standardised outputs across studies</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Scenario comparison & Excel/PDF export</span></li>
               </ul>
             </div>
           </div>
 
-          <!-- Benefits -->
-          <div class="col-lg-6 col-12">
-            <div class="pillar-card-minimal">
+          <!-- Benefits (Compact Card) -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="pillar-card-minimal compact-pillar-card">
               <div class="pillar-card-header">
                 <div class="pillar-card-icon">
                   <i class="fa-solid fa-chart-line"></i>
                 </div>
               </div>
-              <h2 class="pillar-card-title" style="font-size: 1.7rem;">Benefits</h2>
+              <h2 class="pillar-card-title text-white">Benefits</h2>
               <ul class="pillar-card-points">
-                <li><i class="fa-solid fa-circle-check"></i><span><strong>Save time:</strong> Move from synopsis to plan in much less time than manual methods.</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span><strong>Improve accuracy:</strong> Reduce errors from manual spreadsheets.</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span><strong>Stay consistent:</strong> Use the same logic and structure across every study.</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span><strong>Decide earlier:</strong> See budget and timeline impact before the study starts.</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span><strong>Collaborate better:</strong> Give teams one shared, clear view of the plan.</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span><strong>Save time:</strong> Rapid synopsis to plan conversion.</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span><strong>Accuracy:</strong> Eliminate spreadsheet errors.</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span><strong>Consistency:</strong> Uniform logic across programs.</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span><strong>Decide earlier:</strong> Immediate cost & schedule visibility.</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span><strong>Collaborate:</strong> One shared view for clinical & finance.</span></li>
               </ul>
             </div>
           </div>
 
-          <!-- Who It Is For -->
-          <div class="col-12">
-            <div class="pillar-card-minimal">
+          <!-- Who It Is For (Compact Card - Balanced 3rd Column) -->
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="pillar-card-minimal compact-pillar-card">
               <div class="pillar-card-header">
                 <div class="pillar-card-icon">
                   <i class="fa-solid fa-users-gear"></i>
                 </div>
               </div>
-              <h2 class="pillar-card-title" style="font-size: 1.7rem;">Who It Is For</h2>
+              <h2 class="pillar-card-title text-white">Who It Is For</h2>
               <ul class="pillar-card-points">
-                <li><i class="fa-solid fa-circle-check"></i><span>Pharma and biotech sponsors</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Pharma & biotech sponsors</span></li>
                 <li><i class="fa-solid fa-circle-check"></i><span>Contract Research Organizations (CROs)</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Clinical operations, feasibility and finance teams</span></li>
-                <li><i class="fa-solid fa-circle-check"></i><span>Business development teams preparing proposals</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Clinical operations & feasibility leaders</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Finance & study budgeting managers</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Business development & proposal teams</span></li>
               </ul>
             </div>
           </div>
@@ -329,16 +388,31 @@
       </div>
     </section>
 
-    <!-- Section 9: FAQs (White Section) -->
-    <section class="modern-faq-section section-white pt-60 pb-60">
+    <!-- Section 7: Frequently Asked Questions (White Section) -->
+    <section class="modern-faq-section section-white pt-60 pb-60" id="faqs">
       <div class="container position-relative" style="z-index: 2;">
         <div class="row g-5 align-items-start">
           <div class="col-lg-5 col-12 modern-faq-col-sticky">
             <div class="modern-faq-sidebar">
               <span class="metrics-pill-badge mb-3">
-                <span class="badge-dot">●</span> TrialOps360
+                <span class="badge-dot">●</span> TrialOps360 FAQs
               </span>
-              <h2 class="modern-faq-title">FAQs</h2>
+              <h2 class="modern-faq-title mb-3" style="font-size: 2.3rem; font-weight: 800; color: #090724; line-height: 1.25;">
+                Frequently Asked <span class="gradient-text">Questions</span>
+              </h2>
+              <p class="mb-4" style="color: #64748b; font-size: 0.95rem; line-height: 1.6;">
+                Clear answers to common questions about data confidentiality, inputs, and clinical planning outputs.
+              </p>
+
+              <!-- Image in FAQ Section (Light Theme Card) -->
+              <div class="faq-visual-preview-box">
+                <div class="faq-img-wrapper">
+                  <img src="images/resource/about-clinical-research.jpg"
+                    alt="Intuivus Clinical Trial Planning Team"
+                    class="img-fluid faq-visual-img">
+                  <div class="faq-img-glow-overlay"></div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -449,22 +523,34 @@
       </div>
     </section>
 
-    <!-- Section 10: Closing Call to Action -->
-    <section class="cta-section-layout1 pt-60 pb-60">
-      <div class="shape1 bounce-x"><img src="images/icons/shape-45.png" alt="" loading="lazy"></div>
+    <!-- Section 7: Redesigned Premium Cosmic CTA Section -->
+    <section class="cta-section-layout1 pt-60 pb-60" id="cta">
       <div class="large-container">
-        <div class="outer-box">
-          <div class="bg-image bg"><img src="images/background/cta4-bg-intuivus.jpg" alt="" loading="lazy"></div>
-          <div class="sec-title text-center light mb-0">
-            <div class="h2 title">Ready to see TrialOps360 in action?</div>
-            <p class="text mt-3" style="color: #cbd5e1; font-size: 1.08rem;">Book a short demo with our team.</p>
+        <div class="trialops-redesigned-cta-box">
+          <div class="cta-mesh-grid-pattern"></div>
+          <span class="metrics-pill-badge mb-3">
+            <span class="badge-dot">●</span> Get Started with TrialOps360
+          </span>
+          <h2 class="cta-redesigned-title">
+            Ready to see TrialOps<span class="gradient-text">360</span> in action?
+          </h2>
+          <p class="cta-redesigned-subtext">
+            Convert protocol assumptions into deterministic clinical budgets, recommended sites, and study timelines in minutes.
+          </p>
+          <div class="d-flex flex-wrap align-items-center justify-content-center gap-3 position-relative" style="z-index: 2;">
+            <a href="contact.html?enquiry=demo" class="cta-btn-primary">
+              <span>Request a Demo</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="contact.html?enquiry=budget" class="cta-btn-ghost">
+              <i class="fa-solid fa-calculator"></i>
+              <span>Get Complimentary Budget</span>
+            </a>
           </div>
-          <div class="cta-action-wrap text-center mt-4 pt-1">
-            <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
-              <a href="contact.html?enquiry=demo" class="btn-style-one theme-btn">
-                <span class="btn-text">Request a Demo <i class="fa fa-arrow-right ms-2"></i></span>
-              </a>
-            </div>
+          <div class="cta-trust-strip">
+            <span class="cta-trust-item"><i class="fa-solid fa-circle-check"></i> No commitment required</span>
+            <span class="cta-trust-item"><i class="fa-solid fa-circle-check"></i> 30-minute tailored walkthrough</span>
+            <span class="cta-trust-item"><i class="fa-solid fa-circle-check"></i> Confidential study scenario modeling</span>
           </div>
         </div>
       </div>
