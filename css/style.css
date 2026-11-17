@@ -25049,9 +25049,21 @@ html.has-loader.is-filling .o-loader__part {
      ========================================================================== */
 
 .tycoon-footer {
-  background: #000000 !important;
+  background-color: #070512 !important;
+  background-image:
+    radial-gradient(ellipse 65% 55% at 50% 30%, rgba(124, 58, 237, 0.18) 0%, transparent 70%),
+    radial-gradient(circle at 10% 85%, rgba(99, 50, 209, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 90% 85%, rgba(56, 189, 248, 0.08) 0%, transparent 45%),
+    linear-gradient(to right, rgba(168, 85, 247, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 85, 247, 0.07) 1px, transparent 1px) !important;
+  background-size:
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    44px 44px,
+    44px 44px !important;
   color: #ffffff !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-top: 1px solid rgba(168, 85, 247, 0.22) !important;
   padding: 80px 40px 30px !important;
   position: relative !important;
   overflow: hidden !important;
@@ -25526,18 +25538,17 @@ html.has-loader.is-filling .o-loader__part {
 .hyper-ref-card.is-highlighted,
 .hyper-ref-card:hover {
   border-color: rgba(168, 85, 247, 0.75) !important;
-  transform: translateY(-5px) !important;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 35px rgba(124, 58, 237, 0.32) !important;
-  background: radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.22) 0%, #090A10 70%) !important;
+  transform: translateY(-8px) !important;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(124, 58, 237, 0.32) !important;
 }
 
 .hyper-ref-card.is-highlighted .hyper-card-icon-box,
 .hyper-ref-card:hover .hyper-card-icon-box {
   border-color: #C084FC !important;
-  background: rgba(124, 58, 237, 0.28) !important;
+  background-color: rgba(124, 58, 237, 0.28) !important;
   box-shadow: 0 0 24px rgba(168, 85, 247, 0.65) !important;
   color: #FFFFFF !important;
-  transform: scale(1.05);
+  transform: scale(1.06) !important;
 }
 
 .hyper-ref-card.is-highlighted .hyper-card-icon-box svg,
@@ -25559,22 +25570,27 @@ html.has-loader.is-filling .o-loader__part {
 
 .hyper-ref-card.is-highlighted .hyper-card-arrow-btn,
 .hyper-ref-card:hover .hyper-card-arrow-btn {
-  background: #7C3AED !important;
   color: #FFFFFF !important;
   border-color: #A855F7 !important;
-  box-shadow: 0 0 16px rgba(124, 58, 237, 0.6) !important;
-  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(124, 58, 237, 0.6) !important;
+  transform: scale(1.08) !important;
+}
+
+.hyper-ref-card.is-highlighted .hyper-card-arrow-btn::before,
+.hyper-ref-card:hover .hyper-card-arrow-btn::before {
+  opacity: 1 !important;
 }
 
 .hyper-ref-card.is-highlighted .hyper-card-arrow-btn svg,
 .hyper-ref-card:hover .hyper-card-arrow-btn svg {
-  transform: translate(2px, -2px);
+  stroke: #FFFFFF !important;
+  transform: translate(2.5px, -2.5px) !important;
 }
 
 .hyper-ref-card.is-highlighted .hyper-card-watermark,
 .hyper-ref-card:hover .hyper-card-watermark {
-  -webkit-text-stroke: 1.5px rgba(168, 85, 247, 0.16) !important;
-  transform: scale(1.04);
+  -webkit-text-stroke: 1.5px rgba(168, 85, 247, 0.2) !important;
+  transform: scale(1.05) !important;
 }
 
 

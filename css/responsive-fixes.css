@@ -5,18 +5,39 @@
 /* --- CARD DESIGN (Matching Image 1: Client-First, Innovation, Integrity, Passion) --- */
 .hyper-ref-card {
   position: relative !important;
-  background: #090A10 !important;
+  background-color: #090A10 !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 20px !important;
   padding: 32px 28px !important;
   overflow: hidden !important;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
   height: 100% !important;
   min-height: 380px !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  transform: translateY(0) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  will-change: transform, box-shadow, border-color !important;
+}
+
+/* Ambient purple glow layer with seamless 0.4s fade on hover AND dishover */
+.hyper-ref-card::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  border-radius: inherit !important;
+  background: radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.28) 0%, rgba(124, 58, 237, 0.08) 55%, transparent 80%) !important;
+  opacity: 0 !important;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+.hyper-ref-card:hover::before {
+  opacity: 1 !important;
 }
 
 /* Synopsis section cards can match height gracefully */
@@ -47,19 +68,24 @@
   width: 52px !important;
   height: 52px !important;
   border-radius: 14px !important;
-  background: rgba(124, 58, 237, 0.12) !important;
+  background-color: rgba(124, 58, 237, 0.12) !important;
   border: 1px solid rgba(168, 85, 247, 0.35) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   color: #C084FC !important;
   box-shadow: 0 0 15px rgba(124, 58, 237, 0.20) !important;
-  transition: all 0.35s ease !important;
+  transform: scale(1) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              color 0.4s ease !important;
 }
 
 .hyper-card-icon-box svg {
   stroke: #C084FC !important;
-  transition: all 0.35s ease !important;
+  transition: stroke 0.4s ease !important;
 }
 
 /* Number Badge Pill (Image 1 style e.g. 01, 02, 03, 04) */
@@ -174,23 +200,42 @@
 
 /* Circular Arrow Button (Image 1 style ↗) */
 .hyper-card-arrow-btn {
+  position: relative !important;
+  overflow: hidden !important;
   width: 38px !important;
   height: 38px !important;
   border-radius: 50% !important;
-  background: rgba(255, 255, 255, 0.04) !important;
+  background-color: rgba(255, 255, 255, 0.04) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   color: #D4D4D8 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   cursor: pointer !important;
-  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  transform: scale(1) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              color 0.4s ease !important;
   flex-shrink: 0 !important;
+  z-index: 2 !important;
+}
+
+.hyper-card-arrow-btn::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%) !important;
+  opacity: 0 !important;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  z-index: -1 !important;
 }
 
 .hyper-card-arrow-btn svg {
   stroke: currentColor !important;
-  transition: transform 0.25s ease !important;
+  transform: translate(0, 0) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), stroke 0.4s ease !important;
 }
 
 /* Giant Subtle Watermark Number (Image 1 style) */
@@ -207,23 +252,23 @@
   pointer-events: none !important;
   user-select: none !important;
   z-index: 1 !important;
-  transition: all 0.35s ease !important;
+  transform: scale(1) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), -webkit-text-stroke 0.4s ease !important;
 }
 
 /* --- PREMIUM SLEEK HOVER STATE (High Contrast, Deep Dark, Neon Accents) --- */
 .hyper-ref-card:hover {
-  border-color: rgba(168, 85, 247, 0.7) !important;
+  border-color: rgba(168, 85, 247, 0.75) !important;
   transform: translateY(-8px) !important;
   box-shadow: 0 24px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(124, 58, 237, 0.28) !important;
-  background: linear-gradient(180deg, #100C22 0%, #090A10 100%) !important;
 }
 
 .hyper-ref-card:hover .hyper-card-icon-box {
   border-color: #C084FC !important;
-  background: rgba(124, 58, 237, 0.28) !important;
+  background-color: rgba(124, 58, 237, 0.28) !important;
   box-shadow: 0 0 24px rgba(168, 85, 247, 0.6) !important;
   color: #FFFFFF !important;
-  transform: scale(1.06);
+  transform: scale(1.06) !important;
 }
 
 .hyper-ref-card:hover .hyper-card-icon-box svg {
@@ -232,7 +277,7 @@
 
 .hyper-ref-card:hover .hyper-card-badge-pill {
   border-color: rgba(168, 85, 247, 0.55) !important;
-  background: rgba(124, 58, 237, 0.16) !important;
+  background-color: rgba(124, 58, 237, 0.16) !important;
   color: #FFFFFF !important;
   box-shadow: 0 0 14px rgba(124, 58, 237, 0.35) !important;
 }
@@ -242,21 +287,24 @@
 }
 
 .hyper-ref-card:hover .hyper-card-arrow-btn {
-  background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%) !important;
   color: #FFFFFF !important;
   border-color: #A855F7 !important;
   box-shadow: 0 0 18px rgba(124, 58, 237, 0.65) !important;
-  transform: scale(1.08);
+  transform: scale(1.08) !important;
+}
+
+.hyper-ref-card:hover .hyper-card-arrow-btn::before {
+  opacity: 1 !important;
 }
 
 .hyper-ref-card:hover .hyper-card-arrow-btn svg {
   stroke: #FFFFFF !important;
-  transform: translate(2.5px, -2.5px);
+  transform: translate(2.5px, -2.5px) !important;
 }
 
 .hyper-ref-card:hover .hyper-card-watermark {
   -webkit-text-stroke: 1.5px rgba(168, 85, 247, 0.2) !important;
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
 }
 
 .hyper-ref-card:hover .hyper-tag {
@@ -2599,9 +2647,42 @@ html {
   padding: 80px 0 30px !important;
   width: 100% !important;
   box-sizing: border-box !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #070512 !important;
+  background-image:
+    radial-gradient(ellipse 65% 55% at 50% 30%, rgba(124, 58, 237, 0.18) 0%, transparent 70%),
+    radial-gradient(circle at 10% 85%, rgba(99, 50, 209, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 90% 85%, rgba(56, 189, 248, 0.08) 0%, transparent 45%),
+    linear-gradient(to right, rgba(168, 85, 247, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 85, 247, 0.07) 1px, transparent 1px) !important;
+  background-size:
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    44px 44px,
+    44px 44px !important;
+  border-top: 1px solid rgba(168, 85, 247, 0.22) !important;
+}
+
+.tycoon-footer::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 80% !important;
+  max-width: 1000px !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent 0%, rgba(139, 92, 246, 0.3) 20%, rgba(216, 180, 254, 0.95) 50%, rgba(139, 92, 246, 0.3) 80%, transparent 100%) !important;
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.7), 0 0 35px rgba(124, 58, 237, 0.35) !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
 }
 
 .tycoon-footer .outer-box {
+  position: relative !important;
+  z-index: 3 !important;
   max-width: 1780px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
@@ -3140,23 +3221,41 @@ section:not(.page-title):not(.page-title-modern):not(#scs-portal-stage):not(.scs
   color: rgba(255, 255, 255, 0.65) !important;
 }
 
-/* Compact Breadcrumb Header for Contact Page */
+/* Generous Balanced Breadcrumb Header for Contact Page */
 .page-title-contact {
-  padding-top: 105px !important;
-  padding-bottom: 22px !important;
-  min-height: auto !important;
+  padding-top: 150px !important;
+  padding-bottom: 75px !important;
+  min-height: 360px !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .page-title-contact .page-modern-title {
-  font-size: clamp(1.7rem, 2.8vw, 2.2rem) !important;
-  margin-bottom: 4px !important;
-  line-height: 1.25 !important;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem) !important;
+  margin-bottom: 14px !important;
+  line-height: 1.18 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
 }
 
 .page-title-contact .page-modern-subtitle {
-  font-size: 0.88rem !important;
+  font-size: clamp(0.98rem, 1.3vw, 1.1rem) !important;
   margin-bottom: 0 !important;
-  line-height: 1.5 !important;
+  line-height: 1.65 !important;
+  max-width: 760px !important;
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+.page-title-contact .page-modern-breadcrumb {
+  margin-bottom: 16px !important;
+}
+
+@media (max-width: 767px) {
+  .page-title-contact {
+    padding-top: 125px !important;
+    padding-bottom: 45px !important;
+    min-height: auto !important;
+  }
 }
 
 /* ==========================================================================
