@@ -203,15 +203,8 @@
          Resting view on load; splits & opens circular aperture revealing Hero Banner
          ========================================================== -->
     <div class="scs-portal-stage" id="scs-portal-stage">
-      <!-- Radiating Cosmic Grid & 3 Interlocking Logo Hexagons (Reference Geometry) -->
+      <!-- 3 Interlocking Logo Hexagons (Reference Geometry - Clean without straight grid lines) -->
       <div class="scs-portal-grid" aria-hidden="true">
-        <span class="scs-grid-line is-h"></span>
-        <span class="scs-grid-line is-v"></span>
-        <span class="scs-grid-line is-diag-1"></span>
-        <span class="scs-grid-line is-diag-2"></span>
-        <span class="scs-grid-line is-diag-3"></span>
-        <span class="scs-grid-line is-diag-4"></span>
-
         <!-- Left Intersecting Hexagon (Intuivus Logo Shape) -->
         <div class="scs-hex-sub is-left">
           <svg viewBox="0 0 500 540" class="scs-hex-svg" preserveAspectRatio="xMidYMid meet">
@@ -1157,9 +1150,68 @@
       }
     }
 
+    function initHeroMainSwiper() {
+      if (typeof Swiper === 'undefined') return;
+      var swiperEl = document.querySelector('.hyper-main-swiper');
+      if (!swiperEl) return;
+
+      var slides = swiperEl.querySelectorAll('.swiper-wrapper > .swiper-slide:not(.swiper-slide-duplicate)');
+      var slideCount = slides.length;
+      var navBtns = swiperEl.querySelectorAll('.hyper-nav-btn');
+      var bottomBar = swiperEl.querySelector('.hyper-bottom-bar');
+
+      if (slideCount <= 1) {
+        // Single slide: hide navigation arrows and pagination
+        swiperEl.classList.add('is-single-slide');
+        navBtns.forEach(function (btn) { btn.style.display = 'none'; });
+        if (bottomBar) bottomBar.style.display = 'none';
+        if (window.heroSwiperInstance) {
+          window.heroSwiperInstance.destroy(true, true);
+          window.heroSwiperInstance = null;
+        }
+        return;
+      }
+
+      // 2 or more slides: show navigation arrows and pagination
+      swiperEl.classList.remove('is-single-slide');
+      navBtns.forEach(function (btn) { btn.style.display = ''; });
+      if (bottomBar) bottomBar.style.display = '';
+
+      if (window.heroSwiperInstance) {
+        window.heroSwiperInstance.destroy(true, true);
+        window.heroSwiperInstance = null;
+      }
+
+      window.heroSwiperInstance = new Swiper('.hyper-main-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        speed: 750,
+        loop: slideCount > 1,
+        watchOverflow: true,
+        autoplay: {
+          delay: 5500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        },
+        navigation: {
+          nextEl: '.hyper-main-swiper .hyper-nav-next',
+          prevEl: '.hyper-main-swiper .hyper-nav-prev'
+        },
+        pagination: {
+          el: '.hyper-main-swiper .hyper-swiper-pagination',
+          clickable: true
+        }
+      });
+    }
+    window.refreshHeroSwiper = initHeroMainSwiper;
+
     document.addEventListener('DOMContentLoaded', function () {
       initModularProductsSwiper();
       initTestimonialEqualHeights();
+      initHeroMainSwiper();
+    });
+    window.addEventListener('load', function () {
+      initHeroMainSwiper();
     });
   </script>
 
@@ -1865,7 +1917,7 @@
 
         var ticking = false;
         var hasTriggeredResize = false;
-        var runway = 280; // Compact runway: smooth 220px aperture opening, then immediate natural scroll to About Us
+        var runway = 280; // Compact, responsive runway: smooth aperture opening, then immediate natural transition to About Us
 
         function updateDimensions() {
           var vh = window.innerHeight || 900;
@@ -1901,8 +1953,8 @@
             frame.style.height = vh + 'px';
           }
 
-          // APERTURE ANIMATION: Responsive smooth opening across 220px of scroll
-          var portalRange = 220;
+          // APERTURE ANIMATION: Smooth, responsive opening across 250px of scroll
+          var portalRange = 250;
           var p = Math.max(0, Math.min(1, relativeScroll / portalRange));
 
           // 3. HEADER VISIBILITY: Hidden on O-SCS resting view (p <= 0.08), Visible on Hero Banner & Beyond
