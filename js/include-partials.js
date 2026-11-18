@@ -230,6 +230,7 @@
       <div class="footer-copy-row">
         <span>&copy; 2026 ALL RIGHTS RESERVED</span>
         <span>INTUIVUS &bull; CONNECTED INTELLIGENCE</span>
+        <span class="footer-dev-credit">Developed by <a href="https://www.thewebtycoons.com/" target="_blank" rel="noopener noreferrer">Web Tycoons</a></span>
       </div>
     </div>
   </div>
@@ -242,35 +243,24 @@
         <button type="button" class="btn-close demo-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="row g-0 align-items-stretch">
           
-          <!-- Left Column: Visual Showcase -->
-          <div class="col-md-5 d-none d-md-flex flex-column justify-content-between demo-modal-media-col" style="background: linear-gradient(180deg, rgba(13, 8, 36, 0.90) 0%, rgba(9, 5, 24, 0.97) 100%), url('images/resource/about-clinical-research.jpg') center center / cover no-repeat;">
-            <div>
-              <div class="demo-modal-brand-badge mb-3">
-                <span class="badge-dot">●</span> Intuivus Live Demo
+          <!-- Left Column: Visual Showcase (Image with Brand Overlay & Clean Text) -->
+          <div class="col-md-5 d-none d-md-block demo-modal-media-col position-relative overflow-hidden p-0">
+            <img src="images/resource/about-clinical-research.jpg" alt="Intuivus Clinical Research" class="w-100 h-100 d-block" style="object-fit: cover; object-position: center;">
+            <div class="demo-modal-img-overlay"></div>
+            <div class="demo-modal-caption-wrap p-4 d-flex flex-column justify-content-between h-100 position-absolute" style="z-index: 3; inset: 0;">
+              <div>
+                <h3 class="demo-modal-media-title mb-2" style="font-size: 1.25rem; font-weight: 700; color: #ffffff; line-height: 1.3;">
+                  Experience Clinical <span class="gradient-text">Intelligence</span> Live
+                </h3>
+                <p class="demo-modal-media-desc mb-0" style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-bottom: 0 !important;">
+                  Tailored walkthrough of TrialOps360 with our clinical specialists.
+                </p>
               </div>
-              <h3 class="demo-modal-media-title">Experience Clinical Intelligence Live</h3>
-              <p class="demo-modal-media-desc">
-                Schedule a tailored 30-minute walkthrough to see how TrialOps360 automates study budgets, global site allocations, and execution plans with board-ready certainty.
-              </p>
-              
-              <ul class="demo-modal-feature-list">
-                <li>
-                  <i class="fa-solid fa-circle-check"></i>
-                  <span>1-on-1 session with clinical operations leaders</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i>
-                  <span>Protocol synopsis to bottom-up budget demo</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i>
-                  <span>Interactive country &amp; site allocation simulation</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="demo-modal-media-footer mt-3 pt-3 border-top border-white-10">
-              <span class="text-white-50" style="font-size: 0.74rem;"><i class="fa-solid fa-shield-halved text-purple me-1"></i> Enterprise GxP &amp; 21 CFR Part 11 compliant.</span>
+              <div class="demo-modal-media-footer pt-2">
+                <span class="text-white-50" style="font-size: 0.72rem; letter-spacing: 0.02em;">
+                  <i class="fa-solid fa-shield-halved text-purple me-1"></i> GxP &amp; 21 CFR Part 11 Compliant
+                </span>
+              </div>
             </div>
           </div>
 
@@ -280,8 +270,8 @@
               <span class="metrics-pill-badge mb-2">
                 <span class="badge-dot">●</span> 30-Min Walkthrough
               </span>
-              <h3 class="title fw-bold mb-1" id="requestDemoModalLabel" style="color: #ffffff; font-size: 1.35rem; line-height: 1.25;">Request a Product Demo</h3>
-              <p class="mb-0" style="color: #94a3b8; font-size: 0.82rem;">Fill in your details below and our clinical team will confirm your session.</p>
+              <h3 class="title fw-bold mb-1" id="requestDemoModalLabel" style="color: #0f172a; font-size: 1.35rem; line-height: 1.25;">Request a Product Demo</h3>
+              <p class="mb-0" style="color: #64748b; font-size: 0.82rem;">Fill in your details below and our clinical team will confirm your session.</p>
             </div>
 
             <form id="popup_demo_form" name="popup_demo_form" novalidate>
@@ -312,7 +302,7 @@
 
               <div class="mb-2">
                 <label for="demo_focus_area" class="form-label">Primary Area of Interest</label>
-                <select id="demo_focus_area" name="focus_area" class="form-control">
+                <select id="demo_focus_area" name="focus_area" class="form-control select2-searchable" data-placeholder="Select Primary Area of Interest" style="width: 100%;">
                   <option value="TrialOps360 Full Platform">TrialOps360 Full Platform Walkthrough</option>
                   <option value="Clinical Trial Budgeting">Clinical Trial Budgeting &amp; Modeling</option>
                   <option value="Site Allocation & Feasibility">Site Allocation &amp; Feasibility Simulation</option>
@@ -602,6 +592,52 @@
     if (typeof window.initFooterParticles === 'function') {
       window.initFooterParticles();
     }
+    initSelect2Dropdowns();
+  }
+
+  function initSelect2Dropdowns() {
+    if (typeof jQuery === 'undefined' || !jQuery.fn.select2) {
+      setTimeout(initSelect2Dropdowns, 100);
+      return;
+    }
+    var $modal = $('#requestDemoModal');
+    var $select = $('#demo_focus_area');
+    if ($select.length) {
+      if ($select.hasClass('select2-hidden-accessible')) {
+        $select.select2('destroy');
+      }
+      $select.select2({
+        dropdownParent: $modal.length ? $modal : $('body'),
+        width: '100%',
+        minimumResultsForSearch: 0
+      });
+    }
+
+    var $contactSelect = $('#enquiry_type');
+    if ($contactSelect.length && !$contactSelect.hasClass('select2-hidden-accessible')) {
+      $contactSelect.select2({
+        width: '100%',
+        minimumResultsForSearch: 0
+      });
+    }
+  }
+
+  // Event handlers for modal & search autofocus
+  document.addEventListener('shown.bs.modal', function (e) {
+    if (e.target && e.target.id === 'requestDemoModal') {
+      initSelect2Dropdowns();
+    }
+  });
+
+  if (typeof jQuery !== 'undefined') {
+    jQuery(document).on('select2:open', function () {
+      setTimeout(function () {
+        var searchField = document.querySelector('.select2-container--open .select2-search__field');
+        if (searchField) {
+          searchField.focus();
+        }
+      }, 50);
+    });
   }
 
   if (document.readyState === 'loading') {
