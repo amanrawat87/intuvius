@@ -44,15 +44,14 @@
     <section class="page-title-modern">
       <div class="container">
         <div class="title-outer text-start">
-          <ul class="page-modern-breadcrumb mb-3">
-            <li><a href="index.html" class="crumb-home">Home</a></li>
+          <ul class="page-modern-breadcrumb mb-2" style="pointer-events: none; user-select: none;">
+            <li><span>Home</span></li>
             <li><span class="sep">/</span></li>
-            <li><a href="#">Technology</a></li>
+            <li><span>Technology</span></li>
             <li><span class="sep">/</span></li>
             <li class="active">Other Systems</li>
           </ul>
-          <h1 class="page-modern-title">Connected Systems for <span class="gradient-text">Clinical Trials</span></h1>
-          <p class="page-modern-subtitle">A connected set of systems designed to support every phase of the clinical trial lifecycle, from early feasibility through to site execution.</p>
+          <h1 class="page-modern-title mb-0" style="cursor: default; pointer-events: none;">Other <span class="gradient-text">Systems</span></h1>
         </div>
       </div>
     </section>
@@ -77,8 +76,8 @@
                 Intuivus is a clinical trial technology company. We are building a connected set of systems that support every stage of a clinical trial, from early planning and deterministic budgeting through to global site execution and financial reconciliation.
               </p>
               <div class="d-flex flex-wrap align-items-center gap-3">
-                <a class="header-btn-primary" href="trialops360.html"><span class="btn-text">Explore TrialOps360 <i class="fa fa-arrow-right ms-2"></i></span></a>
-                <a class="btn-style-two" href="contact.html"><span class="btn-text">Contact Our Team</span></a>
+                <a class="product-family-btn-primary" href="trialops360.html"><span class="btn-text">Explore TrialOps360 <i class="fa fa-arrow-right ms-2"></i></span></a>
+                <a class="product-family-btn-secondary" href="contact.html"><span class="btn-text">Contact Our Team</span></a>
               </div>
             </div>
           </div>
@@ -86,63 +85,85 @@
 
         <!-- Ecosystem Architecture Grid -->
         <div class="row g-4 justify-content-center">
-          <div class="col-lg-5 col-md-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="d-flex align-items-center justify-content-between mb-3">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-chart-pie"></i>
+          <div class="col-lg-5 col-md-6 col-12 d-flex">
+            <div class="pillar-card-minimal ecosystem-pillar-card w-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="pillar-card-icon">
+                    <i class="fa-solid fa-chart-pie"></i>
+                  </div>
+                  <span class="metrics-pill-badge" style="background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.3); color: #166534;">
+                    <span class="badge-dot" style="color: #16a34a;">●</span> Live System
+                  </span>
                 </div>
-                <span class="metrics-pill-badge" style="background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.3); color: #166534;">
-                  <span class="badge-dot" style="color: #16a34a;">●</span> Live System
-                </span>
+                <h3 class="pillar-card-title fw-bold" style="font-size: 1.45rem; color: #090724;">TrialOps360</h3>
+                <p class="pillar-card-thesis text-secondary mb-0">
+                  Autonomous protocol synopsis ingestion delivering board-approved bottom-up budgets, site allocations, and verified milestone timelines.
+                </p>
               </div>
-              <h3 class="pillar-card-title fw-bold" style="font-size: 1.45rem; color: #090724;">TrialOps360</h3>
-              <p class="pillar-card-thesis text-secondary mb-3">
-                Autonomous protocol synopsis ingestion delivering board-approved bottom-up budgets, site allocations, and verified milestone timelines.
-              </p>
-              <a href="trialops360.html" class="text-decoration-none fw-semibold" style="color: #7c3aed; font-size: 0.95rem;">
-                View System Capabilities <i class="fa-solid fa-arrow-right ms-1"></i>
-              </a>
+              <div class="card-footer-divider pt-3 mt-auto">
+                <a href="trialops360.html" class="text-decoration-none fw-semibold d-inline-flex align-items-center" style="color: #7c3aed; font-size: 0.95rem;">
+                  View System Capabilities <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-5 col-md-6 col-12">
-            <div class="pillar-card-minimal">
-              <div class="d-flex align-items-center justify-content-between mb-3">
-                <div class="pillar-card-icon">
-                  <i class="fa-solid fa-network-wired"></i>
+          <div class="col-lg-5 col-md-6 col-12 d-flex">
+            <div class="pillar-card-minimal ecosystem-pillar-card w-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="pillar-card-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                  </div>
+                  <span class="metrics-pill-badge">
+                    <span class="badge-dot">●</span> In Development
+                  </span>
                 </div>
-                <span class="metrics-pill-badge">
-                  <span class="badge-dot">●</span> In Development
-                </span>
+                <h3 class="pillar-card-title fw-bold" style="font-size: 1.45rem; color: #090724;">Connected Trial Lifecycle</h3>
+                <p class="pillar-card-thesis text-secondary mb-0">
+                  Future modules will seamlessly synchronize study feasibility, regulatory tracking, investigator contracts, and real-time trial financial governance into one unified architecture.
+                </p>
               </div>
-              <h3 class="pillar-card-title fw-bold" style="font-size: 1.45rem; color: #090724;">Connected Trial Lifecycle</h3>
-              <p class="pillar-card-thesis text-secondary mb-3">
-                Future modules will seamlessly synchronize study feasibility, regulatory tracking, investigator contracts, and real-time trial financial governance into one unified architecture.
-              </p>
-              <a href="contact.html" class="text-decoration-none fw-semibold" style="color: #7c3aed; font-size: 0.95rem;">
-                Inquire About Roadmap <i class="fa-solid fa-arrow-right ms-1"></i>
-              </a>
+              <div class="card-footer-divider pt-3 mt-auto">
+                <a href="contact.html" class="text-decoration-none fw-semibold d-inline-flex align-items-center" style="color: #7c3aed; font-size: 0.95rem;">
+                  Inquire About Roadmap <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta-section-layout1 pt-60 pb-60">
-      <div class="shape1 bounce-x"><img src="images/icons/shape-45.png" alt="" loading="lazy"></div>
-      <div class="large-container">
-        <div class="outer-box">
-          <div class="bg-image bg"><img src="images/background/cta4-bg-intuivus.jpg" alt="" loading="lazy"></div>
-          <div class="sec-title text-center light mb-0">
-            <div class="h2 title">Want to know more about what we are building?</div>
-          </div>
-          <div class="cta-action-wrap text-center mt-4 pt-1">
-            <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
-              <a href="contact.html" class="btn-style-one theme-btn">
-                <span class="btn-text">Contact Us <i class="fa fa-arrow-right ms-2"></i></span>
-              </a>
+    <!-- Call to Action (Redesigned Enterprise Modern SaaS Card) -->
+    <section class="cta-section-layout1 pt-60 pb-60" id="cta">
+      <div class="container">
+        <div class="outer-box position-relative" data-aos="fade-up">
+          <div class="cta-aurora-glow"></div>
+          <div class="cta-grid-lines"></div>
+          <div class="position-relative" style="z-index: 2;">
+            <div class="sec-title text-center light mb-0">
+              <span class="metrics-pill-badge mb-3">
+                <span class="badge-dot">●</span> FUTURE TRIAL ARCHITECTURE
+              </span>
+              <h2 class="title" style="font-size: clamp(28px, 4.2vw, 46px); font-weight: 800; color: #ffffff; line-height: 1.2; letter-spacing: -1px; max-width: 820px; margin: 0 auto 16px;">
+                Want to Know More About What We Are <span class="cta-title-gradient">Building?</span>
+              </h2>
+              <p class="text mx-auto" style="max-width: 680px; color: #cbd5e1; font-size: 1.05rem; line-height: 1.65;">
+                Connect with our product and clinical operations specialists to discuss upcoming modules, roadmap timelines, or customized enterprise integration.
+              </p>
+            </div>
+            <div class="cta-action-wrap text-center mt-4 pt-2">
+              <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+                <a href="contact.html" class="cta-action-btn-primary">
+                  <span>Contact Our Team</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="contact.html?enquiry=roadmap" class="cta-action-btn-secondary">
+                  <span>Inquire About Roadmap</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

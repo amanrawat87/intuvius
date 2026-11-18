@@ -33,10 +33,6 @@
                   <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </a>
                 <ul class="nav-dropdown-menu">
-                  <li class="nav-dd-header" aria-hidden="true">
-                    <span class="nav-dd-eyebrow">Clinical Systems</span>
-                    <span class="nav-dd-eyebrow-pill">Intuivus Suite</span>
-                  </li>
                   <li class="nav-dd-item">
                     <a href="trialops360.html" class="nav-dd-card">
                       <span class="nav-dd-icon" aria-hidden="true">
@@ -45,7 +41,6 @@
                       <span class="nav-dd-body">
                         <span class="nav-dd-title-row">
                           <span class="nav-dd-title">TrialOps360</span>
-                          <span class="nav-dd-badge">Flagship</span>
                         </span>
                         <span class="nav-dd-desc">Clinical trial budgeting, forecasting &amp; planning</span>
                       </span>
@@ -67,14 +62,6 @@
                       </span>
                       <span class="nav-dd-arrow" aria-hidden="true">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-dd-footer">
-                    <a href="contact.html?enquiry=budget" class="nav-dd-footer-link">
-                      <span class="nav-dd-footer-text">Need a study plan? <strong>Get Complimentary Budget</strong></span>
-                      <span class="nav-dd-footer-arrow" aria-hidden="true">
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                       </span>
                     </a>
                   </li>

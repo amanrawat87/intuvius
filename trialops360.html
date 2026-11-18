@@ -44,47 +44,101 @@
     <section class="page-title-modern">
       <div class="container">
         <div class="title-outer text-start">
-          <ul class="page-modern-breadcrumb mb-3">
-            <li><a href="index.html">Home</a></li>
+          <ul class="page-modern-breadcrumb mb-2" style="pointer-events: none; user-select: none;">
+            <li><span>Home</span></li>
             <li><span class="sep">/</span></li>
-            <li><a href="trialops360.html">Technology</a></li>
+            <li><span>Technology</span></li>
             <li><span class="sep">/</span></li>
             <li class="active">TrialOps360</li>
           </ul>
-          <h1 class="page-modern-title">TrialOps<span class="gradient-text">360</span> Flagship Platform</h1>
-          <p class="page-modern-subtitle">Deterministic clinical trial budgeting, scenario forecasting, and site allocation intelligence built for modern sponsors and CROs.</p>
+          <h1 class="page-modern-title mb-0" style="cursor: default; pointer-events: none;">TrialOps<span class="gradient-text">360</span></h1>
         </div>
       </div>
     </section>
 
-    <!-- Section 1: What is TrialOps360? (White Section) -->
+    <!-- Section 1: What is TrialOps360? (2-Column Overview with Dashboard Visual) -->
     <section class="about-section section-white pt-60 pb-60" id="what-is-trialops360">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-10">
+        <div class="row align-items-center g-5">
+          <!-- Left Image: Dashboard Visual (Swapped) -->
+          <div class="col-lg-6 col-12" data-aos="fade-right">
+            <div class="trialops-dashboard-frame position-relative">
+              <div class="dashboard-glow-backdrop" aria-hidden="true"></div>
+              <div class="dashboard-img-card shadow-lg rounded-4 overflow-hidden border">
+                <img src="images/resource/trialops360-benefits-dashboard.jpg"
+                  alt="TrialOps360 Analytics Dashboard and Operational Benefits"
+                  class="img-fluid w-100 d-block"
+                  style="object-fit: cover;">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content: Overview & Benefits (Swapped) -->
+          <div class="col-lg-6 col-12" data-aos="fade-left">
             <div class="sec-title mb-3">
               <span class="metrics-pill-badge mb-3">
                 <span class="badge-dot">●</span> Overview
               </span>
-              <h2 class="title fw-bold mb-3" style="font-size: 2.3rem;">What is TrialOps360?</h2>
+              <h2 class="title fw-bold mb-3" style="font-size: clamp(2rem, 3.2vw, 2.5rem); color: #090724; line-height: 1.25; letter-spacing: -0.02em;">
+                What is TrialOps<span class="gradient-text">360</span>?
+              </h2>
             </div>
             <div class="text">
-              <p class="mb-0" style="color: #475569; font-size: 1.08rem; line-height: 1.8;">
-                TrialOps360 is a comprehensive system for planning and budgeting clinical trials. Teams enter key assumptions from the study synopsis, such as phase, indication, number of patients, countries, duration and visit schedule. The system then produces a complete planning package that is ready to review and refine.
+              <p class="mb-4" style="color: #475569; font-size: 1.02rem; line-height: 1.75;">
+                TrialOps360 is a comprehensive system for planning and budgeting clinical trials. Teams enter key assumptions from the study synopsis, such as phase, indication, number of patients, countries, duration, and visit schedule. The system then produces a complete planning package that is ready to review and refine.
               </p>
+            </div>
+
+            <!-- Benefit Highlights -->
+            <div class="trialops-overview-features d-flex flex-column gap-3">
+              <div class="d-flex align-items-start gap-3">
+                <div class="overview-check-icon">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                  <h4 class="mb-1 fw-bold" style="font-size: 1.02rem; color: #090724;">+45% Faster Trial Budgeting</h4>
+                  <p class="mb-0 text-secondary" style="font-size: 0.91rem; line-height: 1.55;">
+                    Autonomous protocol ingestion converts synopses into bottom-up line-item budgets in minutes.
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="overview-check-icon">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                  <h4 class="mb-1 fw-bold" style="font-size: 1.02rem; color: #090724;">Automated Site Allocation &amp; Enrollment</h4>
+                  <p class="mb-0 text-secondary" style="font-size: 0.91rem; line-height: 1.55;">
+                    Data-driven country distribution recommendations with predictive patient recruitment curves.
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="overview-check-icon">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                  <h4 class="mb-1 fw-bold" style="font-size: 1.02rem; color: #090724;">Audit-Defensible Planning Accuracy</h4>
+                  <p class="mb-0 text-secondary" style="font-size: 0.91rem; line-height: 1.55;">
+                    Standardized deterministic modeling that eliminates spreadsheet formulas and human error.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 2: TrialOps360 Flagship Showcase (Dark Section) -->
+    <!-- Section 2: TrialOps360 Showcase (Dark Section) -->
     <section class="trialops-hero-section section-dark pt-60 pb-60" id="trialops360">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
             <span class="metrics-pill-badge mb-3">
-              <span class="badge-dot">●</span> Technology • Flagship Platform
+              <span class="badge-dot">●</span> Technology
             </span>
             <h2 class="title text-start mb-3" style="color: #ffffff; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 800; letter-spacing: -0.03em;">TrialOps<span class="gradient-text">360</span></h2>
             <p class="text-white fw-bold mb-3" style="font-size: 1.35rem; line-height: 1.35;">
@@ -326,6 +380,17 @@
     <!-- Section 6: Key Features, Benefits, Who It Is For (Dark Section) -->
     <section class="why-us-section section-dark pt-60 pb-60" id="key-features">
       <div class="container">
+        <div class="sec-title text-center mb-5" data-aos="fade-up">
+          <span class="metrics-pill-badge mb-2">
+            <span class="badge-dot">●</span> Platform Capabilities
+          </span>
+          <h2 class="title fw-bold text-white" style="font-size: clamp(2rem, 3.5vw, 2.4rem); line-height: 1.25;">
+            Core Features &amp; <span class="gradient-text">Value Pillars</span>
+          </h2>
+          <p class="text-white-50 mx-auto mt-2 mb-0" style="max-width: 620px; font-size: 0.98rem; line-height: 1.6;">
+            A unified solution purpose-built to automate trial assumptions, streamline budgets, and empower clinical teams.
+          </p>
+        </div>
         <div class="row g-4">
           <!-- Key Features (Compact Card) -->
           <div class="col-lg-4 col-md-6 col-12">

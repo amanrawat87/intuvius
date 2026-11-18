@@ -964,7 +964,9 @@ body {
 #who-it-is-for.testimonial-section {
   background: #08061e !important;
   position: relative;
-  overflow: hidden;
+  overflow: visible !important;
+  overflow-x: clip !important;
+  overflow-y: visible !important;
   padding-top: 60px !important;
   padding-bottom: 60px !important;
 }
@@ -990,6 +992,22 @@ body {
   padding: 0 !important;
   position: relative;
   z-index: 2;
+  overflow: visible !important;
+  padding-bottom: 25px !important;
+  margin-bottom: -25px !important;
+}
+
+#who-it-is-for .row {
+  overflow: visible !important;
+  padding-bottom: 35px !important;
+  margin-bottom: -15px !important;
+}
+
+#who-it-is-for .col-xl-3,
+#who-it-is-for .col-lg-6,
+#who-it-is-for .col-md-6,
+#who-it-is-for .col-12 {
+  overflow: visible !important;
 }
 
 /* ==========================================================================
@@ -2746,11 +2764,38 @@ html {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
   font-size: 11px !important;
   font-weight: 600 !important;
   letter-spacing: 0.12em !important;
   text-transform: uppercase !important;
   color: #52525b !important;
+}
+
+.tycoon-footer .footer-copy-row a,
+.tycoon-footer .footer-dev-credit a {
+  color: #a855f7 !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  transition: all 0.25s ease !important;
+}
+
+.tycoon-footer .footer-copy-row a:hover,
+.tycoon-footer .footer-dev-credit a:hover {
+  color: #c084fc !important;
+  text-decoration: underline !important;
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.4) !important;
+}
+
+@media (max-width: 767.98px) {
+  .tycoon-footer .footer-copy-row {
+    flex-direction: column !important;
+    gap: 8px !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
 }
 
 @media (max-width: 1023.98px) {
@@ -4718,4 +4763,316 @@ body:not(.home-page-tlp) .section-white .pillar-card-points li i {
   color: #E879F9 !important;
   transform: scale(1.15) !important;
   filter: drop-shadow(0 0 10px rgba(232, 121, 249, 0.9)) !important;
+}
+
+/* ==========================================================================
+   PRODUCT FAMILY OVERVIEW MATCHED BUTTONS (OTHER-SYSTEMS & ABOUT)
+   ========================================================================== */
+.product-family-btn-primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 12px 26px !important;
+  border-radius: 12px !important;
+  font-size: 14.5px !important;
+  font-weight: 600 !important;
+  background: linear-gradient(135deg, #7C3AED 0%, #6332D1 100%) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 18px rgba(124, 58, 237, 0.4) !important;
+  text-decoration: none !important;
+  border: 1.5px solid rgba(192, 132, 252, 0.4) !important;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  white-space: nowrap !important;
+}
+
+.product-family-btn-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.6) !important;
+  color: #FFFFFF !important;
+}
+
+.product-family-btn-secondary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 12px 26px !important;
+  border-radius: 12px !important;
+  font-size: 14.5px !important;
+  font-weight: 600 !important;
+  background: #FFFFFF !important;
+  color: #6332D1 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+  text-decoration: none !important;
+  border: 1.5px solid rgba(124, 58, 237, 0.4) !important;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  white-space: nowrap !important;
+}
+
+.product-family-btn-secondary:hover {
+  background: rgba(124, 58, 237, 0.08) !important;
+  border-color: #7C3AED !important;
+  color: #4C1D95 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.15) !important;
+}
+
+/* ==========================================================================
+   TRIALOPS360 SECTION 6 (KEY FEATURES & PILLAR CARDS) SPACING FIXES
+   ========================================================================== */
+.compact-pillar-card .pillar-card-title,
+.section-dark .compact-pillar-card .pillar-card-title {
+  margin-top: 4px !important;
+  margin-bottom: 24px !important;
+}
+
+.compact-pillar-card .pillar-card-points,
+.section-dark .compact-pillar-card .pillar-card-points {
+  gap: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.compact-pillar-card .pillar-card-points li,
+.section-dark .compact-pillar-card .pillar-card-points li {
+  margin-bottom: 8px !important;
+  line-height: 1.4 !important;
+  font-size: 0.93rem !important;
+}
+
+.compact-pillar-card .pillar-card-points li:last-child,
+.section-dark .compact-pillar-card .pillar-card-points li:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   SECTION 7 FAQ REFINEMENTS (START ALIGNMENT, COMPACT SPACING & FONT SIZE)
+   ========================================================================== */
+.section-white .faq-img-wrapper {
+  height: 250px !important;
+  max-height: 250px !important;
+}
+
+@media (min-width: 992px) {
+  .modern-faq-section .modern-faq-accordion-wrap {
+    padding-top: 10px !important;
+  }
+}
+
+.modern-faq-section .modern-faq-card {
+  margin-bottom: 12px !important;
+  border-radius: 12px !important;
+}
+
+.modern-faq-section .modern-faq-trigger {
+  padding: 14px 18px !important;
+  gap: 12px !important;
+}
+
+.modern-faq-section .faq-question-text {
+  font-size: 0.94rem !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+}
+
+.modern-faq-section .faq-answer-inner {
+  padding: 0 18px 14px 18px !important;
+}
+
+.modern-faq-section .faq-answer-inner .answer-text,
+.modern-faq-section .answer-text {
+  font-size: 0.88rem !important;
+  line-height: 1.6 !important;
+  padding-top: 8px !important;
+}
+
+.modern-faq-section .faq-toggle-icon {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  font-size: 11px !important;
+}
+
+/* ==========================================================================
+   OTHER-SYSTEMS ECOSYSTEM CARDS ALIGNMENT & DIVIDER LINE
+   ========================================================================== */
+.ecosystem-pillar-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+}
+
+.ecosystem-pillar-card .pillar-card-thesis {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  color: #64748b !important;
+  font-size: 0.98rem !important;
+  line-height: 1.65 !important;
+  font-weight: 400 !important;
+}
+
+.ecosystem-pillar-card .card-footer-divider {
+  margin-top: 24px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid rgba(99, 50, 209, 0.12) !important;
+  width: 100% !important;
+}
+
+/* ==========================================================================
+   GLOBAL PAGE TITLE / BREADCRUMB HEADER UNIFIED STYLING & HEIGHT ENHANCEMENT
+   ========================================================================== */
+.page-title,
+.page-title-modern,
+.page-title-contact {
+  padding-top: 175px !important;
+  padding-bottom: 105px !important;
+  min-height: 380px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.page-title-modern .page-modern-title,
+.page-title .title,
+.page-title-contact .page-modern-title {
+  font-size: clamp(1.85rem, 3.4vw, 2.5rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.02em !important;
+  cursor: default !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  margin-bottom: 0 !important;
+}
+
+.page-title-modern .page-modern-breadcrumb,
+.page-title .page-modern-breadcrumb,
+.page-title-contact .page-modern-breadcrumb {
+  cursor: default !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  margin-bottom: 12px !important;
+}
+
+.page-title-modern .page-modern-breadcrumb a,
+.page-title-modern .page-modern-breadcrumb span,
+.page-title-modern .page-modern-breadcrumb li,
+.page-title .page-modern-breadcrumb a,
+.page-title .page-modern-breadcrumb span,
+.page-title .page-modern-breadcrumb li,
+.page-title-contact .page-modern-breadcrumb a,
+.page-title-contact .page-modern-breadcrumb span,
+.page-title-contact .page-modern-breadcrumb li {
+  pointer-events: none !important;
+  cursor: default !important;
+  text-decoration: none !important;
+}
+
+/* ==========================================================================
+   TRIALOPS360 OVERVIEW (2-COLUMN & DASHBOARD VISUAL)
+   ========================================================================== */
+.overview-check-icon {
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #7c3aed !important;
+  font-size: 1.15rem !important;
+  margin-top: 2px !important;
+}
+
+.trialops-dashboard-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.dashboard-glow-backdrop {
+  position: absolute !important;
+  inset: -15px !important;
+  background: radial-gradient(circle at center, rgba(124, 58, 237, 0.18) 0%, rgba(124, 58, 237, 0) 70%) !important;
+  filter: blur(25px) !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+.dashboard-img-card {
+  position: relative !important;
+  z-index: 2 !important;
+  border: 1px solid rgba(124, 58, 237, 0.2) !important;
+  border-radius: 20px !important;
+  background: #ffffff !important;
+  box-shadow: 0 20px 45px -10px rgba(124, 58, 237, 0.18), 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 480px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.dashboard-img-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 26px 55px -10px rgba(124, 58, 237, 0.25), 0 14px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.dashboard-img-card img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 480px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+/* ==========================================================================
+   MODULAR PRODUCTS SWIPER ACTION BUTTON HOVER CONTRAST FIX
+   ========================================================================== */
+.modular-action-btn {
+  color: #FFFFFF !important;
+}
+
+.modular-action-btn span,
+.modular-action-btn i {
+  color: #FFFFFF !important;
+  transition: all 0.25s ease !important;
+}
+
+.modular-card-visual:hover .modular-action-btn {
+  background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%) !important;
+  border-color: #a855f7 !important;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5) !important;
+  color: #FFFFFF !important;
+}
+
+.modular-card-visual:hover .modular-action-btn span,
+.modular-card-visual:hover .modular-action-btn i {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.modular-action-btn:hover,
+.modular-action-btn:focus,
+.modular-card-visual:hover .modular-action-btn:hover {
+  background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%) !important;
+  border-color: #c084fc !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 8px 24px rgba(147, 51, 234, 0.65) !important;
+  transform: translateY(-2px) !important;
+}
+
+.modular-action-btn:hover span,
+.modular-action-btn:hover i,
+.modular-action-btn:focus span,
+.modular-action-btn:focus i,
+.modular-card-visual:hover .modular-action-btn:hover span,
+.modular-card-visual:hover .modular-action-btn:hover i {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6) !important;
 }
