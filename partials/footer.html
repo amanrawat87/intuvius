@@ -93,35 +93,24 @@
         <button type="button" class="btn-close demo-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="row g-0 align-items-stretch">
           
-          <!-- Left Column: Visual Showcase -->
-          <div class="col-md-5 d-none d-md-flex flex-column justify-content-between demo-modal-media-col" style="background: linear-gradient(180deg, rgba(13, 8, 36, 0.90) 0%, rgba(9, 5, 24, 0.97) 100%), url('images/resource/about-clinical-research.jpg') center center / cover no-repeat;">
-            <div>
-              <div class="demo-modal-brand-badge mb-3">
-                <span class="badge-dot">●</span> Intuivus Live Demo
+          <!-- Left Column: Visual Showcase (Image with Brand Overlay & Clean Text) -->
+          <div class="col-md-5 d-none d-md-block demo-modal-media-col position-relative overflow-hidden p-0">
+            <img src="images/resource/about-clinical-research.jpg" alt="Intuivus Clinical Research" class="w-100 h-100 d-block" style="object-fit: cover; object-position: center;">
+            <div class="demo-modal-img-overlay"></div>
+            <div class="demo-modal-caption-wrap p-4 d-flex flex-column justify-content-between h-100 position-absolute" style="z-index: 3; inset: 0;">
+              <div>
+                <h3 class="demo-modal-media-title mb-2" style="font-size: 1.25rem; font-weight: 700; color: #ffffff; line-height: 1.3;">
+                  Experience Clinical <span class="gradient-text">Intelligence</span> Live
+                </h3>
+                <p class="demo-modal-media-desc mb-0" style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-bottom: 0 !important;">
+                  Tailored walkthrough of TrialOps360 with our clinical specialists.
+                </p>
               </div>
-              <h3 class="demo-modal-media-title">Experience Clinical Intelligence Live</h3>
-              <p class="demo-modal-media-desc">
-                Schedule a tailored 30-minute walkthrough to see how TrialOps360 automates study budgets, global site allocations, and execution plans with board-ready certainty.
-              </p>
-              
-              <ul class="demo-modal-feature-list">
-                <li>
-                  <i class="fa-solid fa-circle-check"></i>
-                  <span>1-on-1 session with clinical operations leaders</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i>
-                  <span>Protocol synopsis to bottom-up budget demo</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i>
-                  <span>Interactive country &amp; site allocation simulation</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="demo-modal-media-footer mt-3 pt-3 border-top border-white-10">
-              <span class="text-white-50" style="font-size: 0.74rem;"><i class="fa-solid fa-shield-halved text-purple me-1"></i> Enterprise GxP &amp; 21 CFR Part 11 compliant.</span>
+              <div class="demo-modal-media-footer pt-2">
+                <span class="text-white-50" style="font-size: 0.72rem; letter-spacing: 0.02em;">
+                  <i class="fa-solid fa-shield-halved text-purple me-1"></i> GxP &amp; 21 CFR Part 11 Compliant
+                </span>
+              </div>
             </div>
           </div>
 
